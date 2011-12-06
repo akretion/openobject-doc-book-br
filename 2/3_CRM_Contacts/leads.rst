@@ -5,208 +5,196 @@
 
 .. _part2-crm-leads:
 
-Managing your Leads
+Gerindo seus Prospectos
 ===================
 
-To define leads, imagine a bucket full of potential sales contacts expressing an interest in your company's products. 
+Para definir prospectos, imagine um recipiente cheio de contatos de clientes potenciais, manifestando interesse pelos produtos da sua empresa. 
 
-A lead represents a potential customer with whom you have not established a relationship yet. Usually a lead contains valuable information to realise future sales opportunities. However, the most common mistake is that such key information too often gets lost, because it is registered nowhere. And even when registered, it might still be difficult to track any activity for that lead, because the information is not at hand when you need it.
+Um prospecto, representa um cliente potencial com quem você ainda não entrou em relação. Usualmente, um prospecto contém informações valiosas para realizar futuras oportunidades de venda. Porém, o erro o mais comum é que essa informação chave se perde frequentemente, porque nao está cadastrada em parte alguma. E mesmo quando está registrada, é complicado seguir as atividades desses prospectos, porque essa informação não é disponível quando se precisa dela.
 
-Storing leads information in a central place such as OpenERP will release you of these worries.
+Gravar as informações dos prospectos num lugar central como OpenERP, acabará com esses problemas.
 
-So when would you create a lead in OpenERP, either manually or automatically? The following events could be a trigger:
+Então, quando criar um prospecto no OpenERP, manualmente ou automaticamente? Os eventos seguintes poderiam ser um ponto de partida:
 
-* An inquiry email sent to one of your company's generic email addresses, such as sales@mycompany.com, from the mailgateway,
+* Um e-mail mandado para um dos seus endereços genéricos de email, tal como sales@mycompany.com
 
-* A business card from a prospective customer met briefly at an exhibition: you have to contact him
-  again to qualify the lead and to know if there is any possibility of a sales opportunity; registered manually,
+* Um cartão de negócio de um cliente em perspetiva encontrado brevemente numa exibição: contatar ele mais uma vez para qualificar o prospecto e para saber se existe uma possibilidade de oportunidade de venda; cadastrada manualmente, 
 
-* A database of potential customers in a given sector and region imported through a CSV file. The potential customers have to be
-  contacted again individually or through a mass mailing to determine which contacts require further follow-up,
+* Um banco de dados de clientes potenciais num dado setor e região importada desde um arquivo CSV. Os clientes potenciais tem que ser contatados mais uma vez individualmente ou com um mass mailing para determinar quais contatos precisam ser seguidos,
 
-* An interesting contact that you met during a business networking event. You have to qualify it before assigning a salesperson to the contact,
+* Um contato interesante que encontrou durante um evento de negócio. Tem que qualificar ele antes de atribuir um vendedor ao contato,
 
-* A form completed on your website directly integrated into OpenERP using our webservice. Before converting the form
-  into a sales proposition or opportunity, you should read and handle the person's request.
+* Um formulário preenchido sobre seu site de Internet diretamente integrado no OpenERP usando nosso web serviço. Antes de converter o formulário em uma proposta ou oportunidade, é necessário ler e gerir o pedido da pessoa. 
 
-Employees in the marketing or presales department will usually work on leads. Once these leads will be converted into customers and/or sales opportunities, the sales department pays individual attention to each opportunity. Of course, before converting a lead into an opportunity, some qualification work has to be done.
+Funcionários do departamento de marketing ou pre-venda trabalharão usualmente sobre prospectos. Uma vez que esses prospectos serão convertidos em clientes e/ou oportunidades de venda, o departamento de venda presta individual atenção para cada opportunidade. Naturalmente, antes de converter um prospecto em uma oportunidade, algum trabalho de qualificaçao tem que ser feito.
 
-OpenERP allows you to easily configure the way your company qualifies leads. You can create your own stages through :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Stages`. Use the sequence number to determine the order of the stages, i.e. 10 for First Call, 20 for Renewing Contact and so on. Of course, you can also drag & drop a stage to another place to automatically change the order of all the stages. A salesman can change the status of the lead according to the response from the prospect and enter the result of this contact in the lead form (e.g. in the ``Notes`` field).
+O OpenERP te permite configurar facilmente o jeito de qualificar prospectos. Pode criar seus proṕrios estágios com :menuselection:`Vendas --> Configuração --> Dicas & Oportunidade --> Estágios`. Usa o numero da sequência para determinar o ordem dos estágios, ex : 10 para primeira ligação, 20 para renovação do contato, etc. Naturalmente, você pode também colocar o estágio num outro lugar para automaticamente mudar o ordem de todos os estágios. O vendedor pode mudar o estado do prospecto em função da reposta do prospecto e entrar o resultado desse contato na visão de formulário do prospecto (e.g. no campo ``Notas``).
 
-From the :menuselection:`Sales --> Sales --> Leads` menu, you can qualify each individual lead through the ``Stage`` field that is found up to the right of the lead definition. To move your lead automatically to the next step from the list of leads, you can use the button that looks like a green, right arrow.
+Desde o :menuselection:`Vendas --> Vendas --> Prospectos` menu, pode qualificar cada prospecto individual com o ``Estágio`` campo que pode encontrar em cima, na direita da definição do prospecto. Para mudar seu prospecto automaticamente para a próxima desde a lista dos prospectos, basta usar o botão que parece com uma flecha direita verde.
 
-Leads can be assigned to a *Sales Team* for easy follow-up (see  :ref:`ch-team`). Each user can be added to a default sales team which can be specified in the `User Preferences`. When you define a tree structure for your sales teams, you can also escalate a lead to another sales team for further actions.
+Prospectos podem ser atribuidos a um *time de vendas* para serem seguidos facilmente (olha  :ref:`ch-team`). Cada usuário pode ser adicionado a um time de vendas por padrão que pode ser especificado no `usuário preferências`. Quando definir uma estrutura em árvore pra seu time de vendas, pode também atribuir um prospecto para um outro time de vendas para ações posteriores.
 
-.. note:: Leads or Opportunities
+.. nota:: Prospectos ou Opportunidades
 
-       Companies may decide to not use leads, but instead to keep all information directly in an opportunity. For some companies, leads are
-       merely an extra step in the sales process. You could call this extended (start from lead) versus simplified (start from
-       opportunity) customer relationship management.
-       OpenERP perfectly allows for either one of these approaches to be chosen. If your company handles its sales from
-       opportunities directly, feel free to move on to chapter :ref:`part2-crm-opport`, although most of the features explained below
-       also apply to opportunities.
+       Empresas podem decidir não usar os prospectos, mas, em vez disso, de guardar todas informações diretamente numa oportunidade. Para algumas empresas, 
+       prospectos são apenas uma passagem adicional no processo de vendas. Pode-se chamar isso de extendido (começar desde prospecto) contra simplificado (começar 
+       desde oportunidade).
+       OpenERP permite perfeitamente ecolher a aproximação adaptada. Se sua empresa gerir seus pedidos desde oportunidades diretamente, pode ir ao capítulo
+       :ref:`part2-crm-opport`, mesmo se a maioria das características explicadas em baixo, também se aplicam às oportunidades.
 
-In the next sections we will explain in more detail some examples of what `Leads` in OpenERP can be used for.
+Nas próximas seções, explicaremos alguns exemplos mais em detalhes de como `prospectos` no OpenERP podem ser usados.
 
-.. tip:: Leads Menu is not displayed
+.. dica:: Prospectos Menu não é mostrado
 
-        In  ``Simplified`` view, ``Leads`` will not be displayed. To see not also opportunities, but also leads, you should switch
-        to the ``Extended`` view. You can easily switch from `Simplified` to `Extended` view by changing your `User Preferences` through
-        the `Edit Preferences` button.
+        Em visao ``Simplificada``, ``Prospectos`` não serão mostrados. Para ver não só oportunidades, mas também prospectos, tem que mudar para a 
+        ``visao extendida``. Pode mudar visao `simplificada` para `Extendida` facilmente, mudando suas `preferências de usuários` pelo botão `Editar Preferências`.
 
-Storing your Business Cards effectively
+Gravando seu Cartão de Negócio Eficientemente
 ---------------------------------------
 
-Potential customers are usually entered as a lead in the system. This means that you do not create a
-partner or a sales opportunity until you have qualified whether the lead is interesting or not.
+Clientes potenciais são usualmente digitados como um prospecto no sistema. Quer dizer que não cria um parceiro ou uma oportunidade de venda até que tenha qualificado se o prospecto é interessante ou não.
 
 
-.. tip:: Qualification
+.. dica:: Qualificação
 
-      When a qualified lead requires further actions, you can turn the lead into a partner and, eventually, a sales opportunity.
+      Quando um prospecto qualificado precisa de ações posteriores, pode virar o prospecto num parceiro e, eventualmente, uma oportunidade de venda.
 
-To make a new lead, go to the :menuselection:`Sales --> Sales --> Leads` menu and click the `New` button. In the **Lead** form that opens, you can enter the contact data of this new potential customer and add notes.
+Para fazer um novo prospecto, vá em :menuselection:`Vendas --> Vendas --> Prospectos` menu e clique no botão `Novo`. No formulário **prospecto** que se abre, digite os dados do contato desse novo cliente potencial e adicione notas.
 
 .. figure:: images/crm_lead_new.png
    :scale: 80
    :align: center
 
-   *Creating a New Lead*
+   *Criando um novo prospecto*
 
-You can also set the status of a lead according to the qualification work that has been carried out:
+Pode também colocar o status do prospecto em função do trabalho que foi feito:
 
-* ``Draft`` : the lead data have been entered, no work has been done yet and a salesperson has not
-  yet been assigned to the request,
+* ``Rascunho`` : os dados do prospecto foram digitados, ainda nenhum trabalho foi feito e o vendedor ainda não foi associado com o pedida,
 
-* ``Open``: the lead is being handled,
+* ``Aberto``: o prospecto está sendo tratado,
 
-* ``Closed``: the lead has been converted into a partner and/or a sales opportunity,
+* ``Fechado``: o prospecto foi convertido num parceiro e/ou uma oportunidade de venda,
 
-* ``Pending``: the lead is waiting for a response from the potential customer,
+* ``Pendente``: o prospecto está esperando uma resposta do cliente potencial,
 
-* ``Escalate``: the lead is escalated to the upper sales team in the tree structure for further actions, 
+* ``Escalada``: o prospecto é escalado para o superior time de vendas na estrutura de árvore para ações posteriores, 
 
-* ``Cancelled``: the lead has been cancelled because the salesperson has decided that it is not worth
-  following up.
+* ``Cancelado``: o prospecto foi cancelado porque o vendedor decidiu que não valia a pena seguir.
 
-A lead status can easily be changed, even from list view (the standard view when you start the **Leads** program). Simply click the green arrows to change the status of a lead.
-
-On the :guilabel:`Extra` tab in the **Leads** form, you find statistics about days to open and close and more information about the campaign, the channel, and so on.
+Um status de prospecto pode ser mudado facilmente, mesmo desde a visao de lista (a visao por padrão quando inicia o programa **prospecto**). Simplesmente clique na flecha verde para mudar o status do prospecto.
+Sobre o :guilabel:`Extra` aba no **Prospectos** formulário, encontra estatística sobre dias abertos e fechados e mais informações sobre a campanha, o canal, etc.
 
 .. figure:: images/crm_lead_extra.jpeg
    :scale: 80
    :align: center
 
-   *Extra Tab*
+   *Extra ada*
 
-On the :guilabel:`Communication & History` tab in the **Leads** form, you can see a complete history of all actions regarding this lead. You can also add internal notes and change the status of a lead  while adding such a note. 
-Send an email directly from the lead simply by clicking the :guilabel:`Send New Email` button (to configure your email settings, please refer to chapter :ref:`ch-crm-fetchmail-install`.
-You can add attachments to internal notes and emails you send to the prospect. You can customize your message and have the status changed after an email has been sent; you could automatically have the lead set to **Pending**, because you require a response from the customer before further actions can be taken.
+Sobre :guilabel:`Comunicação & Histórico` aba, no **Prospectos** formulário, pode ver um histórico completo de todas as ações em relação a esse prospecto. Pode também adicionar notas internas e alterar o status do prospecto enquanto adiciona uma nota assim.
+Manda um email diretamente desde o prospecto clicando simplesmente no botão :guilabel:`Enviar novo Email` (Para configurar suas opções de email, por favor consulte o capítulo :ref:`ch-crm-fetchmail-install`).
+Pode adicionar anexos nas notas internas e emails que você mandou para o prospecto. Pode personalizar sua mensagem e ter o status mudado depois que um email foi mandado; poderia automaticamente ter o prospecto colocado em **pendente**, porque precisa uma resposta desde o cliente antes de fazer ações posteriores.
 
 .. figure:: images/crm_lead_comm.jpeg
    :scale: 80
    :align: center
 
-   *Communication & History Tab*
+   *Aba Comunicação & Histórico*
 
-Importing a Leads Database
+Importação de um banco de dados de prospectos
 --------------------------
 
-You can also import a huge list of leads. That may be useful if you have bought a database of
-potential prospects that you want to load into OpenERP to handle them all at the same time.
+Pode-se também importar uma grande lista de prospectos. Isso pode ser útil se tiver comprado um banco de dados de prospectos potenciais que você quer carregar no OpenERP para os gerir todos ao mesmo tempo.
 
-Start with a list of leads in CSV format, for instance. If your prospects database is provided in
-another format, you can easily convert it to the CSV format using Microsoft Excel or OpenOffice Calc.
+Começa com uma lista de prospectos de formato CSV por exemplo. Se seu banco de dados de prospectos tiver um outro formato, pode-se convertê-lo facilmente no formato CSV usando Miscrosoft Excel ou OpenOffic Calc. 
 
-.. tip:: Import 
+.. dica:: Importação 
 
-      The best thing to do to make sure your import will go smoothly, first export all the required Lead fields using the `Export` function,
-      and then edit the resulting csv file for import.
+      A melhor coisa a fazer para garantir que sua importação  passará sem problemas, é primeiro exportar todos os campos Prospectos necessários usando a função `Export`,e então editar o arquivo csv para importação.
 
-Open the **Leads** form using the menu :menuselection:`Sales --> Sales --> Leads`. In `Other Options`, click the :guilabel:`Import` link. (You can also import from List view, just open the action window on the right (by clicking the arrow) and in `Other Options`, click the :guilabel:`Import` link.) 
+Abra o formulário **Prospectos**  usando o menu :menuselection:`Vendas --> Vendas --> Prospectos`. Em `Outras Opções`, clique no link :guilabel:`Import`. (Pode também importar desde a visao de lista, só abra a janela ação à direita (clicando sobre a flecha) e em `Outras Opções` clique no link :guilabel:`Import`.) 
 
-Select your file containing the leads information and click :guilabel:`Import File`. OpenERP will automatically map the column headers from your CSV file to the corresponding fields in OpenERP. If necessary, you can click ``CSV Options`` to change the settings so that they match your local settings. 
+Selecione seu arquivo que contém as informações dos prospectos, e clique em :guilabel:`Import File`. O OpenERP mapea automaticamente os cabeçalhos das colunas do seu arquivo CSV para os campos correspondentes no OpenERP. se necessário, pode  clicar em ``CSV Options`` para alterar as configurações para que elas coincidam com as configurações locais. 
 
 .. figure:: images/crm_lead_import1.jpeg
    :scale: 80
    :align: center
 
-   *Importing Leads into the System*
+   *Importação dos prospectos no sistema*
 
-Check the online chapter about system administration for more information on import and export on http://doc.openerp.com/v6.0/book/.
+Verifique o capítulo on-line sobre o sistema de administração para mais informações sobre importação e exportação em http://doc.openerp.com/v6.0/book/.
 
-.. tip:: Various Imports
+.. dica:: várias Importações
 
-    Importing and Exporting data in OpenERP is a generic function available to all resources.
-    So you can import and export such lists as partners, opportunities, accounting entries,
-    products and price lists.
+    Importando e exportando dados no OpenErp é uma função genérica disponível a todos os recursos.
+    Assim, você pode importar e exportar listas, como parceiros, oportunidades, entradas de contabilidade,
+    produtos e listas de preços.
 
-Clearly there are other methods of generating leads automatically or semi-automatically:
+É claro que há outros métodos de geração de prospectos de forma automática ou semi-automática:
 
-* Through a Contact Form on your Website;
+* Através de um formulário de contato em seu site;
 
-* Using the Outlook or Thunderbird plugin to insert new leads directly from the salesman's mailbox when he sees promising emails,
+* Usando o plugin Outlook ou Thunderbird para inserir novas pistas diretamente da caixa de correio do vendedor quando ele vê e-mails promissores,
 
-* Using the email gateway for each incoming email from a certain address (such as
-  sales@mycompany.com) which may create a lead automatically from the contents of the email.
+* Usando o gateway de e-mail para cada e-mail recebido de um determinado endereço (como
+   sales@mycompany.com), que pode criar um prospecto automaticamente a partir do conteúdo do e-mail.
 
-These different methods are described later in this book (see chapter :ref:`contform`).
+Estes diferentes métodos são descritos neste livro  (ver capítulo :ref:`contform`).
 
-Organizing Leads
+Organizar prospectos
 ----------------
 
-To help the users organize and handle leads efficiently, OpenERP provides several features in the CRM to be used according to the needs of each:
+Para ajudar os usuários a organizar e gerir prospectos de forma eficiente, o OpenERP fornece vários recursos no CRM para ser usado em função das necessidades de cada um:
 
-Use the :menuselection:`Sales --> Sales --> Leads` view to organize your leads:
+Usa a visao :menuselection:`Vendas --> Vendas --> Prospectos` para organizar os prospectos:
 
-* Display a list of all the leads (qualified, open, not open, ...) according to the sales team you are linked to,
+* Mostra uma lista de todas os Prospectos (qualificado, aberto, não aberto, ...) em função do time de vendas com qual você está ligado,
 
-* Create a new lead by clicking `New`,
+* Cria um novo porspecto através do botao "Novo",
 
-* Display Unassigned Leads, click the button next to the `Salesman` field, 
+* Mostra Prospectos não atribuidos, clique no botão ao lado do campo `Representante`,
 
-* Display a list of all your leads you still need to handle (your open and draft leads),
+* Mostra uma lista de todas os seus prospectos você ainda precisa gerir (seus prospectos abertos e rascunhos),
 
-* Display a list of all your leads that are waiting for a customer response (usually in `Pending` status). This enables you to check periodically on your work to do,
+* Mostra uma lista de todos os prospectos que estão esperando uma resposta do cliente (normalmente em estado `Pendente`). Isso permite que você verifique periodicamente o seu trabalho a fazer,
 
-* Display a list of all the leads assigned to different salespeople,
+* Mostra uma lista de todos os prospectos atribuídos a diferentes vendedores,
 
-* Use Extended Filters to display all the leads created today or during the last week, in a specific time period, and so on,
+* Use Filtros Extendidos para mostrar todos os prospectos criados hoje ou durante a última semana, em um período de tempo específico,
 
-* Quickly find leads not yet assigned to a Campaign, by clicking the Group by button and then Campaign.
+* Encontre rapidamente prospectos ainda não atribuídos a uma campanha, clicando no grupo por botão e depois campanha.
 
-The sales manager can use this **Leads** view to easily keep track of what each salesperson is working on.
+O gerente de vendas pode usar a visao **Prospectos** para facilmente conservar pistas sobre o que cada vendedor está trabalhando.
 
 .. figure:: images/crm_leads_list.png
    :scale: 80
    :align: center
 
-   *List of Leads to be Handled*
+   *Lista de todos os prospectos a gerir*
 
-Leads can also be prioritized. Salespeople can assign a priority to their lead, and then start working on their leads from the top of the list, which is sorted by priority. 
+Prospectos também podem ser priorizados. Os vendedores podem atribuir uma prioridade para seus prospectos, e depois começar a trabalhar em seus prospectos a partir do topo da lista, que é ordenada por prioridade.	
 
-Analysing Leads
+Analisar prospecções
 ---------------
 
-OpenERP also offers statistical reports to keep track of your Lead Management. The :menuselection:`Sales --> Reporting --> Leads Analysis` report allows you to check various leads-related elements. You can look at processing delays, number of responses given and emails sent (if you use the email gateway feature). Sort your leads analysis by different groups to get accurate, grained analysis.
+OpenERP também oferece relatórios estatísticos para conservar a memoria da geração de prospectos. O: `Vendas --> Relatórios --> Analisar Prospecções` relatório permite verificar vários elementos em relação com os prospectos. Você pode olhar para atrasos de processamento, número de respostas dadas e e-mails enviados (se você usar o recurso de gateway de e-mail). Classifica suas análises de prospectos por diferentes grupos para obter análise exata.
 
-These are some analysis possibilities of the **Leads Analysis** report.
+Estas são algumas possibilidades de análise do Analisar prospecções relatório.
 
-1. Leads by State and per Month 
+1. Prospectos, por Estado e por mês
 
-To analyse the leads by status, group the leads by qualification level (``Stage``) and status (``State``), this can also be done for individual months (first group by ``Month``).
+Para analisar os prospectos por estado, agrupe os prospectos por nível de qualificação (``Estágio ``) e status (`` Estado ``), este também pode ser feito por meses individuais (primeiro grupo por `` Mês ``).
 
-2. Leads by Origin
+2. Prospectos por Origem
 
-Analyse leads according to their state (open, lost, won) and their stage (e.g. cold / hot or new / qualification / ... ) and find out how many leads belong to each state / stage.
+Analise prospectos em função dos seus estados (aberto, perdido, ganho) e seu estágio (por exemplo, frio / quente ou novo / qualificação / ...) e descubra quantos prospectos pertencem a cada estado / estágio.
 
-3. How effective are your Campaigns? 
+3. Quão eficaz são suas campanhas?
 
-Group by Campaign to easily find the number of leads by campaign and the total number of leads. You can also select a specific campaign in your filter. 
+Agrupe por Campanha para encontrar facilmente o número de prospectos por campanha e do número total de prospectos. Você também pode selecionar uma campanha específica no seu filtro.
 
-4. Leads by Priority.
+4. Prospectos por Prioridade.
 
-Group by Priority to see which leads are hot, warm or cold.
+Agrupa por Prioridade para ver que Prospectos são quentes, mornos ou frios.
 
 
 .. figure:: images/crm_lead_analys.jpeg
