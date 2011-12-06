@@ -1,272 +1,249 @@
 
 .. _part2-crm-cont:
 
-Managing your Address Book
-==========================
+Gerenciando o Catálogo de Endereços
+===================================
 
 .. index::
-   single: Partner
-   single: Customer
+   single: Parceiro
+   single: Cliente
    single: Prospect
-   single: Address
-   single: Contact
+   single: Endereço
+   single: Contato
 
-What is the difference between a partner and a contact in OpenERP? A ``Partner`` represents an entity that you do business with - a customer, a prospect, or even an employee of your company. In other CRM applications, a partner is also referred to as an Account.
-A ``Contact`` represents a person who works for a partner.
+Qual é a diferença entre um parceiro e um contato no OpenERP? Um ``Parceiro`` representa uma entidade que você faz negócio com - um parceiro, um prospect, ou eventualmente um funcionário da sua empresa. Em outras Aplicações CRM, um parceiro é também referenciado como uma Conta.
+Um ``Contato`` representa uma pessoa que trabalha para um parceiro.
 
-Each partner can have an unlimited number of contacts. OpenERP also allows you to have several contacts with the same address type for one partner. You can easily link several Invoice addresses to a customer, for instance. 
+Cada parceiro pode ter um número ilimitado de contatos. OpenERP também permite que você tenha vários contatos com o mesmo tipo de endereço para um parceiro. Você pode facilmente vincular vários Endereços de Faturamento para um Cliente, por exemplo.
 
-.. note:: Address Types
+.. note:: Tipo de Endereço
 
-	If you have recorded several contacts for the same partner, you can tell OpenERP which contact will be used in
-	various documents (e.g. a quotation) by specifying the ``Address Type``.
+        Se você tem vários contatos para o mesmo parceiro, você pode dizer ao OpenERP qual dos contatos será usado em  alguns docunentos (e.g. Um Cotação) através do ``Tipo de Endereço``.
 
-	For example, a partner (*company*) can have a delivery address that differs from the company's invoice address.
-	If the Address Types are correctly assigned, OpenERP can automatically select the appropriate address
-	during the creation of the document – an invoice is addressed to the contact that has been assigned
-	the Address Type of Invoice, otherwise to the Default address.
+	Por exemplo, um parceiro (*Empresa*) pode ter um endereço de entrada que difere do endereço de faturamento da empresa.
+	Se o tipos de endereços estão atribuídos corretamente, OpenERP pode automaticamente selecionar o endereço adequado durante a criação do documento – uma Fatura é endereçada para um contato que tenha sido atribuído o tipo de endereço da fatura, caso contrário, para o endereço padrão.
 
-The concept of a partner in OpenERP is much more flexible than in many other management applications. Why is that? Because a partner can be your supplier and your customer at the same time.
-As a consequence, any data you update for that partner will apply to both customer and supplier! Thanks to this, you no longer need to update your address book several times (or even in several places) for the same partner.
+O conceito de parceiro no OpenERP é muito mais flexível do que em muitos outros aplicativos de gerenciamento. Por que? Porque um parceiro pode ser o seu fornecedor e seu cliente, ao mesmo tempo.
+Como consequência, quaisquer dados que você atualizar para esse parceiro será aplicada tanto ao cliente e fornecedor! Graças a isso, você não precisa atualizar seu catálogo de endereços várias vezes (ou até mesmo em vários locais) para o mesmo parceiro.
 
-The partner form contains information about the company, such as its corporate name, its primary language, and whether the company is a
-\ ``Customer`` \ and/or a \ ``Supplier`` \. The partner form is composed of several tabs.
+O formulário de parceiro inclui informações sobre a empresa, como sua razão social, seu idioma principal, e se a empresa é um \ ``Cliente`` \ e/ou um \ ``Fornecedor`` \. O formulário de parceiro é composto de várias guias,
 
-* the :guilabel:`General` tab contains information about different contacts of that partner, postal information,
-  communication information and the categories the partner belongs to,
+* A guia :guilabel:`Geral` contém informações sobre diferentes contatos do parceiro, endereços, comunicação e as categorias que o parceiro pertence,
 
-* the :guilabel:`Sales & Purchases` tab contains information such as the default salesman and sales team, and the website,
+* A Guia :guilabel:`Vendas e compras` contém informações como o vendedor padrão e equipe de vendas, e site,
 
-* the :menuselection:`History` tab gives visibility on the complete ``Communication History`` (meetings, marketing campaign activities,
-  leads and opportunities, phone calls, emails) with the partner. The events the partner has been involved in are created automatically by
-  different documents like phone calls, leads, meetings,
+* A guia :menuselection:`Histórico` fornece visibilidade sobre todo o ``histórico das comunicações`` (Reuniões, Campanha de Marketing, leads e oportunidades, telefonemas, emails) com o parceiro. Os eventos do parceiro esteve envolvido em são criados automaticamente por documentos diferentes, como chamadas telefônicas, leads, reuniões,
 
-* the :menuselection:`Notes` tab is an area for free text notes.
+* A guia :menuselection:`Notas` para comentários.
 
 .. figure::  images/crm_partner_hist.jpeg
    :scale: 100
    :align: center
 
-   *The History Tab of a Customer*
+   *A Guia Histórico de um cliente*
 
-Creating and Updating Partners
-------------------------------
+Criando e Atualizando Parceiros
+------------------------------_
 
-Before explaining you how to create a partner, just a quick word on the different ways of representing partners in OpenERP.
-`List` view shows a list of customers (the default representation when you click the Customers menu). In this view, you can see several customers at a time.
-`Form` view is displayed when you click a specific customer to start editing or when you create a new customer.
+Antes de explicar como criar um parceiro, uma palavra rápida sobre as diferentes formas de visualização de parceiros no OpenERP.
+Modo `Lista` exibe uma lista de clientes (a visualização padrão quando você clicar no menu Clientes). Nesta Visualização, você pode ver vários clientes ao mesmo tempo. Modo `Formulário` é exibido quando você clicar em um determinado cliente para iniciar uma edição ou quando você cria um novo cliente.
 
-To create a new partner (a company, customer, supplier, ...) or to display the list of existing customers, use the menu :menuselection:`Sales --> Address Book --> Customers`. This menu does not only allow you to create a new partner, but also to search for partners.
+Para criar um novo parceiro (uma empresa, clientes, fornecedores, ...) ou para exibir uma lista de clientes já existente, acesse o menu :menuselection:`Vendas --> Catálogo de Endereços --> Clientes`. Este menu não só permite que você crie um novo parceiro como também para pesquisar parceiros.
 
 .. figure::  images/crm_partner_default.jpeg
    :scale: 100
    :align: center
 
-   *A Customer Form*
+   *Um Formulário de Cliente*
 
-.. note:: Mandatory 
+.. note:: Obrigatório
 
-        Blue fields are always mandatory, meaning that you have to enter a value there. It is impossible to save changes as long as a blue field is not completed.
+        Campos azuis são sempre obrigatório, significando que que você tem que introduzir um valor. É impossível salvar as alterações, enquanto os campos azuis não frem preenchidos.
 
-You should at least enter the company's ``Name`` in the partner form. Some fields are text fields, other fields may be linked to existing data that have been entered elsewhere, such as ``Countries``. 
+Você deve pelo menos digitar o ``Nome`` da empresa no formulário do parceiro. Alguns campos são campos de texto, os outros campos podem ser vinculado aos dados existentes que tenham sido inseridos em outros lugares, como ``Países``.
 
-Create a customer with the following data:
+Crie um cliente contendo os seguintes dados:
 
-* :guilabel:`Name` : \ ``Smith and Offspring``\ ,
+* :guilabel:`Nome` : \ ``Smith and Offspring``\ ,
 
-* :guilabel:`Customer` checkbox : \ ``checked``\ ,
+* :guilabel:`Cliente` checkbox : \ ``checked``\ ,
 
-* :guilabel:`Supplier` checkbox : \ ``unchecked``\ ,
+* :guilabel:`Fornecedor` checkbox : \ ``unchecked``\ ,
 
-* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
+* :guilabel:`Nome de Contato` : \ ``Stephen Smith``\ ,
 
-* :guilabel:`Type` : \ ``Default``\, in the Postal Address section,
+* :guilabel:`Tipo` : \ ``Default``\, na Guia de Endereços,
 
-* :guilabel:`Save` the form.
+* :guilabel:`Salvar` o formulário.
 
 .. tip:: Email
 
-      If you use the email gateway, the Outlook or the Thunderbird plugin, do not forget to register an email addresses to each contact, so that the gateway will automatically attach incoming emails to the right partner.
+      Se você usar um gateway de e-mail, o Outlook ou o Thunderbird Plugin, não se esquecer de informar um endereço de e-mail para cada contato, para que o gateway possa anexar automaticamente e-mails recebidos para o parceiro correto
 
-To update a partner, open the corresponding form, select `Edit` and change the required fields. As explained before, when a company is both one of your customers and a supplier, you just have to edit the partner form once to have changes applied to both customer and supplier.
+Para atualizar um parceiro, abra o formulário correspondente, selecione `Editar` e alterar os campos necessários. Como explicado anteriormente, quando uma empresa é simultaneamente um cliente e um fornecedor, você só precisa editar o formulário parceiro e uma vez que tenha realizado as modificações serão feitas tanto para os clientes quanto para os fornecedores.
 
-.. note:: Checkboxes
+.. note:: Caixas de Selelão
 
-       Why is it important for you to correctly set the Customer and Supplier checkboxes in the partner form? These checkboxes are designed to enable OpenERP to quickly select the partners who should be displayed in some drop-down boxes. An example: when you select a partner in a Sales Quotation, OpenERP will only allow you to select from the list of Customers. And that is precisely what the Customer checkbox is used for. 
+       Por que é tão importante definir corretamente as caixas de seleção de Cliente e do Fornecedor no parceiro? Estes checkboxes visam permitir o OpenERP selecionar rapidamente os parceiros que devem ser exibidos em de algumas caixas suspensas. Um exemplo: quando você seleciona um parceiro numa cotação de venda, OpenERP só irá permitir que você selecione na lista de clientes. E é exatamente para isso que a caixa de seleção Cliente é utilizado.
 
-.. index:: Contact; Address
+.. index:: Contatos; Endereços
 
-Managing your Contacts & Addresses
-----------------------------------
+Gerenciando Contatos & Endereços
+--------------------------------
 
-You can have several contacts for one partner. Contacts represent company employees that you are in
-touch with, along with their address details. For each address you can indicate the type (\ ``Default``\, \ ``Invoice``\, \ ``Delivery``\, \ ``Contact``\   or \ ``Other``\).
+Você pode ter alguns contatos por parceiro. Contatos representam funcionários da empresa que você está em contato, juntamente com seus detalhes endereço. Para cada endereço você pode indicar o tipo (\ ``Padrão``\, \ ``Fatura``\, \ ``Entrega``\, \ ``Contato``\   or \ ``Outros``\).
 
-Contacts can be entered into the :guilabel:`General` tab of the **Customer** form, or from the list of addresses in the :menuselection:`Sales --> Address Book --> Addresses` menu.
+Contatos podem ser inserido na Guia :guilabel:`Geral` do formulário do **Cliente**, ou na lista de endereços no menu :menuselection:`Vendas --> Livro de Endereços --> Enderços`.
 
-.. tip:: Same Contact, Different Partners 
+.. tip:: Mesmo Contato, Diferentes Parceiros
 
-      Do you have contacts who work for several companies, and need to be linked to several partners? Check out the :ref:`ch-contact` chapter.
+        Você tem contatos que trabalham para diversas empresas, e precisa de estar vinculado a vários parceiros? Confira o capítulo :ref:`ch-contact`.
 
-Customizing Partner Fields
---------------------------
+Personalizando Campos do Parceiro
+---------------------------------
 
-OpenERP also allows you to customize the ``Partner`` view to your needs. Click the `Manage Views` option if you want to add fields, delete fields or change the order of fields in a view.
+OpenERP também permite que você personalize o ``Parceiro`` à suas necessidades. Clique na opção `Gerenciar Exibições` se você quiser adicionar campos, excluir campos ou alterar a ordem dos campos.
 
-Let us add the ``Birthday`` field to a contact, in the `Addresses` form view. To do so, go to the :menuselection:`Sales -->
-Address Book --> Addresses` menu and open any address in Form view. In the right menu bar, click `Manage Views`, then `Edit` because the corresponding view will already be preselected.
+Vamos adicionar o campo ``Aniversário`` no contato, no formulário de `Endereços`. Para fazer isso, vá para o :menuselection:`Vendas -->
+Catalogo de Endereços --> Endereços` e abra qualquer enderço no modo Formulário. Na barra de menu da direita, clique em `Gerenciar Views`, e `Editar` porque a visão correspondentes já está pré-selecionada.
 
-Go to the last line of the view and click the blue plus (+) sign to add a field to the `Communication` group. Proceed as in the figure below, then click the `Update` button.
+Vá para a última linha da exibição e clique no sinal de mais(+) azul para adicionar um campo para ao grupo `Comunicação`. Veja na figura abaixo e depois clique no botão `Atualizar`.
 
 .. figure::  images/manage_views_addfield_small.jpeg
    :scale: 75
    :align: center
 
-   *Add the Birthday Field for a Contact*
+   *Adicionar o campo de aniversário para um contato*
 
-In the `Properties` screen that appears, you can change the label to ``Birthday`` in the ``String`` field. To indicate that a new field can be used in the corresponding search view, make sure to select ``Always Searchable``. Click the `Update` button to confirm your changes. Click `Preview` to see your result. The ``Birthday`` field will now appear in your `Address` form view, ready to be used.
+Na tela de `Propriedades` exibida, você pode alterar a legenda para ``Aniversário``  no campo ``Texto``. Para indicar que um novo campo pode ser usado no modo de exibição pesquisa, certifique-se de selecionar ``Sempre Pesquisável``. Clique no botão `Atualizar` para confirmar as alterações. Clique ``Pré-visualização`` para ver o resultado. O campo ``Aniversário`` agora vai aparecer em `Endereço` no `Modo de Formulário`, pronto para ser utilizado.
 
-Performing Actions on Customers
--------------------------------
+Executando Ações nos Clientes
+-----------------------------
 
 .. index::
-   single: send SMS
-   single: opportunity
-   single: reminder
+   single: Enviar SMS
+   single: Oportunidade
+   single: Lembrete
 
-At the right side of the `Customers` list or form view, you will find a list of all of the reports, actions and links available for the selected partner(s). You can perform actions and print reports both from List and from Form view, List view allowing you to do actions for several partners at the same time.
+No lado direito da lista de `Cliente` ou do modo de formulário, você vai encontrar uma lista de todos os relatórios, ações e links disponíveis para os parceiros selecionados. Você pode executar ações e imprimir relatórios tanto da lista como do formulário, A Lista lhe permite fazer ações para vários parceiros ao mesmo tempo
 
-.. tip:: Actions
+.. tip:: Ações
 
-       To display the list of possible actions, just select one or more customers or click the arrow at the top of the right side bar. 
+       Para exibir a lista de ações possíveis, basta selecionar um ou mais clientes ou clique na seta no topo da barra lateral direita.
 
-You can create a new opportunity for a customer, or start a mass mailing. Mass mailings will usually be started from list view, because you will select several partners at a time.
+Você pode criar uma nova oportunidade para um cliente, ou iniciar um envio de e-mails em massa. O envio de e-mail em massa geralmente é iniciado a partir de uma lista, porque você poderá selecionar vários parceiros.
 
-.. note:: Campaigns
+.. note:: Campanhas
 
-        For mass mailings, you might prefer to use the Direct Marketing application, which offers great functionalities (please refer to chapter :ref:`part3-crm-market`).
+        Para correspondência em massa, talvez você prefira usar o aplicativo de Marketing Direto, que oferece grandes funcionalidades (consulte o capítulo :ref:`part3-crm-market`).
 
-Another action enables you to quickly send an SMS message. 
+Outra ação permite enviar rapidamente uma mensagem de SMS.
 
-.. tip::  Send an SMS message
+.. tip::  Envia uma mensagem SMS
 
-	To send an SMS message from standard Open ERP you will have to place an order with the bulk SMS
-	gateway operator Clickatell™ http://clickatell.com.
+        Para enviar uma mensagem SMS a partir do padrão Open ERP você terá que fazer um pedido de SMS de grandes quantidades da operadora Clickatell ™ http://clickatell.com.
 
-	To send an SMS message to a partner or a selection of several partners, first select the partners
-	in list view, then click the :guilabel:`SMS Send` Action icon.
+        Para enviar uma mensagem SMS a um parceiro ou uma seleção de vários parceiros, primeiro selecione os parceiros no Modo de lista, então clique no ícone da ação :guilabel:`Enviar SMS`.
 
-.. index:: Filter
+.. index:: Filtro
 
-Finding your Partners using Filters
------------------------------------
+Encontrando Parceiros Utilizando Filtros
+----------------------------------------
 
-Open the `Customers` list view to discover the search options allowing you to easily filter your partners. You can group by ``Salesman`` to see which customers have already been assigned a salesman or not. Click the button at the right (the icon of the person) to see the customers you are responsible for.
+Abra o Modo de Lista de `Clientes` para descobrir as opções de busca que lhe permite facilmente filtrar seus parceiros. Você pode agrupar por ``Vendedor`` para ver quais os clientes que já foram atribuídos um vendedor ou não. Clique no botão à direita (o ícone da pessoa) para ver os clientes que são seus.
 
-.. tip:: Limit
+.. tip:: Limites
 
-       If you want to display more than the 20 partners displayed by default, click the ``1 to 20 of - XX`` option at the bottom of the screen to be able to change the limit.
+        Se você deseja exibir mais do que os 20 parceiros exibido por padrão, clique na opção ``1 a 20 de - XX`` na parte inferior da tela para poder alterar o limite.
 
-Filters also allow you to quickly set lists of customers for which you want to do specific actions. Through the ``New Filter`` option, you can also add your own filters for any field related to the ``Customer`` form.
+Os filtros também permitem definir rapidamente as listas de clientes para os quais você quer fazer ações específicas. Através da opção ``Novo Filtro``, você também pode adicionar seus próprios filtros para qualquer área relacionada ao formulário de ``Cliente``.
 
-.. note:: Filters
-        
-       You can easily create your own frequently used filters by prefiltering the data the way you want and then using the Save Filter option.
+.. note:: Filtros
 
+        Você pode facilmente criar seus próprios filtros frequentemente utilizados por pré-filtragem dos dados da forma que desejar e em seguida, usar a opção Salvar filtro.
 
 .. _partner-categ:
 
-Categorizing your Partners
---------------------------
+Categorizando Parceiros
+-----------------------
 
 .. index::
-   pair: partner; category
+   pair: Parceiro; Categoria
 
-OpenERP uses categories to organize all of its partners according to their relationship with your company (customer, prospect, supplier, and so on). Each partner may be attached to several categories. To open the list of available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
+OpenERP usa categorias para organizar todos os seus parceiros de acordo com o seu relacionamento com a sua empresa (cliente, prospect, fornecedor, e assim por diante). Cada parceiro podem ser associados às diversas categorias. Para abrir a lista de categorias disponíveis no parceiro, use o menu :menuselection:`Vendas --> Configuração --> Catálogo de Endereços --> Categorias de Parceiros`.
 
 .. figure::  images/crm_partner_category_big.png
    :scale: 100
    :align: center
 
-   *List of Partner Categories*
+   *Lista de Categorias do Parceiro*
 
-Click one of the categories in the partner category structure to get a list of the partners
-in that category. If you click a category that has subcategories, you will get a list of all of the
-partners in the main category and in all of its subcategories.
+Clique em uma das categorias na estrutura de categoria de parceiros para obter uma lista dos parceiros nessa categoria. Se você clicar em uma categoria que tem subcategorias, você receberá uma lista de todos os parceiros na categoria principal e em todas as suas subcategorias.
 
-.. note:: Categories
+.. note:: Categorias
 
-        To create a new category, go to the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories` and click the `New` button.
+        Para criar uma nova categoria, vá para :menuselection:`Vendas --> Configuração --> Catálogo de Endereços --> Categorias de Parceiros` e clique no botão `Novo`.
 
-Because categories can be organized according to a tree structure, you can apply an action at any level of
-the structure: a marketing promotion activity, for example, can be applied either to all customers,
-or selectively only to customers in one category and its subcategories.
+Porque as categorias podem ser organizadas de acordo com uma estrutura de árvore, você pode aplicar uma ação em qualquer nível da estrutura: uma promoção de marketing, por exemplo, pode ser aplicado a todos os clientes, ou seletivamente apenas para os clientes numa categoria e suas subcategorias.
 
-You can create your own categories and assign them to your partner from the `Customer` form. Another way of assigning the corresponding partner to a category is to open the category from the `Partner Categories`.
+Você pode criar suas próprias categorias e atribuir-lhes o seu parceiro a partir do formulário do `cliente`. Outra maneira de atribuir o parceiro que correspondente a uma categoria é abrir a categoria em `Categorias de Parceiros`
 
-In the :ref:`profiling` chapter, you will see how to assign partners to categories automatically using segmentation rules.
+No capítulo :ref:`profiling`, você verá como atribuir parceiros a categorias automaticamente usando às regras de segmentação.
 
 .. _ch-contact:
 
-An Alternative to Manage your Contacts
---------------------------------------
+Uma Alternativa Para Gerenciar Contatos
+---------------------------------------
 
-According to your kind of business, the standard way of linking several contacts to one partner may not be flexible enough for you. You could perfectly well have the same employees working for several of your companies. Or maybe you work with representatives ensuring follow up of several of your customers. So you would want to have the same contact linked to different partners.
+De acordo com seu tipo de negócio, a maneira padrão de ligar vários contatos a um parceiro pode não ser flexível o suficiente para você. Você poderia perfeitamente ter o mesmo funcionário trabalhando para várias empresas. Ou talvez você trabalha com representantes assegurando o acompanhamento de diversos dos seus clientes. Então você gostaria de ter o mesmo contato ligada a diferentes parceiros. Claro, OpenERP fornece uma alternativa o módulo: mod: `base_contact`, que lhe dá ainda mais flexibilidade no gerenciamento de seus contatos.
 
-Of course, OpenERP provides an alternative, the :mod:`base_contact` module, which gives you even more flexibility in managing your contacts.
+Compartilhe facilmente o mesmo contato (empregado, por exemplo), que podem perfeitamente ter empregos diferentes, com vários parceiros. Você só precisa digitar (ou *criar*) o contato uma vez e fazer um link a os parceiros envolvidos, enquanto especifica a posição o contato detém para cada empresa em particular. Quaisquer alterações nas informações de contato só precisará ser feita uma vez para que sejam aplicados para todos os parceiros que o contato está relacionado!
 
-Easily share the same contact (an employee, for instance), who may perfectly have different jobs, with several partners. You only need to enter (or *create*) the contact once and link it to the partners concerned, while specifying the position the contact holds for each company in particular. Any changes to contact information only need to be made once for them to be applied to all partners the contact is related to!
+Podemos ilustrar o conceito de múltiplos relacionamentos entre os contatos e os parceiros (empresas) através de um exemplo. A figura :ref:`fig-crmconw` mostra duas empresas tendo diversos endereços (locais de trabalho) e diversos contatos anexado a estes endereços.
 
-We illustrate the concept of multiple relationships between contacts and partners (companies) through an example. The figure :ref:`fig-crmconw` shows two companies having several addresses (places of business) and several contacts attached to these addresses.
+Neste exemplo você encontrará alguns exemplos:
 
-In this example you will find the following elements:
+* O banco ABC tem dois escritórios, representadado pelos endereços de ABC Bélgica e ABC Luxemburgo,
 
-* The ABC bank has two places of business, represented by the addresses of ABC Belgium and ABC
-  Luxembourg,
+* Os endereços da Dexey França e Dexey Bélgica pertencem à empresa Dexey
 
-* The addresses of Dexey France and Dexey Belgium belong to the Dexey company,
+* No escritório da ABC Luxemburgo, você tem os contatos do diretor (D. Smith) e o contador (A. Silva),
 
-* At the office of ABC Luxembourg, you have the contacts of the director (D. Smith) and the
-  accountant (A. Doe),
+* Sr. Doe ocupa o cargo de contador para ABC Luxemburgo e França Dexey,
 
-* Mr Doe holds the post of accountant for ABC Luxembourg and Dexey France,
+* Sr. D. Smith é diretor do Dexey França e Dexey Bélgica e também temos seu endereço privado que não está ligado a um parceiro.
 
-* Mr D. Smith is director of Dexey France and Dexey Belgium and we also have his private address
-  which is not attached to a partner.
+Uma opção de menu extra será adicionado, permitindo-lhe apresentar a lista de contatos, através de :menuselection:`Vendas --> Catalogo de Endreços --> Contatos`.
 
-An extra menu option will be added, allowing you to display the list of contacts, through :menuselection:`Sales --> Address Book --> Contacts`.
-
-The screenshot below illustrates how contacts are handled with the advanced Contacts configuration.
+A imagem abaixo ilustra como os contatos são tratados na configuração avançada de contatos.
 
 .. _fig-crmconw:
 
 .. figure:: images/crm_contact_with_latest.png
    :scale: 100
 
-   *Advanced Contact Management*
+   *Gerenciamento Avançado de Contato*
 
-This is a clear way to illustrate the complexities that may be accomplished in OpenERP.
+Esta é uma forma clara de ilustrar o nível de complexidade que podem ser realizadas no OpenERP.
 
-If you correct or change a contact name in the contact form, the changes will be applied to all the posts occupied in the different companies.
+Se você corrigir ou alterar um nome de contato no formulário de contato, as alterações serão aplicadas a todos os lugares ocupados em empresas diferentes.
 
-The screen below represents a partner form. You can add several addresses, such as Invoice & Delivery, and a list of
-contacts per address. Each contact has its own data, such as name, function, phone number and email.
+A tela abaixo representa um formulário de parceiro. Você pode adicionar diversos endereços, como fatura e entrega, e uma lista de contatos por endereço. Cada contato tem seus próprios dados, como nome, número de telefone, função e e-mail.
 
 .. figure:: images/crm_base_contacts.png
    :scale: 80
    :align: center
 
-   *Partner Form with the Advanced Contacts Management*
+   *Formulário de Parceiro com Gerenciamento Avançado de Contatos*
 
-Go to :menuselection:`Sales --> Address Book --> Contacts` to open a contact form.
-You enter data in the contact form, containing information such as mobile phone, different functions occupied, and personal blog. You can also add a photo of your contact.
-If you click the `Functions and Addresses` line, you will get more details about the job (such as start date, end date and fax).
+Vá para :menuselection:`Vendas --> Catalogo de Endereços --> Contato` para abrir o formulário de contato.
+Você insere os dados no formulário de contato, contendo informações como telefone celular, diferentes funções ocupados, e blog pessoal. Você também pode adicionar uma foto ao seu contato. Se você clicar na linha de `Cargos e Endereços`, você irá obter mais detalhes sobre o trabalho (tais como data de início, data de término e fax).
 
 .. figure:: images/crm_partner_poste.png
    :scale: 100
    :align: center
 
-   *Detail of a Position occupied by a Contact at a Partner*
+   *Detalhes de um cargo ocupado por um contato de um parceiro*
 
 .. Copyright © Open Object Press. All rights reserved.
 
@@ -293,4 +270,6 @@ If you click the `Functions and Addresses` line, you will get more details about
 .. resulting from the use of the information contained herein.
 
 .. Published by Open Object Press, Grand Rosière, Belgium
+
+-
 
