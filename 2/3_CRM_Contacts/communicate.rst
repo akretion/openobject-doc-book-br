@@ -6,55 +6,51 @@
    single: module; fetchmail
    single: gateway
 
-Connecting with your Email and Accessing from your Mobile Device
-================================================================
+Conectar-se com seu e-mail e acessar a partir do seu dispositivo móvel
+======================================================================
 
- *OpenERP provides all the information you need to pursue your company's business opportunities
- effectively. But to stay productive with all the information you have to handle, it is essential 
- that you can keep using your normal communication tools by interfacing them with OpenERP, 
- and that you are not limited just to OpenERP's interface.*
+ *OpenERP fornece todas as informações que você precisa para buscar oportunidades de negócios da sua empresa de forma eficaz. Mas para se manter produtivo com todas as informações que você tem que manipular, é essencial que você possa continuar usando suas ferramentas de comunicação normal por interface com OpenERP, e que você não está limitado apenas à interface do OpenERP.*
 
-Often your sales persons are already used to working with standard email clients to manage their business. OpenERP allows you to perfectly integrate their knowledge with the use of OpenERP. 
+Muitas vezes as pessoas as suas vendas já estão acostumados a trabalhar com clientes de e-mail padrão para gerenciar seus negócios. OpenERP permite integrar perfeitamente os seus conhecimentos com o uso do OpenERP. 
 
-OpenERP offers this flexibility to those who need to continue using their traditional email programs to maintain their
-efficiency: OpenERP can be connected to Outlook and Thunderbird. Your users can participate in many OpenERP-maintained processes without ever leaving their familiar environment, and can avoid double data entry, yet easily link information to OpenERP's database automatically.
+OpenERP oferece esta flexibilidade para aqueles que precisam de continuar a usar seus programas de e-mail tradicionais para manter a sua eficiência: OpenERP pode ser conectado ao Outlook e Thunderbird. Seus usuários podem participar em muitas OpenERP mantida processos sem nunca deixar seu ambiente familiar, e pode evitar a dupla entrada de dados, mas facilmente ligar as informações ao banco de dados OpenERP automaticamente .
 
-With the Outlook and Thunderbird plug-ins, you can create and/or open contacts directly from your email client in OpenERP without effort.
-You can also link emails (with attachments) to OpenERP, to avoid information getting lost.
-Both plug-ins enable you for instance to create leads based on exchanges you have with the customer.
+Com o Outlook e plug-ins do Thunderbird, você pode criar e/ou abrir contatos diretamente do seu cliente de e-mail em OpenERP sem esforço.
+Você também pode vincular-mails (com anexos) para OpenERP, para evitar que informações se percam.
+Ambos os plug-ins permitem por exemplo, para criar ligações com base no intercâmbio que você tem com o cliente.
 
-The email gateway functionality enables you to use OpenERP’s CRM without necessarily using the OpenERP interface. Up-to-date leads can automatically be stored in OpenERP just by sending and receiving emails through a specific email address. You can even answer such mails from your own mailbox.
+A funcionalidade de gateway de e-mail permite que você use CRM OpenERP sem necessariamente usar a interface OpenERP. Dia a dia levam podendo ser automaticamente armazenada em OpenERP apenas enviando e recebendo e-mails através de um endereço de e-mail específico. uma mails até mesmo responder a tal da caixa de correio própria.
 
-And of course, you can link the OpenERP meeting calendar to your mobile device.
+E, claro, você pode vincular o calendário de reuniões OpenERP para o seu dispositivo móvel.
 
 .. _ch-crm-fetchmail:
 
-Communication Tools
--------------------
+Ferramentas de Comunicação
+--------------------------
 
 .. index:: fetchmail
 
-The *Fetchmail / Mailgateway* functionality lets you interface the CRM with incoming and outgoing emails. So you can receive mails in OpenERP and answer them directly from OpenERP.
-You can install it when you configure the CRM, through the `Reconfigure` wizard, `Fetch Emails`, or by installing the :mod:`fetchmail` module from the list of modules.
-Thanks to this feature, each email you receive on the specified email address may automatically create a lead, a contact or an other object in OpenERP, while keeping track of email attachments. This is an easy way to ensure that no crucial sales information gets lost.
+O Fetchmail * / * mailGateway a funcionalidade permite a interface do CRM com e-mails recebidos e enviados. Assim, você pode receber e-mails em OpenERP e respondê-las diretamente do OpenERP.
+Você pode instalá-lo quando você configurar o CRM, por meio da Reconfigure `assistente,` Fetch Emails `, ou instalando o: mod:` fetchmail módulo `a partir da lista de módulos.
+Graças a esta característica, cada e-mail que você receberá no endereço de e-mail especificado pode criar automaticamente uma ligação, um contato ou um outro objeto no OpenERP, mantendo a leitura de anexos de e-mail. Esta é uma maneira fácil de garantir que nenhuma informação importante se perda em vendas.
 
-You set the generic email address you want to use, such as sales@mycompany.com, and then you tell OpenERP that every incoming email for this address should automatically be created as a lead.
+Você define o endereço de e-mail genérico que pretende utilizar, tais como vendas@minhaempresa.com, e então você diz OpenERP que cada e-mails para este endereço devem ser automaticamente criado como um lead.
 
-.. tip:: Objects
+.. tip:: Objetos
 
-       You can use this feature for any object in OpenERP, so for instance also to keep track of your helpdesk or job applications.
+      Você pode usar esse recurso para qualquer objeto em OpenERP, assim, por exemplo, também para acompanhar o seu helpdesk ou pedidos de emprego.
 
-To use the email gateway, you should install the `Fetchmail` module. You might need a system administrator to carry out this work.
+Para usar o e-mai do gateway , você deve instalar o módulo `` Fetchmail. Você pode precisar de um administrador do sistema para realizar este trabalho.
 
-If you followed the steps in the previous chapters, you should have the `Fetchmail` module installed. If not, you can install the `Fetchmail` module from the Configuration Wizard (CRM Configuration Wizard, Synchronization, Fetch Emails), or from the modules list.
+Se você seguiu os passos nos capítulos anteriores, você deve ter o `` Fetchmail módulo instalado. Se não, você pode instalar o módulo `Fetchmail` a partir do Assistente de Configuração (CRM Assistente de Configuração, de sincronização, Fetch e-mails), ou a partir da lista de módulos.
 
-.. note:: Scheduled Action
+.. note:: Ação programada
 
-       Click the ``Fetch email`` button to get the emails directly. OpenERP also automatically creates a **Scheduled Action** to fetch the mails every 5 minutes.
+       Clique no botão `` Fetch email `` para obter os e-mails diretamente. OpenERP também cria automaticamente um **Ação programada**  para buscar os e-mails a cada 5 minutos.
 
-*Step 1*
+*Passo 1*
 
-You can configure your incoming mail account(s) from the :menuselection:`Sales --> Configuration --> Emails --> Email Servers`.
+Você pode configurar sua conta de correio de entrada (s) a partir de :menuselection:`Sales --> Configuration --> Emails --> Email Servers`.
 
 .. figure::  images/email_server_config.jpeg
    :scale: 80
@@ -62,624 +58,619 @@ You can configure your incoming mail account(s) from the :menuselection:`Sales -
 
    *How to Configure your Email Server for Incoming Mails?*
 
-Go to :menuselection:`Tools --> Configuration --> Email Template --> Email Accounts` to define the email smtp settings.
+Vá em :menuselection:`Tools --> Configuration --> Email Template --> Email Accounts` to define the email smtp settings.
 
-In the ``Description`` field, type the visible name you would like to use for the account.
+No campo ``Description``, digite o nome visível que você gostaria de usar como a conta.
 
-In ``Server``, type the mail server, i.e. smtp.googlemail.com.
+No ``Server``, tipo do email do servidor, ex: smtp.googlemail.com.
 
-Type the SMTP port (e.g. 587), configure the other settings according to the specifications of your server.
+Digite a porta SMTP (por exemplo, 587), configure as outras configurações de acordo com as especificações do seu servidor.
 
-Add the User Information, such as email address for which the mails will enter OpenERP, i.e. support@mycompany.com, the user name and the password. Configure the other settings to your needs.
+Adicione as informações do usuário, como endereço de e-mail para o qual os e-mails entrará OpenERP, support@mycompany.com ou seja, o nome de usuário ea senha. Configure as outras opções para suas necessidades.
 
-Save and click the ``Test Outgoing Connection`` button to check whether the settings are correct.
+Salve e clique no botão ``Test Outgoing Connection`` para verificar se as configurações estão corretas.
 
-When everything is correctly configured, `Approve` the account. OpenERP will automatically create a Scheduler for the mails. You can also send/receive mails manually by clicking the ``Send/Receive`` button.
+Quando tudo estiver corretamente configurado, `Aprovar` a conta. OpenERP irá criar automaticamente um agendador de e-mails. Você também pode enviar/receber e-mails manualmente, clicando no botão ``Enviar/Receber``.
 
-*Step 2*
+*Passo 2*
 
-You can configure your outgoing mail account(s) from the :menuselection:`Tools --> Configuration --> Email Template --> Email Accounts`.
+Você pode configurar sua conta(s) de correio de saída em :menuselection:`Tools --> Configuration --> Email Template --> Email Accounts`.
 
 .. figure::  images/outgoing_server_config.jpeg
    :scale: 80
    :align: center
 
-   *How to Configure your Email Server for Outgoing Mails?*
+   *Como configurar seu servidor de e-mail para mails de saída?*
 
-Go to Sales > Configuration > Emails > Email Servers to define the email server settings.
+Vá em Vendas > Configuração > Emails > Email Servers para definir as configurações do servidor de e-mail.
 
-Assign a ``Name`` and select the ``Server Type``, i.e. IMAP Server.
+Atribua um ``Nome`` e selecione o  ``Tipo de Servidor``, ex IMAP Server.
 
-Click ``Add Attachments`` if you want to include attachments for the mails received / sent.
+Clique em ``Adicionar Anexos`` se você quiser incluir anexos para os e-mails recebidos / enviados.
 
-Enter the Server Information, check SSL if necessary, i.e. imap.googlemail.com and the Login Information.
+Digite a Informação do Servidor, cheque SSL se necessário, ex imap.googlemail.com e as informações de login.
 
-You can also choose to send an automatic reply on receipt of the mail. You can configure the mail here from the ``Email Server Action`` field.
+Você também pode optar por enviar uma resposta automática de recebimento do email. Você pode configurar o e-mail aqui no campo ``Email Server Action``.
 
-Assign the ``Model`` to use when a new email arrives, i.e. choose Lead (crm.leads) if you want every new email that arrives to be created as a lead. 
+Atribua o ``Modelo`` para usar quando um e-mail novo chega, ex escolha Lead (crm.leads) se você quiser a cada novo e-mail que chega a ser criado como uma lead. 
 
-Click `Confirm` to confirm the account settings.
+Clique em `Confirmar` para confirmar as configurações da conta.
 
-.. note:: Server Configuration
+.. note:: Configuração do Servidor
 
-       You will also need your administrator to configure your server settings to allow for an email gateway. This will not be explained
-       in this book.
+       Você também vai precisar de o administrador para configurar as definições de seu servidor para permitir um gateway de e-mail. TIsso não será explicado
+       neste livro.
 
 .. index:: Outlook (Microsoft)
 
 .. _outl:
 
-Managing your CRM from Microsoft Outlook
-----------------------------------------
+Gerir o seu CRM do Microsoft Outlook
+------------------------------------
 
-The Microsoft Outlook plug-in enables you to carry out a series of OpenERP operations quickly and directly
-from the Outlook email client:
+O Microsoft Outlook plug-in permite que você realize uma série de operações OpenERP forma rápida e direta
+a partir do cliente de e-mail Outlook:
 
-* create a contact or partner from an email,
+* crie um contato ou parceiro de um e-mail,
 
-* open a partner from an email,
+* abra um parceiro de um e-mail,
 
-* save an email and its attachments in OpenERP from your mailbox,
+* salve um e-mail e seus anexos no OpenERP da caixa de correio,
 
-* send any attachment to an OpenERP document (such as opportunities, customers).
+* senvie qualquer anexo de um documento OpenERP (tais como oportunidades, clientes).
 
-Thanks to the plug-in, you can effortlessly link emails and attachments to the corresponding opportunity in OpenERP, or link an attached product folder to a customer, for instance.
+Graças ao plug-in, você pode facilmente ligar e-mails e anexos correspondentes a oportunidade no OpenERP, ou vincular uma pasta do produto ligado a um cliente, por exemplo.
 
-.. tip:: Outlook Versions
+.. tip:: Versões Outlook
 
-	The Microsoft Outlook plug-in works with Microsoft Outlook 2003 and 2007, but not with Outlook Express.
+	O Microsoft Outlook plug-in funciona com o Microsoft Outlook 2003 e 2007, mas não com o Outlook Express.
 
-In this chapter, only the actual possibilities of the plug-in will be discussed. For more information about how to install and configure the Outlook plug-in, please refer to the chapter :ref:`outlook`.
+Neste capítulo, apenas as possibilidades reais do plug-in será discutido. Para mais informações sobre como instalar e configurar o Outlook plug-in, consulte o capítulo :ref:`outlook`.
 
-From the Outlook toolbar, have a look at the :menuselection:`Tools` menu.
+Na barra de ferramentas do Outlook, de uma olhada em  :menuselection:`Tools` menu.
 
-The `Push` option allows you to archive emails to OpenERP, either to new document types or to existing ones (such as Leads). It also allows you to create a new contact.
+Uma opção `empurrar` permite-lhe o arquivamento dos e-mails para OpenERP, quer para novos tipos de documentos ou para os já existentes (como Leads). Ele também permite que você crie um novo contato.
 
-The `Partner` option allows you to open the Partner in OpenERP according to the email (i.e. contact email address) selected. 
+A opção `Parceiro` permite que você abra o parceiro no OpenERP de acordo com o e-mail selecionado (ex contactar endereço de email). 
 
-With `Document`, you can open the document (i.e. a customer, an opportunity) concerned in OpenERP. Make sure your web server is running to use this functionality. 
+Com o `Documento`, você pode abrir o documento (ex um cliente, uma oportunidade) no OpenERP. Verifique se o seu servidor web está sendo executado para utilizar esta funcionalidade.. 
 
 .. figure::  images/outlook_config2.png
    :scale: 100
    :align: center
 
-   *How to Access OpenERP from Outlook?*
+   *Como acessar OpenERP a partir do Outlook?*
 
-* Link an email to an existing document in OpenERP
+* Víncule um e-mail a um documento existente no OpenERP
 
-To archive an email in OpenERP from Outlook, select the email and click the `Push` button. Alternatively you can open the menu :menuselection:`Tools --> Push`: the ``Push to OpenERP`` screen will open.
+Para arquivar um e-mail no OpenERP a partir do Outlook, selecione o e-mail e clique no botão`Empurrar`. Alternativamente, você pode abrir o menu :menuselection:`Tools --> Push`: the ``Push to OpenERP`` tela será aberta.
 
-In the ``Link to an Existing Document`` section, check *Partner*. Then select the customer you want to attach the selected mail to.
-The plug-in also allows you to select several customers at once, simply by selecting a customer and pressing the ``ctrl`` button while selecting the next one.
+Na seção ``Vincular um documento existente``, cheque *Parceiro*. Em seguida, selecione o cliente que você deseja anexar o e-mail selecionado para.
+O plug-in também permite que você selecione vários clientes ao mesmo tempo, simplesmente selecionando um cliente e pressionar o botão ``ctrl`` ao selecionar o próximo.
 
-Suppose you decide to no longer link the selected email to a customer, but instead to an opportunity. Then you have to click the ``Search`` button to refresh the `Documents` list to display your opportunities.    
+SSuponha que você decida não mais vincular o e-mail selecionado para um cliente, mas sim uma oportunidade. Então você tem que clicar no botão ``Pesquisar`` para atualizar a lista de `Documentos` para mostrar as suas oportunidades.    
 
-From the list of available documents, you can select any document type you defined in the ``Document Settings`` section. 
+A partir da lista de documentos disponíveis, você pode selecionar qualquer tipo de documento definido na seção ``Configurações do documento``. 
 
-* Create a New Document
+* Criar um novo documento
 
-This feature can be used to create any of the configured document types in the ``Document Settings`` tab.
-Suppose you would like to create a new lead from an email. In the ``Create a New Document`` section, select ``CRM Lead``, then click the ``Create`` button. A new lead will be created in OpenERP from the selected email.
+Este recurso pode ser usado para criar qualquer um dos tipos de documentos configurados na aba ``Configurações do documento``.
+Supomos você gostaria de criar um novo lead a partir de um e-mail. Na seção ``Criar um novo documento`` , Selecione ``CRM Lead``, em seguida, clique no botão ``Criar``. AA novo lead será criada no do e-mail selecionado do OpenERP.
 
-* Create a New Contact / Partner
+* Criar um novo contato / Parceiro
 
-If the partner or contact from your email does not exist in OpenERP yet, the Outlook plug-in allows you to
-create one on the fly simply by using the information contained in the email.
+Se o parceiro ou entrar em contato de seu e-mail não existe no OpenERP ainda, o Outlook plug-in permite que você
+crie um em tempo real simplesmente usando as informações contidas no e-mail.
 
-Select the email from which you want to create a new contact, then click the ``Push`` button.
-In the ``Create a New Contact`` section, click the ``New Contact`` button. This option offers two possibilities:
-either you just create a contact (address), or you create a partner with the contact linked to it.
+Selecione o e-mail a partir do qual você quer criar um novo contato, em seguida clique no botão ``Empurrar``.
+Na seção ``Crie um novo contato``, clique no botão ``novo contato``. Esta opção oferece duas possibilidades:
+quer você apenas crie um contato (endereço), ou crie um parceiro com o contato ligado a ela.
 
-	- When you just want to create a new contact, complete the address data in the dialog box and click the ``Save`` button.
-	  The contact will then be created in OpenERP.
+	- Quando você quer apenas criar um novo contato, complete os dados de endereço na caixa de diálogo e clique no botão ``Salvar``.
+	  O contato será então criado em OpenERP.
 
-	- When you also want to create a new partner, complete the contact data.
-	  Then click the ``Create Partner`` button, add the partner's name and click the ``Save`` button.
+	- Quando você também deseja criar um novo parceiro, completa o contato data.34
+	  Em seguida, clique no botão ``Crie um Parceiro``, adicione o nome do parceiro e clique no botão ``Salvar``.
 
-	- You can also add a new contact to an existing partner. Click the ``Search`` button next to the Partner field
-	  and select the corresponding partner from the list. Then complete the contact data and click the ``Save`` button.
+	- Você também pode adicionar um novo contato para um parceiro existente. Clique no botão ``Pesquisar`` próximo ao campo Parceiro e selecione o parceiro correspondente da lista. Em seguida, preencha os dados de contato e clique no botão ``Salvar``.
 
 .. figure::  images/outlook_creation.png
    :scale: 100
    :align: center
 
-   *Creating a Contact on the Fly from Outlook*
+   *Criando um contato no Fly a partir do Outlook*
 
-* Open the Document created in OpenERP
+* Abra o documento criado no OpenERP
 
-From your mailbox, simply by clicking an email, you can directly access the corresponding data in OpenERP. Go to the menu :menuselection:`Tools --> Document` which will open the corresponding document (e.g. a lead) in OpenERP, directly from the email you selected.
+Da caixa de correio, simplesmente clicando em um e-mail, você pode acessar diretamente os dados correspondentes no OpenERP. Vá para o menu :menuselection:`Tools --> Document` que irá abrir o documento correspondente no OpenERP (ex uma lead), directamente a partir do e-mail que você selecionou.
 
-.. tip:: Knowledge Management
+.. tip:: Gestão do Conhecimento
 
-	The Outlook plug-in is compatible with OpenERP's Knowledge (i.e. Document) Management. If you install the
-	Knowledge application you will be able to:
+	O Outlook plug-in é compatível com a Gestão de conhecimento do OpenERP (ex Documento). Se você instalar o aplicativo Conhecimento você será capaz de:
 
-	* search through the content of your company's documents (those that have the type .doc, .pdf, .sxw
-	  and .odt) and also in archived emails,
+	* pesquisa através do conteúdo de documentos da sua empresa (os que o tipo .doc, .pdf, .sxw
+	  and .odt) e também em e-mails arquivados,
 
-	* have a shared file system that is connected to various OpenERP documents to share information and
-	  access it with your favorite browser,
+	* ter um sistema de arquivos compartilhado que está ligado a vários documentos OpenERP para compartilhar informações e
+	  acessá-lo com seu navegador favorito,
 
-	* organize and structure your documents (such as projects, partners and users) in OpenERP's
-	  system.
+	* organizar e estruturar os seus documentos no sistema OpenERP(tais como projetos, parceiros e usuários).
 
-* Step 1: Install the Outlook plugin in OpenERP
+* Passo 1: Instalar o plugin Outlook no OpenERP
 
-Use the OpenERP Configuration Wizard and install the ``Customer Relationship Management`` application. In the *CRM Application Configuration* dialog under Plug-In, select `MS-Outlook`.
-Then the *Outlook Plug-In* wizard appears. Next to the ``Outlook Plug-in`` field, click the ``Save As`` button to save the plugin to your desktop (or any other location on your computer).
+Use o Assistente de Configuração OpenERP e instale a aplicação ``Customer Relationship Management``. Na *Configuração de aplicação do CRM* diálogo em Plug-In, selecione `MS-Outlook`.
+Em seguida, o *Outlook Plug-In * assistente aparece. Ao lado do campo ``Outlook Plug-in``, clique no botão ``Salvar como`` para salvar o plug-in para o seu desktop (ou qualquer outro local no seu computador).
 
-You can also download the installation manual by clicking the green arrow next to ``Installation Manual``.  
+Você também pode baixar o manual de instalação, clicando na seta verde ao lado de ``instalação manual``.  
 
-Another way to use the Outlook plugin, is by installing the OpenERP module \
-``outlook``\. When you install this module, the same Configuration Wizard as explained before will be displayed. Follow the same instructions.
+Outra maneira de usar o plug-in Outlook, é instalando o módulo OpenERP \
+``outlook``\. Quando você instalar esse módulo, o mesmo Assistente de Configuração explicado anteriormente será exibido. Siga as mesmas instruções.. Siga as mesmas instruções.
 
 
-* Step 2: Prerequisites (for more details, please refer to the online documentation)
+* Passo 2: Pré-requisitos (para mais detalhes, consulte a documentação on-line)
 
-  1. Install Python 2.6+
+  1. Instale Python 2.6+
 
-  2. Python for Windows extensions - PyWin32, this module for python must be installed for the appropriate version of Python.
+  2. Python para extensões do Windows - PyWin32, este módulo para python deve ser instalado para a versão apropriada do Python.
 
-  3. Specify the python folder in the system path (typically with this installer C:\Python26)
+  3. Especificar a pasta python no caminho do sistema (tipicamente com este instalador C:\Python26)
 
-  *How to set the path in Windows XP*
-  For Windows XP: http://www.computerhope.com/issues/ch000549.htm
+  *Como definir o caminho no Windows XP*
+  Para o Windows XP: http://www.computerhope.com/issues/ch000549.htm
     
-  *How to set the path in Windows 7*
-  To change the system environment variables, follow the steps below. 
+  *Como definir o caminho no Windows 7*
+  Para alterar as variáveis ​​de ambiente do sistema, siga os passos abaixo. 
 
-   - From the Windows button, select ``Control Panel``, then click ``System``. 
-   - Click ``Remote Settings`` to open the System Properties window.
-   - In the System Properties window, click the Advanced tab. 
-   - In the Advanced section, click the ``Environment Variables`` button. 
-   - Finally, in the Environment Variables window (as shown below) under System Variables, highlight the Path directory,
-     click Edit and add ;C:\Python26.
+   - A partir do botão do Windows, selecione ``Painel de controle``, clique em ``Sistema``. 
+   - Clique em ``Configurações Remotas`` para abrir a janela Propriedades do sistema.
+   - Na janela Propriedades do Sistema, clique na guia Avançado. 
+   - Na seção Avançado, clique no botão ``Variáveis ​​de ambiente``. 
+   - Finalmente, na janela Variáveis ​​de ambiente (como mostrado abaixo) em Variáveis ​​do Sistema, destaque o caminho do diretório,
+     clique em Editar e adicionar ;C:\Python26.
 
-  4. If you are using MS Outlook 2007 then you are required to install "Microsoft Exchange Server MAPI Client and Collaboration
+  4. Se você estiver usando o MS Outlook 2007, então você é obrigado a instalar "Microsoft Exchange Server MAPI Client and Collaboration
   Data Objects 1.2.1 (CDO 1.21)"
-  Double-click Exchange CDO to install it.
+  Dê um duplo clique em Exchange CDO para instalá-lo.
 
-  5. If you are using MS Outlook 2003, be sure to install the built-in CDO component.
+  5. Se você estiver usando o MS Outlook 2003, não se esqueça de instalar o componente embutido CDO.
 
 
-* Step 3: Install the OpenERP extension in Outlook.
+* Passo 3: instale a extensão OpenERP no Outlook.
 
-	#. Double-click the file \``OpenERP-Outlook-addin.exe``\ that you saved on your desktop. Confirm the default settings.
+	#. De dois cliques no arquivo \``OpenERP-Outlook-addin.exe``\ que você salvou no seu desktop. Confirme as configurações padrão.
 
-	#. Double-click the file \``Register plugin``\ in the OpenERP Outlook Addin folder (typically in C:\Program Files).
+	#. De dois cliques no arquivo \``Register plugin``\ na pasta OpenERP Outlook Addin folder (typically in C:\Program Files).
 
-	#. Start Outlook.
+	#. Inicie o Outlook.
 
-When you have executed Installation Step 1, Step 2 and Step 3, the first thing to do is connect Outlook to OpenERP.
-A little configuration needs to be done.
+Quando você tiver executado Instalação Passo 1, Passo 2 e Passo 3, a primeira coisa a fazer é conectar o Outlook ao OpenERP.
+Pouca configuração precisa ser feita.
 
-.. tip:: Toolbars 
+.. tip:: Barra de Ferramentas
 
-      If you want the OpenERP connection to be shown as a separate toolbar, go to the menu :menuselection:`View --> Toolbars`. Select ``OpenERP``.
+      Se você quiser que a conexão OpenERP para ser mostrada como uma barra de ferramentas separadas, vá no menu :menuselection:`View --> Toolbars`. Select ``OpenERP``.
 
-* Go to the menu :menuselection:`Tools` and select `Configuration`. If this raises an error, make sure to check the access rights to that particular folder.
+* Vá no menu :menuselection:`Tools` and select `Configuration`. Se isso gera um erro, não se esqueça de verificar os direitos de acesso a essa pasta específica.
 
-A configuration window appears enabling you to enter configuration data about your OpenERP server.
+A janela de configuração será exibida para que você possa inserir os dados de configuração sobre o servidor OpenERP.
 
 .. figure::  images/outlook_menu2.png
    :scale: 75
    :align: center
 
-   *How to Connect to the Server*
+   *Como se conectar ao servidor*
 
-	#. On the ``Configuration Settings`` tab, under *Connection Parameters* click the `Change` button
-	   and type your server settings and XML-RPC port, e.g. ``http://127.0.0.1:8069``,
+	#. Na aba ``Definições de configuração`` , em *Parâmetros de conexão* clique no botão `Alterar`
+	   e digite as configurações do servidor e a porta XML-RPC , ex ``http://127.0.0.1:8069``,
 
-	#. Select the database you want to connect to, and type the user and the password required to log in to the database,
+	#. Selecione o banco de dados você deseja se conectar e digite o usuário ea senha necessários para efetuar login no banco de dados,
 
-	#. Click the `Connect` button,
+	#. Clique no botão `Conectar´.
 
-	#. On the ``Configuration Settings`` tab, under *Webserver Parameters* click the `Change` button
-	   and type your web server settings, e.g. ``http://localhost:8080``,
+	#. Na aba ``Definições de configuração``, em *Parâmetros webserver* clique no botão `Alterar`
+	   e digite as configurações do servidor web, ex ``http://localhost:8080``,
 
-	#. Click the `Open` button to test the connection.
+	#. Clique no botão `Abrir` para testar a conexão.
 
-When your connection has succeeded, you would typically want to configure Outlook to fit your needs.
+Quando a ligação foi bem sucedida, normalmente você deseja configurar o Outlook para atender às suas necessidades.
 
-To define extra document types, go to the `Document Settings` tab. This is the place where you can add objects from OpenERP that you wish to link mails to. The default installation comes with a number of predefined documents, such as Partners, Leads and Sales Orders.
+Para definir os tipos de documentos extras, vá na aba `Configurações do documento`. Este é o lugar onde você pode adicionar objetos de OpenERP que você deseja vincular mails para. A instalação padrão vem com um número de documentos pré-definidos, tais como parceiros, Leads e pedidos de vendas.
 
-Here is an example of how to configure extra document types. Suppose you would like to link mails to a meeting:
+Aqui está um exemplo de como configurar os tipos de documentos extras. Suponha que você gostaria de vincular mails para uma reunião:
 
-	#. In the `Title`, type ``Meeting``,
+	#. No `Título`, tipo ``Reunião``,
 
-	#. In the `Document`, type the object from OpenERP, in this example ``crm.meeting``,
+	#. No `Documento`, tipo de objeto de OpenERP, neste exemplo ``crm.meeting``,
 
-	#. In the `Image`, select an icon you would like to use,
+	#. Na `Imagem`, selecione um ícone que você gostaria de usar,
 
-	#. Click the `Add` button to actually create the document type.
+	#. Clique no botão `Adicionar` para realmente criar o tipo de documento.
 
-.. note:: A Word about Objects
+.. note:: Uma palavra sobre Objetos
 
-       To find the object you need in OpenERP, go to the menu :menuselection:`Administration --> Customization --> Database Structure -->
-       Objects`. OpenERP will only show objects for which the corresponding Business Applications / Modules have been installed.
-       You can only add objects to Outlook that are available in the selected database.
+       Para encontrar o objeto que você precisa em OpenERP, vá no menu :menuselection:`Administration --> Customization --> Database Structure -->
+       Objects`. OpenERP só vai mostrar objetos para o qual o correspondente Aplicações de Negócios / Módulos que tiverem sido instalados
+       Você só pode adicionar objetos ao Outlook que estão disponíveis no banco de dados selecionado.
 
 .. index::
    single: Thunderbird (Mozilla)
 
 .. _thunder:
 
-Managing your CRM from Mozilla Thunderbird
+Gerenciando seu CRM no Mozilla Thunderbird
 ------------------------------------------
 
-With the Mozilla Thunderbird plug-in you can carry out a series of OpenERP operations directly from Thunderbird, such as:
+Com o Mozilla Thunderbird plug-in você pode realizar uma série de operações OpenERP diretamente do Thunderbird, tais como:
 
-* create a contact or partner from an email,
+* crie um contato ou parceiro a partir de um e-mail,
 
-* open a partner from an email,
+* abra um parceiro a partir de um e-mail,
 
-* save an email and its attachments in OpenERP,
+* salve um e-mail e seus anexos no OpenERP,
 
-* send any attachment to an OpenERP document (such as opportunities, customers).
+* envie qualquer anexo de um documento OpenERP (tais como oportunidades, clientes).
 
-Thanks to the plug-in, you can effortlessly link emails and attachments to the corresponding opportunity in OpenERP, or link an attached product folder to a customer, for instance.
+Graças ao plug-in, você pode facilmente ligar e-mails e anexos correspondentes a oportunidade no OpenERP, ou vincular de uma pasta de produtos ligados a um cliente, por exemplo.
 
-In this chapter, only the actual possibilities of the plug-in will be discussed. For more information about how to install and configure the Thunderbird plug-in, please refer to the chapter :ref:`thunderbird`.
+Neste capítulo, apenas as possibilidades reais do plug-in serão discutidos. Para mais informações sobre como instalar e configurar o Thunderbird plug-in, por favor consulte o capítulo :ref:`thunderbird`.
 
-From the Thunderbird toolbar, have a look at the :menuselection:`OpenERP` menu.
+Na barra de ferramentas Thunderbird, Na barra de ferramentas Thunderbird, veja em o :menuselection:`OpenERP` menu.
 
-The `Push` option allows you to archive emails to OpenERP, either to new document types or to existing ones. It also allows you to create a new contact.
+A opção `Empurrar` permite-lhe arquivar e-mails para OpenERP, tanto para novos tipos de documentos ou para os já existentes. Ele também permite que você crie um novo contato.
 
-The `Partner` allows you to open the Partner in OpenERP according to the email (i.e. contact email address) selected. 
+O `Parceiro` permite que você abra o parceiro no OpenERP de acordo com o e-mail selecionado (ex endereço de email do contato). 
 
-With `Document`, you can open the document (i.e. a customer, an opportunity) concerned in OpenERP. Make sure your web server is running to use this functionality. You have to open the mail to use this feature. 
+Com o `Documento`, você pode abrir o documento concedido no OpenERP(ex um cliente, uma oportunidade). Verifique se o seu servidor web está sendo executado para utilizar esta funcionalidade. Você tem que abrir o e-mail para usar este recurso. 
 
-* Link an email to an existing document in OpenERP
+* Víncule um e-mail a um documento existente no OpenERP
 
 .. figure::  images/thunderbird_selection.png
    :scale: 100
    :align: center
 
-   *How to Access OpenERP from Thunderbird?*
+   *Como acessar OpenERP no Thunderbird?*
 
-To archive an email in OpenERP from Thunderbird, select the email and click the `Push` button. Alternatively you can open the menu :menuselection:`OpenERP --> Push`: the ``Push to OpenERP`` screen will open.
+Para arquivar um e-mail no OpenERP a partir do Thunderbird, selecione o e-mail e clique no botão `Empurrar`. Alternativamente, você pode abrir o menu :menuselection:`OpenERP --> Push`: the ``Push to OpenERP`` tela será aberta.
 
-In the ``Link to an Existing Document`` section, check *Partner*. Then select the customer you want to attach the selected mail to.
-The plug-in also allows you to select several customers at once, simply by selecting a customer and pressing the ``ctrl`` button while selecting the next one.
+Na seção ``Vincule um documento existente``, cheque o *Parceiro*. Em seguida, selecione o cliente que você deseja anexar o e-mail selecionados para.
+O plug-in também permite que você selecione vários clientes ao mesmo tempo, simplesmente selecionando um cliente e pressionar o botão ``ctrl``  ao selecionar o próximo.
 
-Suppose you decide to no longer link the selected email to a customer, but instead to an opportunity. Then you have to click the ``Search`` button to refresh the `Documents` list to display your opportunities.    
+Suponha que você decida não mais vincular o e-mail selecionado para um cliente, mas sim uma oportunidade. Então você tem que clicar no botão ``Pesquisar`` para atualizar a lista `Documentos` para mostrar as suas oportunidades.    
 
-From the list of available documents, you can select any document type you defined in the ``Document Settings`` section. 
+Da lista de documentos disponíveis, você pode selecionar qualquer tipo de documento que você definiu na seção ``Configurações do documento``. 
 
-* Create a New Document
+* Criar um novo documento
 
-This feature can be used to create any of the configured document types in the ``Document Settings`` tab.
-Suppose you would like to create a new lead from an email. In the ``Create a New Document`` section, select ``CRM Lead``, then click the ``Create`` button. A new lead will be created in OpenERP from the selected email.
+Este recurso pode ser usado para criar qualquer um dos tipos de documentos configurados na guia ``Configurações do documento``.
+Suponha que você gostaria de criar uma nova pista a partir de um e-mail. Na seção ``Criar um novo documento``, selecione ``CRM Lead``, em seguida, clique no botão ``Criar``. Um novo lead será criada no OpenERP apartir do e-mail selecionado.
 
-* Create a New Contact / Partner
+* Criar um novo contato / Parceiro
 
-If the partner or contact from your email does not exist in OpenERP yet, the Thunderbird plug-in allows you to
-create one on the fly simply by using the information contained in the email.
+Se o parceiro ou contato a partir de seu e-mail não existe no OpenERP ainda, o plug-in do Thunderbird permite que você
+criar um em tempo real simplesmente usando as informações contidas no e-mail.
 
-Select the email from which you want to create a new contact, then click the ``Push`` button.
-In the ``Create a New Contact`` section, click the ``New Contact`` button. This option offers two possibilities:
-either you just create a contact (address), or you create a partner with the contact linked to it.
+Selecione o e-mail a partir do qual você quer criar um novo contato, clique no botão ``Empurrar``.
+Na seção ``Criar um novo contato``, clique no botão ``Novo contato``. Esta opção oferece duas possibilidades:
+seja você acabou de criar um contato (endereço), ou criou um parceiro com o contato ligado a ela.
 
-	- When you just want to create a new contact, complete the address data in the dialog box and click the ``Save`` button.
-	  The contact will then be created in OpenERP.
+	- Quando você quer apenas criar um novo contato, complete os dados de endereço na caixa de diálogo e clique no botão ``Salvar`` .
+	  O contato será então criada em OpenERP
 
-	- When you also want to create a new partner, complete the contact data.
-	  Then click the ``Create Partner`` button, add the partner's name and click the ``Save`` button.
+	- Quando você também deseja criar um novo parceiro, complete os dados de contato.
+	  Em seguida, clique no botão ``Criar Parceiro``, adicione o nome do parceiro e clique no botão ``Salve``.
 
-	- You can also add a new contact to an existing partner. Click the ``Search`` button next to the Partner field
-	  and select the corresponding partner from the list. Then complete the contact data and click the ``Save`` button.
+	- Você também pode adicionar um novo contato para um parceiro existente. Clique no botão ``Pesquisar`` ao lado do campo Parceiro
+e selecione o sócio correspondente da lista. Em seguida, preencha os dados de contato e clique no botão ``Salvar``.
 
 .. figure::  images/thunderbird_creation.png
    :scale: 75
    :align: center
 
-   *Creating a Contact on the Fly from Thunderbird*
+   *Criando um contacto em tempo real no Thunderbird*
 
-* Open the Document created in OpenERP
+* Abra o documento criado no OpenERP
 
-From your mailbox, simply by clicking an email, you can directly access the corresponding data in OpenERP. Go to the menu :menuselection:`Tools --> Document` which will open the corresponding document (e.g. a lead) in OpenERP, directly from the email you selected.
+Da caixa de correio, simplesmente clicando em um e-mail, você pode acessar diretamente os dados correspondentes no OpenERP. Vá para o menu :menuselection:`Tools --> Document` que irá abrir o documento correspondente no OpenERP(ex um lead), directamente a partir do e-mail que você selecionou.
 
-.. tip:: Knowledge Management
+.. tip:: Gestão de Conhecimento
 
-	The Thunderbird plug-in is compatible with OpenERP's Knowledge (i.e. Document) Management. If you install the
-	Knowledge application you will be able to:
+	O plug-in do Thunderbird é compatível com a gestão de conhecimento do OpenERP (ex. Documento). Se você instalar o
+Aplicação do conhecimento, você será capaz de:
 
-	* search through the content of your company's documents (those that have the type .doc, .pdf, .sxw
-	  and .odt) and also in archived emails,
+	* pesquisa através do conteúdo de documentos da sua empresa e também em e-mails arquivados (aqueles que têm o tipo .doc, .pdf, .sxw
+	  and .odt),
 
-	* have a shared file system that is connected to various OpenERP documents to share information and
-	  access it with your favorite browser,
+	* ter um sistema de arquivos compartilhado que está ligado a vários documentos OpenERP para compartilhar informações e
+acessá-lo com seu navegador favorito,
 
-* Step 1: Install the Thunderbird plugin in OpenERP
+* Passo 1: Instale o plugin Thunderbird no OpenERP
 
-Use the OpenERP Configuration Wizard and install the ``Customer Relationship Management`` application. In the *CRM Application Configuration* dialog under Plug-In, select `Thunderbird`.
-Then the *Thunderbird Plug-In* wizard appears. Next to the ``Thunderbird Plug-in`` field, click the ``Save As`` button to save the plugin to your desktop (or any other location on your computer).
+Use o Assistente de Configuração OpenERP e instalar o aplicativo ``Gestão de Relacionamento com o Cliente``. No diálogo *Configuração de Aplicação CRM* sob Plug-In, selecione `Thunderbird '
+Em seguida, aparece o assistente *Thunderbird Plug-In* . Ao lado do campo ``Thunderbird Plug-in`` , clique no botão ``Salvar como`` para salvar o plug-in em seu desktop (ou qualquer outro local no seu computador).
 
-You can also download the installation manual by clicking the orange arrow next to ``Installation Manual``.  
+Você também pode baixar o manual de instalação, clicando na seta ao lado de laranja ``Manual de instalação``.  
 
-Another way to use the Thunderbird plugin, is by installing the OpenERP module \
-``thunderbird``\. When you install this module, the same Configuration Wizard as explained before will be displayed. Follow the same instructions.
+Outra maneira de usar o plugin Thunderbird, é instalando o módulo OpenERP \
+``thunderbird``\. Quando você instalar esse módulo, o Assistente de Configuração mesmo explicado anteriormente será exibido. Siga as mesmas instruções.
 
-* Step 2: Install the OpenERP extension in Thunderbird.
+* Passo 2: Instalar a extensão OpenERP no Thunderbird.
 
-To do that, use the file \``openerp_plugin.xpi``\ that you saved on your desktop. 
+Para fazer isso, use o arquivo \``openerp_plugin.xpi``\ que você salvou no seu desktop.
 
-Then proceed as follows:
+Em seguida, proceda da seguinte forma:
 
-	#. From Thunderbird, open the menu :menuselection:`Tools --> Add-ons`.
+	#. A partir doThunderbird, abra o menu :menuselection:`Tools --> Add-ons`.
 
-	#. Click Extensions, then click the `Install` button.
+	#. Clique em Extensões, clique no botão `Instalar` .
 
-	#. Go to your desktop and select the file \ ``openerp_plugin.xpi``\. Click Open.
+	#. Vá para o seu desktop e selecione o arquivo \ ``openerp_plugin.xpi``\. Clique em Abrir.
 
-	#. Click `Install Now` then restart Thunderbird.
+	#. Clique `Instalar agora` em seguida, reinicie o Thunderbird.
 
-Once the extension has been installed, a new ``OpenERP`` menu item is added to your Thunderbird menubar. 
+Uma vez que a extensão foi instalado, um novo item do menu"OpenERP" é adicionado ao seu menu do Thunderbird.
 
-.. tip::  Thunderbird Version
+.. tip::  Versões Thunderbird  
 
-	The OpenERP plugin for Thunderbird works as from Thunderbird version 2.0.
+	O plugin OpenERP para Thunderbird funciona a partir do Thunderbird versão 2.0.
 
-	So check your Thunderbird version before installing, and download the latest version that you need
-	from the following address: http://www.mozilla.org/products/thunderbird/
+	Portanto, verifique a sua versão Thunderbird antes de instalar e baixar a última versão que você precisa
+no seguinte endereço : http://www.mozilla.org/products/thunderbird/
 
-When you have executed Installation Step 1 and Step 2, the first thing to do is connect Thunderbird to OpenERP.
-A little configuration needs to be done.
+Quando você tiver executado Instalação Passo 1 e Passo 2, a primeira coisa a fazer é se conectar Thunderbird no OpenERP.
+Um pouco de configuração precisa ser feito.
 
-.. note:: Before starting the configuration, make sure your GTK server and web server are running (XML-RPC should be allowed).
+.. note:: Antes de iniciar a configuração, verifique se o servidor GTK e servidor web está executando (deve ser permitido XML-RPC).
 
-Go to the ``OpenERP`` menubar and select ` Configuration`.
+Vá na barra de menu ``OpenERP`` e selecione ` Configuração`.
 
-A configuration window appears enabling you to enter configuration data about your OpenERP server.
+A janela de configuração será exibida para que você possa inserir os dados de configuração sobre o servidor OpenERP
 
 .. figure::  images/thunderbird_config.png
    :scale: 75
    :align: center
 
-   *How to Connect to the Server*
+   *Como se conectar ao servidor*
 
-	#. On the ``Configuration Settings`` tab, under *Connection Parameters* click the `Change` button
-	   and type your server settings and XML-RPC port, e.g. ``http://127.0.0.1:8069``,
+	#. Na guia ``Definição de configuração``, clique em *Parâmetros de conexão* clique no botão `Alterar` 
+	   e digite as configurações do servidor e porta XML-RPC, ex. ``http://127.0.0.1:8069``,
 
-	#. Select the database you want to connect to, and type the user and the password required to log in to the database,
+	#. Selecione o banco de dados você deseja se conectar e digite o usuário e a senha necessários para efetuar login no banco de dados,
 
-	#. Click the `Connect` button,
+	#. Clique no botão `Conectar`,
 
-	#. On the ``Configuration Settings`` tab, under *Webserver Parameters* click the `Change` button
-	   and type your web server settings, e.g. ``http://localhost:8080``,
+	#. Na aba ``Definição de configuração``, em *Parâmetros do servidor web* clique no botão `Alterar`
+	   e digite as configurações do servidor web, ex. ``http://localhost:8080``,
 
-	#. Click the `Open` button to test the connection.
+	#. Clique no botão `Abrir` para testar a conexão.
 
-When your connection has succeeded, you would typically want to configure Thunderbird to fit your needs.
+Quanto a  sua conexão, foi bem sucedida, normalmente você deseja configurar o Thunderbird para atender às suas necessidades
 
-To define extra document types, go to the `Document Settings` tab. This is the place where you can add objects from OpenERP that you wish to link mails to. The default installation comes with a number of predefined documents, such as Partners, Leads and Sales Orders.
+o definir os tipos de documento extra, vá para a aba `Configurações do documento`. Este é o lugar onde você pode adicionar objetos de OpenERP que você deseja vincular mails. A instalação padrão vem com um número de documentos pré-definidos, tais como parceiros, Leads e Pedidos de Vendas
 
-Here is an example of how to configure extra document types. Suppose you would like to link mails to a purchase order.
+Aqui está um exemplo de como configurar os tipos de documentos extra. Suponha que você gostaria de vincular mails a uma ordem de compra.
 
-	#. In the `Title`, type ``Purchase Order``,
+	#. No `Título`, tipo ``ordem de compra``,
 
-	#. In the `Document`, type the object from OpenERP, in this example ``purchase.order``,
+	#. No `Documento`, o tipo do objeto a partir OpenERP, neste exemplo ``purchase.order``,
 
-	#. In the `Image`, select an icon you would like to use,
+	#. Na `Imagem`, selecione um ícone que você gostaria de usar,
 
-	#. Click the `Add` button to actually create the document type.
+	#. Clique no botão `Adicionar` para realmente criar o tipo de documento.
+.. note:: Uma palavra sobre os Objetos
 
-.. note:: A Word about Objects 
-
-       To find the object you need in OpenERP, go to the menu :menuselection:`Administration --> Customization --> Database Structure -->
-       Objects`. OpenERP will only show objects for which the corresponding Business Applications / Modules have been installed.
-       You can only add objects to Thunderbird that are available in the selected database.
+       Para encontrar o objeto que você precisa em OpenERP, vá ao menu :menuselection:`Administration --> Customization --> Database Structure -->
+      Objetos`. O OpenERP só vai mostrar objetos para o qual o correspondente as Aplicações de Negócios / Módulos foram instalados.
+       Você só pode adicionar objetos ao Thunderbird que estão disponíveis no banco de dados selecionado.
 
 .. figure::  images/thunderbird_document.png
    :scale: 75
    :align: center
 
-   *How to Add Extra OpenERP Document Types to Thunderbird?*
-   * organize and structure your documents (such as projects, partners and users) in OpenERP's system.
-
+   *Como adicionar tipos de documentos extras do OpenERP para o Thunderbird?*
+   * organizar e estruturar os seus documentos no sistema de OpenERP. (como projetos, parceiros e usuários).
 .. _ch-sync1:
 
-Synchronizing your CRM with Mobile Devices
-------------------------------------------
+Sincronizar o seu CRM com dispositivos móveis
+---------------------------------------------
 
-Synchronize your OpenERP calendars with your mobile device and know which meeting to go to from wherever you are!
+sincronizar seus calendários OpenERP com o seu dispositivo móvel e sei que encontro para ir para onde quer que esteja!
 
-Make your OpenERP even more efficient and let your sales synchronize their meetings with their mobile devices.
-Anywhere your sales people are, they can easily check their planning and confirm new meetings with customers on the spot.
+Faça o seu OpenERP ainda mais eficiente e deixe suas vendas sincronizar as suas reuniões com seus dispositivos móveis.
+Em qualquer lugar seu pessoal de vendas são, eles podem facilmente verificar seu planejamento e confirme novas reuniões com os clientes no local.
 
-You can synchronize your calendars with iPhone and Android phones, and also with tools such as Evolution and Sunbird/Lightning.
+Você pode sincronizar seus calendários com o iPhone e telefones Android, e também com ferramentas como o Evolution e Sunbird / Lightning
 
-.. note:: Installation and Configuration
+.. note:: Instalação e Configuração
 
-       Please note that setting this up requires some technical knowledge, and probably the assistance of IT staff.
+       Por favor note que essa configuração requer algum conhecimento técnico e, provavelmente, a assistência da equipe de TI.
 
 .. index::
    single: mobile; caldav; Android; iPhone; Sunbird; Evolution; Lightning
 
 .. _mobile:
 
-OpenERP Server and SSL Setup
-++++++++++++++++++++++++++++
-Some modules need to be installed on the OpenERP server (or may already be installed). These are:
+Servidor OpenERPe Configuração SSL
+++++++++++++++++++++++++++++++++++
+Alguns módulos precisam ser instalados no servidor OpenERP (ou pode já estar instalado). estes são:
 
-    - :mod:`caldav`: Required, has the reference setup and the necessary
-            underlying code. Will also cause document & document_webdav
-            to be installed.
-    - :mod:`crm_caldav`: Optional, will export the CRM Meetings as a calendar.
-    - :mod:`project_caldav`: Optional, will export project tasks as a calendar.
-    - :mod:`http_well_known`: Optional, experimental. Will ease bootstrapping,
-            but only when a DNS srv record is also used.
+    - :mod:`caldav`: Necessário, ter a configuração de referência e o necessário os 
+             código subjacentes. Também fará com que documentos e document_webdav
+             seja ser instalado.
+    - :modo:`crm_caldav`: Opcional, vai exportar os Encontros CRM como um calendário.
+    - :modo:`project_caldav`: Opcional, vai exportar tarefas do projeto como um calendário.
+    - :modo:`http_well_known`: Opcional, experimental. Vai facilitar bootstrapping,
+             mas apenas quando um registro DNS SRV também é usado.
 
-When you install the above module(s), a ready-to-go reference setup of the folders is provided.
-The OpenERP administrator can add more calendars and (re)structure if needed.
+Quando você instalar o módulo(s) acima, quando estiver pronto para ir, uma configuração de referência das pastas é fornecida.
+O administrador do OpenERP pode adicionar mais calendários e (re) estrutura, se necessário.
 
-It is highly advisable that you also set up SSL to work for the OpenERP server. HTTPS is a server-wide feature in OpenERP, which means a 
-certificate will be set at the openerp-server.conf which will be the same for XML-RPC, HTTP, WebDAV and CalDAV.
-The iPhone also supports secure connections with SSL, although it does not expect a self-signed certificate (or one that is not verified by
-one of the "big" certificate authorities).
+É altamente aconselhável que você também configurar SSL para trabalhar no servidor OpenERP. HTTPS é uma característica de todo o servidor no OpenERP, o que significa um
+certificado será definido no OpenERP server.conf, que será o mesmo para XML-RPC, HTTP, WebDAV e CalDAV.
+O iPhone também suporta conexões seguras com SSL, apesar de não esperar um certificado auto-assinado (ou que não é verificado por
+um dos "grandes" certificado de autoridades).
 
-Calendars on iPhone
-+++++++++++++++++++
+Calendários no iPhone
++++++++++++++++++++++
 
-To set up the calendars, proceed as follows:
+Para configurar os calendários, proceda da seguinte forma:
 
-1. Click ``Settings`` and go to the ``Mail, Contacts, Calendars`` page.
+1. Clique em ``configurações`` e vá na página ``Mail, Contatos, Calendários``.
 
-2. Go to ``Add account...``
+2. vá em ``Adicionar conta...``
 
-3. Click ``Other``.
+3. Clique em ``Outros`.
 
-4. From the ``Calendars`` group, select ``Add CalDAV Account``.
+4. A partir do grupo ``Calendários``, selecione ``Adicionar Conta CalDAV``.
 
-5. Enter the host name.
-   (e.g. if the URL is http://openerp.com:8069/webdav/db_1/calendars/ , openerp.com is the host)
+5. Digite o nome do host.
+   (ex. se a URL é http://openerp.com:8069/webdav/db_1/calendars/ , openerp.com é o host)
 
-.. tip:: Synchronize this Calendar 
+.. tip:: Sincronize este calendário
 
-      Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Iphone``. Then the Caldav server will be shown.
+      Vá em :menuselection:`Sales --> Meetings --> Synchronize this Calendar` e selecione ``Iphone``. Em seguida, o servidor CalDAV será mostrado.
 
-6. In ``Username`` and ``Password``, type your OpenERP login and password.
+6. No ``Nome de Usuário`` e ``senha``, type your OpenERP login and password.
 
-7. As a description, you can either leave the server's name or
-   something like "OpenERP calendars".
+7. Como uma descrição, você pode deixar o nome do servidor ou
+    algo parecido "calendários OpenERP".
 
-8. If you are not using a SSL server, you will get an error, do not worry and push "Continue"
+8. Se você não estiver usando um servidor SSL, você obterá um erro, não se preocupe e empurre "continuar"
 
-9. Then click "Advanced Settings" to specify the correct ports and paths. 
+9. Clique em "Configurações avançadas" para especificar as portas corretas e caminhos.
     
-10. Specify the port for the OpenERP server: 8071 for SSL, 8069 without SSL.
+10. Especifique as informações sobre o servidor OpenERP: 8071 como SSL, 8069 com SSL.
 
-11. Set the ``Account URL`` to the right path of the OpenERP webdav:
-    the URL given by the wizard (e.g. http://my.server.ip:8069/webdav/dbname/calendars/ )
+11. Especifique ``Conta URL`` para o caminho certo do webdav OpenERP
+Novo! Segure a tecla Shift pressionada, clique e arraste as palavras acima para reorganizar. Dispensar:
+    a URL dada pelo assistente (ex. http://my.server.ip:8069/webdav/dbname/calendars/ )
 
-12. Click ``Done``. The phone will connect to the OpenERP server
-    and verify whether the account can be used.
+12. Clique em ``Feito``. O telefone irá se conectar ao servidor OpenERP
+     e verificar se a conta pode ser usado.
 
-13. Go to the main menu of the iPhone and open the Calendar application.
-    Your OpenERP calendars will be visible inside the selection of the
-    "Calendars" button.
-    Note that when creating a new calendar entry, you will have to specify
-    which calendar it should be saved to.
+13. Vá para o menu principal do iPhone e abra o aplicativo Calendário.
+     Seus calendários OpenERP será visível dentro da seleção do botão
+    "Calendários".
+    Note que ao criar uma nova entrada na agenda, você terá que especificar
+     calendário que deve ser salvo.
 
-If you need *SSL* (and your certificate is not a verified one),
-you will first need to let the iPhone trust the certificate. Follow these steps:
+Se você precisar de SSL * * (e seu certificado não é algo verificado),
+primeiro você precisa para deixar o iPhone confiar no certificado. Siga estes passos:
 
-1. Open Safari and enter the HTTPS location of the OpenERP server:
+1. Abra o Safari e digite o local HTTPS do servidor OpenERP:
    https://my.server.ip:8071/
-   (assuming you have the server at "my.server.ip" and the HTTPS port is the default 8071)
+   (supondo que você tenha o servidor em "my.server.ip" ea porta HTTPS é o padrão 8071)
 
-2. Safari will try to connect and issue a warning about the certificate used. Inspect the certificate
-   and click "Accept" so that iPhone now trusts it.
+2. Safari irá tentar se conectar e emitir um aviso sobre o certificado usado. Inspecionar o certificado
+    e clique em "Aceitar" para que o iPhone agora confia-lo.
 
-Calendars on Android
+Calendários em Android
 ++++++++++++++++++++
 
-Prerequisites
+Pré-requisitos
 *************
-There is no built-in way to synchronize calendars with CalDAV.
-So you need to install a third party software: Calendar (CalDav) Sync BETA 
-from Hypermatix Software (for now, it is the only one).
+Não há como built-in para sincronizar calendários com CalDAV.
+Então, você precisa instalar um software de terceiros: Calendário (CalDav) Sincronização BETA
+Software de Hypermatix (por enquanto, é o único).
 
-How to Configure?
+Como configurar?
 *****************
 
-1. Open the ``Calendar Sync`` application.
-   You get an interface with 2 tabs.
+1. Abrir o aplicativo. ``Calendar Sync``
+   Você tem uma interface com 2 abas
    
-2. On the `Connection` tab, in CalDAV Calendar URL, type a URL such as http://my.server.ip:8069/webdav/dbname/calendars/users/demo/c/Meetings.
+2. Na aba `Connection`, em CalDAV Calendar URL, digite uma URL como http://my.server.ip:8069/webdav/dbname/calendars/users/demo/c/Meetings.
 
-.. tip:: Synchronize this Calendar
+.. tip:: Sincronizar esse calendário
 
-      Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Android``. Then the Caldav server link will be shown. Make sure to use the correct XML-RPC port, it may differ from 8069.
+      Vá em :menuselection:`Sales --> Meetings --> Synchronize this Calendar` e selecione ``Android``. Em seguida, no link servidor CalDAV será mostrado. Certifique-se de usar a porta XML-RPC correta, ela pode diferir 8069.
 
-3. Type your OpenERP username and password.
+3. Digite seu nome de usuário e senha do OpenERP.
 
-4. If your server does not use SSL, you will get a warning. Answer ``Yes``.
+4. Se o seu servidor não usa SSL, você receberá um aviso. resposta ``Sim``.
 
-5. Then you can synchronize manually or customize the settings (`Sync` tab) to synchronize every X minutes.
+5. Depois, você pode sincronizar manualmente ou personalizar as configurações (aba `Sync`) para sincronizar a cada X minutos.
 
-Calendars in Evolution
-++++++++++++++++++++++
+Calendários em Evolução
++++++++++++++++++++++++
 
-1. Go to Calendar View.
+1. Vá na Visão em calendário.
 
 2. :menuselection:`File --> New --> Calendar`.
 
-3. Enter the data in the form:
+3. Insira os dados no formulário:
  
-    - Type : CalDav
-    - Name : Whatever you want (e.g. Meeting)
+    - tipo : CalDav
+    - Nome : O que você quiser (ex. reunião)
     - URL : http://HOST:PORT/webdav/DB_NAME/calendars/users/USER/c/Meetings (e.g.
       http://localhost:8069/webdav/db_1/calendars/users/demo/c/Meetings) 
-      the one given on top of this window
-    - Uncheck "User SSL"
-    - Username : Your username (e.g. Demo)
-    - Refresh : every time you want Evolution to synchronize the data with the server
+     a um dado no topo da janela
+    - Desmarque "usuário SSL"
+    - Usuário : seu nome de usuário (ex. Demo)
+    - Atualize : toda vez que quiser fazer uma atualização para sincronizar os dados com o servidor
 
-.. tip:: Synchronize this Calendar
+.. tip:: Sincronize esse calendário
 
-       Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Evolution``. Then the Caldav server will be shown.
+      Vá em :menuselection:`Sales --> Meetings --> Synchronize this Calendar` e selecione ``Evolution``. então o servidor CalDAV será mostrado.
 
-4. Click OK and enter your OpenERP password.
+4. Clique em OK e digite sua senha do OpenERP.
 
-5. A new calendar with the name you entered should appear on the left side.
+5. Um novo calendário com o nome digitado deve aparecer no lado esquerdo.
 
-Calendars in Sunbird/Lightning
+Calendários no Sunbird / Lightning
 ++++++++++++++++++++++++++++++
 
-Prerequisites
-*************
-If you are using Thunderbird, first install the Lightning module
+Pré-requisitos
+**************
+If Se você estiver usando o Thunderbird, instale primeiro o módulo do Lightning
 http://www.mozilla.org/projects/calendar/lightning/
 
-Configuration
+Configuração
 *************
 
-1. Go to Calendar View.
+1. Vá na Visão em calendário.
 
 2. :menuselection:`File --> New Calendar`.
 
-3. Choose ``On the Network``.
+3. Escolha ``On the Network``.
 
-4. As a format, select CalDav
-   and as a location type the URL (e.g. http://host.com:8069/webdav/db/calendars/users/demo/c/Meetings).
+4. Como um formato, selecione CalDav
+e em tipo de local da URL (e.g. http://host.com:8069/webdav/db/calendars/users/demo/c/Meetings).
 
 .. tip:: Synchronize this Calendar
 
-      Go to :menuselection:`Sales --> Meetings --> Synchronize this Calendar` and select ``Sunbird/Lightning``. Then the Caldav server will be shown.
+      Vá em :menuselection:`Sales --> Meetings --> Synchronize this Calendar` e selecione ``Sunbird/Lightning``. Em seguida, o servidor CalDAV será mostrado.
   
-5. Choose a name and a colour for the Calendar, and we advice you to uncheck "alarm".
+5. Escolha um nome e uma cor para o Calendário, e aconselhamos que você desmarque "alarme".
 
-6. Enter your OpenERP login and password (to give the password only once, check the box ``Use Password Manager to remember this password``).
+6. Digite seu login e senha OpenERP (para dar a senha apenas uma vez, marque a caixa ``Use Gerenciador de Senhas para lembrar esta senha``).
 
-7. Then click Finish; your meetings should now appear in your Calendar view.
+7. Em seguida, clique em Concluir; as suas reuniões devem aparecer agora na sua visão de Calendário.
 
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
-
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica
 
 
 
