@@ -2,7 +2,7 @@
 .. _part-ops:
 
 ##################################
-Effective Management of Operations
+Gestão Efetiva de Operações
 ##################################
 
  Your company is a closely interlinked jumble of people and processes that form the whole system.

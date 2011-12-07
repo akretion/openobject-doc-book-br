@@ -2,7 +2,7 @@
 .. _part-qual:
 
 ###############################
-Process and Document Management
+Processos e Gestão de Documentos
 ###############################
 
 .. toctree::

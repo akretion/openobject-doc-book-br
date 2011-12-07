@@ -2,7 +2,7 @@
 .. _part-genacct:
 
 #################
-Manage your Books
+Gerencie seus fatos contábeis
 #################
 
  When it is well integrated with the management system, an accounting system offers a company special

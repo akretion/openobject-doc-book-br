@@ -2,7 +2,7 @@
 .. _part2-beg:
 
 #############################
-Managing Customer Acquisition
+Geranciando a aquisição de clientes
 #############################
 
 .. toctree::

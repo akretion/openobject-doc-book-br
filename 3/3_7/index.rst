@@ -3,7 +3,7 @@
    single: Invoice to Payment
 
 ***********************
-From Invoice to Payment
+Da Fatura ao Pagamento
 ***********************
 
  *This chapter traces the basic accounting workflow in OpenERP, from entering an invoice to

@@ -2,7 +2,7 @@
 .. _part1-steps:
 
 ########################
-First steps with OpenERP
+Primeiros passos com o OpenERP
 ########################
 
  OpenERP is an impressive software system, being easy to use and yet providing great benefits

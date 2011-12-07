@@ -5,7 +5,7 @@
 .. _ch-purchase:
 
 **********************
-Driving your Purchases
+Conduzindo suas compras
 **********************
 
  *In the preceding chapters you saw how to use customer invoices and delivery notes in OpenERP.

@@ -5,7 +5,7 @@
 .. _ch-accts:
 
 *****************
-Analytic Accounts
+Centros de custos
 *****************
 
  *Sitting at the heart of your company's processes, analytic accounts (or cost accounts) are

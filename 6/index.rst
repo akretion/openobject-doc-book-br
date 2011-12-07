@@ -2,7 +2,7 @@
 .. _part-trade:
 
 ####################
-Manage your Business
+Gerenciando seu Negócio
 ####################
 
  These two chapters are about selling and purchasing products and services.

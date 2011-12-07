@@ -2,7 +2,7 @@
    single: Google
 
 **************
-Google Modules
+Módulos do Google
 **************
 
 We have integrated some Google applications with OpenERP, which allow users to view OpenERP data on Google. Please take a look at the module descriptions.

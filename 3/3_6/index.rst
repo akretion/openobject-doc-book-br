@@ -3,7 +3,7 @@
    single: Invoicing & Payments
 
 #############################
-Customer Invoicing & Payments
+Faturamento dos Clientes e Pagamentos
 #############################
 
 OpenERP provides various features to keep track of your invoicing and payments. The simple workflow of invoicing,

@@ -5,7 +5,7 @@
 .. _ch-projects:
 
 *******************
-Drive your Projects
+Conduzindo seus projetos
 *******************
 
  *If you have a good system to manage tasks, your whole company will benefit.

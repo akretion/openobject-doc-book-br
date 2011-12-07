@@ -1,193 +1,201 @@
 
 .. _part2-crm-opport:
 
-Optimizing your Sales Cycle through Opportunities
-=================================================
+Otimizando seu Ciclo de Vendas através de Oportunidades
+======================================================
 
-While a lead represents the first contact with a prospect yet to be qualified, a sales opportunity represents a potential contract. Each opportunity has to be followed up by a salesperson (or sales team) spending time to qualify the opportunity, and this either by making a quotation or cancelling the opportunity.
+Enquanto um prospecto representa um primeiro contato qua ainda deve ser qualificado, uma oprtunidade de vendas representa um contrato em potencial. Cada oprtunidade deve ser acompanhada por um vendedor (ou pela equipe de vendas) que deverá qualificar a oprtunidade, realizando uma cotação ou cancelando a oportunidade. 
 
-Leads are generally handled by the dozen, with the automation of certain responses or emails.
-Opportunities, on the contrary, are usually tracked one by one by the salespeople, because an opportunity involves a negotiation process with the customer to be.
+Prospectos são, geralmente, tratados em grupos, com a automatização de certas respostas por emails.
+Oportunidades, em contrapartida, são geralmente seguidas uma a uma pela equipe de vendas, pois uma oportunidade envolve um processo de negociação com o cliente em potencial.
 
-Just like for leads, OpenERP provides specific features to handle sales opportunities efficiently. All opportunities can be found in the menu :menuselection:`Sales --> Sales --> Opportunities`.
+Assim como para os prospectos, o OpenERP possui funcionalidades específicas para tratar as oportunidades de vendas eficientemente. Todas as oportunidades podem ser encontradas no menu: seleção de menu: Vendas > Vendas > Oportunidades.
 
-With opportunities, you can manage and keep track of your sales pipeline by creating specific customer- or prospect-related sales documents to follow up potential sales. Information such as expected revenue, opportunity stage, expected closing date, communication history, next action date, next action, and much more can be stored.
+Em Oportunidades, você pode gerir e acompanhar suas vendas criando documentos de vendas relacionados a clientes ou prospectos específicos.
+Informaços como retorno esperado, fase da oportunidade, data esperada para o fechamento, histórico da comunicação, data da próxima ação, e muito mais podem ser gravadas.
 
-Opportunities can be connected to the email gateway: new emails may create opportunities, each of them automatically gets the history of the conversation with the customer. You and your sales team(s) will be able to plan meetings and phone calls from opportunities, convert them into quotations, manage related documents, track all customer-related activities, and much more.
+Oportunidades pedem ser conectadas com o email: novos emails podem criar oprtunidades, cada um deles busca automaticamente o histórico da conversa com o cliente.
+Você e sua equipe de vendas poderão planejar encontros e chamadas telefônicas a partir de oportunidades, convertê-los em cotações, administrar documentos relacionados, seguir todas as atividades relacionadas aos clientes e muito mais.
 
-.. tip:: Attachments
+.. dica:: Anexos
 
-      By default, you can keep attachments in OpenERP to make sure all linked documents are directly accessible. At the right side
-      of the screen, under ``Attachments``, click the *Add* button to start linking documents to your opportunity. With the *Browse*
-      button, you can search for the file to be attached in your directories. You can add attachments in the same way for leads,
-      for instance.
-      If you also want those documents to be indexed (not for pictures), you should install the Knowledge Application.
+      Por padrão, você pode manter os anexos no OpenERP para ter certeza que todos os documentos relacionados estarão diretamente acessíceis. 
+      Do lado direito da tela, sob "Anexos", clique em "Adicionar" para começar a ligar os documentos a sua oportunidade. Com botão "Pesquisar", você 
+      pode procurar pelo arquivo que deve ser anexado nos seus diretórios. Você pode adicionar anexos do mesmo jeito que prospectos, por exemplo.
+      Se você também quer que os deocumentos sejam indexados (menos imagens), você deve instalar a "Knowledge Application".
 
-Converting Leads into Customers or Opportunities
-------------------------------------------------
+Convertendo Prospectos em Clientes ou Oportunidades
+--------------------------------------------------
 
-If the salesperson thinks that the lead has been well qualified and that there is a real opportunity, following the contact he had with the prospect, he can easily convert the lead into a partner / opportunity using the button :guilabel:`Convert to Opportunity`.
+Se o vendedor pensa que o prospeco é uma verdadeira oportunidade, prosseguindo o contato que ele teve com o prospecto, ele pode facilmente converter o prospecto em um parceiro/oportunidade utilizanndo o bota:guilabel: converter em oportunidade.
 
-Clicking the `Convert to Opportunity` button offers several possibilities, allowing you also to avoid duplicate partners:
+O botão "Converter em Oportunidade" oferece diversas possibilidades, impedindo que você duplique parceiros:
 
-* You can decide to just create the opportunity and keep the contact data from the lead without creating a partner,
- 
-* You can convert to an opportunity, and create a new partner if it does not exist yet, or merge the contact with an existing partner,
+* Você pode escolher por simplesmente criar uma oportunidade e manter os dados do contato do prospecto sem criar um parceiro,
 
-* You first create a partner, and later you convert the lead to an opportunity.
+* Você pode converter em uma oportunidade, e criar um novo parceiro se ele ainda não existe, ou fundir o contato com um parceiro existente,
 
-To create only a partner, click the button :guilabel:`Create` next to the ``Customer`` field. You can also decide to add the contact data of the lead as a new contact to an existing partner. 
+* Você pode primeiro criar um parceiro, e depois converter o prospecto em oportunidade. 
 
-OpenERP shows a window allowing you to select:
 
-* whether you want to create a new partner,
+Para criar apenas um parceiro, clique em "Criar" próximo ao campo "Cliente". Você também ppode decidir adicionar os dados de contato do prospecto como um novo contato para um parceiro existente.
 
-* whether you want to link this contact to an existing partner (merge). 
+O OpenERP mostra uma janela com as opções:
 
-OpenERP opens a partner form containing the information from the lead. At this stage you can complete the contact details or add any other information for the partner.
+*criar um novo parceiro,
 
-The partner created is automatically attached to the lead, which enables you to keep complete traceability from the lead. To find this information, you should take a look at the :guilabel:`Communication & History` tab in the lead.
+*fundir o contato com um parceiro existente.
 
-Instead, you can also combine the step of creating a partner and directly the lead converting into an opportunity through the :guilabel:`Convert to Opportunity` feature.
+O OpenERP abre um formulário que contém as informações do prospecto. Nessa etapa você pode completar os detalhes do contato ou adicionar outras informações ao parceiro.
 
-.. tip:: Convert to Opportunity
+O parceiro criado é automaticamente anexado ao prospecto, o que permite que você mantenha uma traçabilidade completa do prospecto. Para encontrar essa informação, você deve ir na aba "Comunicação & Histórico" no prospecto.
 
-      When you click the `Convert to Opportunity` button and the email address of the new contact is filled out, OpenERP will check whether
-      this email address corresponds to an email address of an existing partner. If so, OpenERP will directly propose to merge the new
-      contact with the partner found.  
+Você também pode combinar o passo de criar um parceiro e direcionar a conversão do prospecto para a criação de uma oportunidade através da funcionalidade "Converter em oportunidade".
 
-When you click the :guilabel:`Convert to Opportunity` button and the partner already exists, OpenERP opens a window allowing you to select:
+.. dica:: Converter em Oportunidade
 
-* whether you want to create a new opportunity,
+      Quando você clica em "Converter em Oportunidade" e o endereço de email do contato é preenchido, o OpenERP irá conferir se o email
+      corresponde a algum endereço de email de um parceiro já existente. Se sim, o OpenERP irá propor a fusão do novo contato com o parceiro
+      encontrado.
 
-* whether you want to add this lead to an existing opportunity (merge). 
+Clicando em "Converter Oportunidade" e o parceiro já existe, o OpenERP abre uma janela com as opções:
 
-OpenERP shows the title of the opportunity (taken from the lead description) and the partner.
-Make sure to enter the estimated revenue and the success rate (probability) of converting to a sales.
+*criar um novo parceiro,
 
-.. figure:: images/crm_lead_convert.png
+*fundir o contato com um parceiro existente.
+
+O OpenERP mostra o título da oportunidade (retirada da descrição do prospecto) e do parceiro.
+Tenha certeza de haver colocado o retorno esperado e a taxa de sucesso (probabilidade) disse ses converter em vendas.
+
+.. figure:: figure:: images/crm_lead_convert.png
    :scale: 80
    :align: center
 
-   *Converting a Lead into a Sales Opportunity*
+   *Convertendo um Prospecto em uma Oprtunidade de Vendas*
 
 .. figure:: images/crm_opport_data.jpeg
    :scale: 100
    :align: center
 
-   *From Lead to Opportunity: Details*
+   *De Prospecto para Oportunidade : Detalhes*
 
 .. _ch-team:
 
-Adapting OpenERP to your Sales Organization
--------------------------------------------
+
+Adaptando o OpenERP para a sua Organização de Vendas
+----------------------------------------------------
 
 .. index::
    single: sales
 
-Your sales organization may be composed of several groups which for instance address different customer segments or geographies, sell different products and services and often manage different sales cycles.  As a manager you will want to track the performance not only for each individual but also for each group.
+Sua organização de vendas pode ser composta de vários grupos que, por exemplo, endereçam diferentes segmentos de clientes ou geografias, vendem diferentes produtos e serviços e frequentemente administram diferentes ciclos de vendas. Como um administrador você irá querer seguir a performance não apenas individualmente, mas também em por grupo.
 
-OpenERP allows you to do that by defining `Sales Teams`. A sales team is a group of sales people who are performing a similar position. Implementing sales teams is a powerful tool. It allows you to: 
+O OpenERP permite que você faça isso definindo "Equipes de Vendas". Uma equipe de vendas é um grupo de pessoas que estão ocupando uma posição semelhante. Implementar equipes de vendas é uma ferramenta poderosa, pois permite que:
 
-* Assign leads or opportunities according to their nature to a sales team first. Then according to the company’s policy, the opportunities can be assigned to a given individual. For example opportunities can be assigned to a `Western Region sales team` or `Eastern Region sales team` in the first place according to their location. Each sales person may pick unassigned opportunities in his sales team according to his availability,
+* Atribua para as equipes de vendas prospectos ou oportunidades de acordo com a natureza deles. E, de acordo com a política da empresa, as oportunidads podem ser atribuídas para um dado indivíduo. Por exemplo, oportunidades podem ser atribuídas para a "equipe de vendas da região oeste" ou para a "equipe de vendas da região leste" dependendo da localização. Cada vendedor pode pegar oportunidades não atribuídas em sua equipe de vendas de acordo com a disponibilidade.
 
-* You can group your sales teams according to a tree structure (hierarchy). This allows you to have a view of your sales activity at different granular levels (local, regional, national for instance),
+* Você pode agrupar sua equipe de vendas de acordo com sua hierarquia. Isso permite que você tenha uma visão das suas vendas em diferentes níveis (local, regional, nacional, por exemplo).
 
-* Some sales teams may manage their opportunities through different sales cycles. For instance a car dealership which addresses both the residential and corporate customers, will have different sales cycles.  
+*Algumas equipes de vendas podem gerir suas oportunidades através de diferentes ciclos de vendas. Por exemplo, uma concessonária que venda para clientes pessoa física e jurídica terá diferentes ciclos de vendas.
+ 
+*Para cada equipe de vendas, você pode designar um usuário responsável e um endereço de email que será usado quando foram criados ou respondidos emails do OpenERP. Isto será proposto por padrão no OpenERP quando você criar um evento para esse cliente.
 
-* For each sales team, you can assign a responsible user and an email address that will be used when creating or replying to emails from OpenERP. This will be proposed by default in OpenERP when you create an event for this customer.
+.. nota:: Equipes de Vendas
+        Para definir suas Equipes de Vendas, vá em: menuselection: Vendas --> Configuração --> Vendas --> Equipes de Vendas.
 
-.. note:: Sales Teams 
+Vamos pegar o exemplo de um banco para explicar como você pode definir suas equipes de vendas. Um banco possui diversos departamentos, como Seguros, Contabilidade, Ativos, Gestão de Crédito. Cada departamento pode ser dividido em subdepartamentos. Para Seguros, poderia ser Seguro de Empresas e Seguro de residências. A estrutura hierárquica da sua equipe de vendas poderia ser:
 
-        To define your Sales Teams, go to :menuselection:`Sales --> Configuration --> Sales --> Sales Teams`.
+* Equipe de Vendas de Seguros
+     * Seguro empresarial
+     * Seguro residêncial
 
-Let us take the example of a bank to explain how you can define your sales teams. A bank has several departments, such as Insurance, Accounts, Assets, Credit Management. Each department may be divided into several subdepartments. For Insurance, this could be Group Insurance and Home Insurance. The hierarchical structure of your Sales Teams could then be as follows:
+* Equipe de Vendas Contabilidade
 
-* Insurance Sales Team
-     * Group Insurance
-     * Home Insurance
+* Equipe de Vendas Ativos
 
-* Accounts Sales Team
+* Equipe de Vendas Gestão de Creditos
 
-* Assets Sales Team
+Definindo os passos chave para seu ciclo de vendas
+--------------------------------------------------
 
-* Credit Management Sales Team
+Cada empresa tera estágios similares para qualificar as oportunidades, ainda que customizados.
 
-Defining the Key Steps of your Sales Cycle
-------------------------------------------
+Para ver e definir estágios para a qualificação das Oportunidades, vá em :menuselection: Vandas --> Configuração --> Oportunidades --> Estágios.
 
-Each company will have similar, yet customized stages to qualify opportunities.
+Os passos chave do seu ciclo e vendas são o que o OpenERP chama "estágios". Você pode usar os estágiso para melhorar sua capacidade de vendas, pois com eles você pode saber as razões pelas quais os negócios dão certo ou não.
 
-To see & define stages for Opportunity qualification, go to :menuselection:`Sales --> Configuration --> Opportunities --> Stages`. 
+Os estágios vão permitir que o vendedor descubra onde uma oportunidade específica está posicionada no ciclo de vendas. Uma das dificuldades mais frequentes na utilização de estágios é que diferentes vendedores podem achar que as oportunidades de vendas deveriam estar em diferentes estágios. Você pode prevenir isso definindo claramente o quê você espera como resultado para cada estágio. Assim, todos os vendedores irão utilizar os mesmos estágios durante o processo de qualificação, possibilitando que o gerente de vendas tenha informações objetivas e consistentes. Também recomendamos limitar o número de estágios no seu ciclo de vendas para deixá-lo fácil de acompanar.
 
-The key steps of your Sales Cycle are what OpenERP calls ``Stages``. You can use the stages to improve your sales capacity, because they allow you to find out the reasons why deals succeed or fail.
+Conforme você progressa no seu ciclo de vendas, e muda de um estágio para outro, você tem informações mais precisas sobre uma dada oportunidade. Por exemplo, quando você marca uma oportunidade como "Qualificada", você pode decidir que o vendedor tenha que definir o "Retorno epserado" e a "Data de fechamento esperada". A probabilidade também pode mudar automaticamete conforme a mudança de estágios, basta selecionar "Mudar a probabilidade automaticamente". Depois de selecionada o OpenERP irá mudar a probabilidade da oportunidade para a probabilidade definida no estágio. Se você escolher a probabilidade de 0% (perdida) ou de 100% (ganha), Openerp irá colocar o estágio correspondente de quando a oportunidade foi marcada como perdida ou ganha.
 
-Stages will allow salesmen to easily track where a specific opportunity is positioned in the sales cycle. One of the frequent difficulties in using stages is that different sales people may assess differently in which stage their sales opportunity should be. You can avoid this by clearly stating what you expect as a result for each stage. This way, your sales teams will use the same stages throughout the qualification process, allowing the sales manager to get accurate and consistent information. We also recommend to limit the number of stages in your sales cycle to make them easy to follow up.
+Por exemplo, para seguir suas oportunidiades, você pode definir critérios que devam ser alcançados pela equipe de vendas antes da mudança para o estágio seguinte.
 
-As you progress in your sales cycle, and move from one stage to another, you can expect to have more precise information about a given opportunity. For example, when setting an opportunity as 'Qualified', you may decide that the salesman has to enter the "Expected Revenue" and the "Expected Closing Date." You can also have the probability changed automatically when changing stages, by selecting the "Change Probability Automatically" checkbox. If checked, OpenERP will set the probability of the opportunity to the probability defined in the stage. If you set a probability of 0% (Lost) or 100% (Won), OpenERP will assign the corresponding stage when the opportunity is marked as Lost or Won.
+1. Território - Dividir suas oportunidades em territórios.
 
-As an example, to track your opportunities, you can assign the following stages to the sales team. For each stage, you assume you will define criteria that have to be met prior to moving to the next stage. 
+2. Qualificado - Determina onde o prospecto tem uma necessidade.
 
-1. Territory - Segment your opportunities into territories.
+    Qual é o resultado esperado?
+    * A necessidade de comprar o produto/serviço foi confirmada,
+    * Confirma que existe um orçamento.
 
-2. Qualified – Attract the prospect’s interest, determine whether the prospect has a need.
+3. Patrocinadores qualificados - Fazer as perguntas certas e ouvir atentamente para identificar e compreender completamente as necessidades do prospecto.
 
-   What is the expected result?
-    * The need to buy the product/service has been confirmed,
-    * Confirm that there is a budget.
+    Qual é o resultado esperado?
+    * Atuais pontos fracos identificados,
+    * Identificar o que o prospecto quer atingir
+    * Identificar o responsável pelas decisões.
 
-3. Qualified Sponsors – Ask the right questions and listen carefully to identify and thoroughly understand the prospect's needs.
+4. Proposição - Discute algumas soluções para determinar as preferências do cliente, recomenda soluções específicas para responder às necessidades do cliente.
 
-   What is the expected result?
-    * Current pain points identified,
-    * Identify what the prospect wants to achieve,
-    * Identify the decision-maker.
+    Qual o resultado esperado?
+    * Demonstração e/ou proposição dada,
+    * O responsável confirma seu interesse na compra,
+    * Preço preliminar confirmado
 
-3. Proposition – Discuss some solutions to determine the customer’s preferences, recommend specific solutions to answer the customer's needs.
+5. Negociação - Enviar a proposta final para o cliente e começar o processo de negociação.
+    
+    Qual o resultado esperado? 
+    * Negociação concluída,
+    * Termos do contrato/condições acertadas,
+    * Contrato enviado para assinatura.
+    
+6. Ganho/Perdido - Registra o passo final da oportunidade.
 
-   What is the expected result?
-    * Demo and/or Proposal given,
-    * Decision maker confirmed his interest to purchase,
-    * Preliminary pricing confirmed/agreed upon.
+    Qual o resultado esperado?
+    * Contrato assinado/ não assinado,
+    * Próximos passos.
+    
 
-4. Negotiation – Submit the final proposal to the customer and begin the negotiation process.
-
-   What is the expected result?
-    * Negotiation concluded,
-    * Contract terms/conditions agreed upon,
-    * Contract submitted for signature.
-
-5. Won/Lost – Register the final step of the opportunity.
-
-   What is the expected result?
-    * Contract signed / not signed,
-    * Next steps.
-
-You can apply your own stages throughout the qualification process by means of the ``Stage`` field that is found up to the right of the opportunity definition. To move an opportunity automatically to the next step, you can use the button that looks like a green, right arrow.
+Você pode aplicar seus próprios passos durante o processo de qualificação através do campo "Estágio" que pode ser encontrado à direita da definição de oportunidade. Para enviar uma oportunidade automaticamente para o próximo passo, você pode usar o botão em forma de uma flecha verde para a direita.
 
 .. figure:: images/crm_opport_stages.jpeg
    :scale: 100
    :align: center
 
-   *Example of Opportunity Stages*
+   *Exemplo de Estágios de Oportunidades*
 
-OpenERP also has other sales configuration options; you can define your `Campaigns`, allowing you to keep track of the event your leads and opportunities refer to. Examples of campaigns are Google Adwords, an event you are hosting, a newsletter.  
-With `Categories` you identify your prospect's needs (e.g. Needs Training, Needs OpenERP Online), while `Channels` help you to keep visibility on how the lead or opportunity entered the system (email, website, referred by an existing customer). 
+O OpenERP também possui outras opções de confiuração; você pode definir suas "Campanhas", permitindo que você siga evente ao qual seus prospectos e oportunidades se referem. Exemplos de campanhas são, Google adwords, um evento que você esteja realizando, uma newsletter.
+Com "Categorias" você identifica as necessidades dos seus prospectos (ex, necessidade de treinamento, de OpenERP online), enquanto "Canais" ajudam você a manter a visibilidade em como o prospecto ou a oportunidade entrou no sistema (email, website, através de um cliente existente).
 
-Planning your Next Actions
---------------------------
+Planejando suas próximas ações
+------------------------------
 
-When a lead has been converted into an opportunity, the latter can be assigned to any salesperson. You might designate an opportunity manager in the company who is responsible for assigning the new opportunities to different salespeople according to the job they do, their location or availability.
+Quando um prospecto foi transformado em oportunidade, esta pode ser atribuída para qualquer vendedor. Você deve designar um diretor de oportunidades na empresa para que ele seja responsável por atribuir as novas oportunidades para diferentes vendedores de acordo com o trabalho que eles fazem, sua localização ou disponibilidade.
 
-Of course, OpenERP allows you to automate such steps in your sales cycle. With `Automated Rules` you can tell the system for instance to automatically assign opportunities to a sales person or to change the status of an opportunity according to specific criteria.
+O OpenERP, também permite que você automatise esses passos no sue ciclo de vendas. Com "Automatizar regras" você pode dizer ao sistema, por exemplo, para automaticamente atribuir oportunidades para um vendedor ou para mudar o status de uma oportunidade de acordo com critérios específicos.
 
-.. note:: Automated Actions
+.. nota:: Ações Automatizadas
 
+       Para acessar as regras do CRM, use :menuselection: Vendas 
        To access the CRM rules, use the :menuselection:`Sales --> Configuration --> Automated Actions --> Automated Actions` menu.
 
-Let's give an example of what you can use Automated Actions for. Suppose you want to have OpenERP assign opportunities for customers in the IT Sector category directly to Thomas, your IT salesman. Thomas should be assigned automatically when a lead is converted to an opportunity by clicking the `Convert to Opportunity` button in the *Leads* screen. This can be set through the ``Object`` field in the `Automated Actions` form; just select `Convert/Merge Opportunity`.
 
-The screenshots below illustrate how you can tell OpenERP to do this automatically for you. 
+
+
+Vamos dar um exemplo do que você pode fazer com as Ações Automatizadas. Suponha que você quer atribuir as oprtunidades no setor de TI diretamente para Thomas, seu vendedor do setor de TI. Thomas deverá receber automaticamente a oportunidade quando um prospecto for convertido em uma, através do botão "Converter em Oportunidade", na tela de *Prospectos*. Isso pode ser definido no campo "Objeto" no formulário "Ações Automatizadas"; basta escolher "Converter/Fusionar Oportunidade".
+
+
+As capturas de tela abaixo ilustram como você deve fazer para que o OpenERP faça isso automaticamente para você. 
 
 *Step 1*
 
@@ -205,35 +213,37 @@ The screenshots below illustrate how you can tell OpenERP to do this automatical
 
    *Actions Tab of Automated Actions*
 
-When you answer to an opportunity from the `Communication & History` tab, you can directly have the status of the opportunity changed. You can also add a Global CC, even with multiple email addresses separated by ';'. This ensures that when any email regarding this opportunity is sent, all the persons defined in Global CC will be notified.
-
-Planning your next actions also refers to filling fields or performing actions manually, without interference of automated rules. It is important that you fill all the opportunity fields accurately. To ensure good follow-up and prioritise your opportunities, make sure to register the ``Next Action Date`` and the ``Next Action`` in the Opportunity. In the *Opportunities* screen, you can group your search results by these fields, so that you know exactly how to plan your work.
-
-You can use the filters to group by ``Priority`` and then click the ``Next Action Date`` column to sort by next action date to easily follow up your opportunities and know exactly what you have to do.
+Quando você responde a uma oportunidade da aba "Comunicação & História", você pode diretamente mudar o status da oportunidade. Você também pode adicionar um CC global, mesmo com múltiplos emails separados por ';'. Isso garante que quando um email sobre essa oportunidade é enviado, todas as pessoas que estão no CC global serão notificadas.
 
 
-Planning your Meetings & Calls Effectively
-------------------------------------------
+Planejar suas próximas ações também se refere ao preenchimento de campos ou à realização de ações manualmente, sem a interferência de regras automatizadas. É importante que você preencha todos os campos oportunidade com precisão. Para garantir um bom acompanhamento e priorizar suas oportunidades, certifique-se de registrar a "Data da próxima ação" e a "Próxima Ação" em Oportunidade. Na tela *Oportunidades*, você pode agrupar seus resultados de pesquisa por esses campos, para que você saiba exatamente como planejar o seu trabalho.
 
-Planning your meetings & calls does not only allow you to structure your work, but also to improve your sales skills by learning from your call & meeting history. For both Meetings & Calls, you can enter a complete report of what you discuss!
+Você pode usar os filtros para agrupar por "Prioridade" e então clicar na coluna  ``Data da próxima ação" para classificar pela data da próxima ação e para facilmente acompanhar suas oportunidades e saber exatamente o que você tem que fazer.
 
-As explained in chapter :ref:`crm-flow`, you can schedule a meeting directly from an opportunity. When you create a meeting from an opportunity, related fields will be prefilled from the opportunity.
-For the ease of reading, Thomas will schedule a new meeting from an opportunity here and set Luc, the Sales Manager, as the person responsible for the meeting. He wants to send Luc a reminder 1 day before the meeting starts.
 
-.. note:: Schedule a Meeting from an Opportunity
+Planejando suas reuniões e chamadas telefônicas 
+-----------------------------------------------
 
-   To plan the meeting, Thomas clicks the `Schedule Meeting` button in the **Opportunity** and clicks the `Week` button in the Calendar view. He uses the drag and drop function to schedule the meeting for Luc. He plans the meeting next Wednesday from 2 pm to 3 pm. He sets Luc as the person responsible and sets a reminder to be send 1 day before the start of the meeting. He also changes the ``Next Action Date`` in the opportunity to the meeting date. 
+Planejar suas reuniões e chamadas não só permite estruturar seu trabalho, mas também melhorar suas habilidades de vendas, aprendendo com o histórico de suas chamadas e reuniões. Para ambas, você pode inserir um relatório completo sobre o quê foi discutido!
 
-You can also schedule a meeting directly from a **Customer** form. Go to the customer for whom you want to schedule a meeting and open the form view. In the list of actions at the right side of the screen, click `Schedule a Meeting`. If you stay in the Month view of the Calendar, you just have to click the day you want the meeting to be planned, let's say Thursday in two weeks. A meeting form will be displayed, with the name of the customer and the date prefilled.
+Como explicado no capítulo :ref:`crm-flow`, você pode agendar uma reunião diretamente de uma oportunidade. Quando você cria uma reunião de uma oportunidade, os campos relacionados serão preenchidos a partir da oportunidade.
 
-Another way to enter a meeting request, is to directly use the meeting calendar from the menu :menuselection:`Sales --> Meetings --> Meetings`. You can use the monthly, weekly or daily views to plan a meeting by selecting the corresponding buttons. You can also click a day in the Navigator window to schedule a meeting.
+Para facilitar a leitura, Thomas irá agendar uma nova reunião a partir de uma oportunidade aqui e definir Luc, o gerente de vendas, como a pessoa responsável pela reunião. Ele quer enviar um lembrete a Luc 1 dia antes da reunião começar.
 
-In the **Meeting** window, enter the meeting data such as meeting summary, type, duration. In the weekly and daily views, you can also press the left mouse button in the calendar and slide the mouse along to create an event of several hours. OpenERP then opens an entry screen for a new meeting.
-You can add reminders (or ``Alarms``) to your meetings and send invitations, either to persons from your own company, partner contacts or external people (just specify the email address directly in the invitation). You can send invitations before or after confirmation of a meeting. Either from the meeting itself or from the separate `Event Invitations` view in the menu :menuselection:`Sales --> Configuration --> Calendar --> Event Invitations`, you can track and change the attendee status. If you cannot attend a meeting, you can delegate it to one of your colleagues.
+.. nota:: Programar uma reunião a partir de uma oportunidade
 
-.. tip:: Alarms or Meeting Reminders
+   Para planejar a reunião, Thomas clica no botão 'Agendar Reunião' em "Oportunidade" e depois clica no botão "Semana" na visão de Calendário. Ele usa a função de arrastar e soltar para agendar a reunião para Luc. Ele planeja a próxima reunião para quarta-feira 14:00-3:00. Ele coloca Luc como a pessoa responsável e define um lembrete para ser enviado um dia antes do início da reunião. Ele também altera a "Data da próxima Ação" na oportunidade para a data da reunião.
 
-     Add your own alarms through :menuselection:`Sales --> Configuration --> Calendar --> Alarms`. You might want to be warned one week in advance of the meeting, so all you have to do is create your own alarm. The screenshot below will show you how to do this.
+Você também pode agendar uma reunião diretamente de um formulário *cliente*. Vá no Cliente para quem você deseja agendar uma reunião e abra a exibição de formulário. Na lista de ações no lado direito da tela, clique em agendar uma reunião. Se você ficar na vista "Mês" do calendário, você só terá que clicar no dia em que você deseja que a reunião seja planejada, vamos dizer que quinta-feira em duas semanas. Um formulário reunião será exibido, com o nome do cliente e a data preenchida.
+
+Outra forma de introduzir um pedido de reunião, é usar diretamente o calendário de reuniões a partir do menu: menuselection: `Vendas -> Reuniões -> Reuniões`. Você pode usar mensais, semanais ou diárias para planejar uma reunião, selecionando os botões correspondentes. Você também pode clicar em um dia na janela Navegador para agendar uma reunião.
+
+Na janela **Reunião**, insira os dados de reunião, tais como resumo da reunião, tipo, duração. Nas exibições semanais e diárias, você também pode pressionar o botão esquerdo do mouse no calendário e deslizar o mouse para criar um evento de várias horas. O OpenERP em seguida abrirá uma tela de entrada para uma nova reunião.
+Você pode adicionar lembretes (ou `` Alarmes ``) para as suas reuniões e enviar convites, seja para pessoas de sua própria empresa, contatos parceiros ou pessoas externas (apenas especificar o endereço de e-mail diretamente no convite). Você pode enviar convites antes ou após a confirmação de uma reunião. Quer a partir da reunião em si ou a partir d visão "Convites para eventos" no menu: menuselection: `Vendas -> Configuração -> Calendário - Convites> Evento`, você pode acompanhar e alterar o status do participante. Se você não puder comparecer a uma reunião, você pode delegá-la a um de seus colegas.
+
+.. dicas:: Alarmes ou Lembretes de Reuniões
+
+     Adicione seus próprios alarmes através de: menuselection: `Vendas -> Configuração -> Calendário -> Alarmes`. Você pode querer ser avisado com uma semana de antecedência da reunião, então tudo que você tem a fazer é criar seu próprio alarme. A imagem abaixo mostra como fazer isso.
      
 .. figure:: images/alarm.jpeg
    :scale: 100
@@ -245,12 +255,10 @@ You can add reminders (or ``Alarms``) to your meetings and send invitations, eit
    :scale: 100
    :align: center
 
-   *Entering a New Meeting*
+   *Criando uma nova Reunião*
 
-You may notice different colours and styles in the calendar. That is because OpenERP distinguishes between recurring events, multiple days events and events that only happen once.
-Multi-day events have a coloured background, whereas single events have a coloured font. Each event
-has a colour that represents the user who created the meeting. You can filter the different users by
-selecting them from the list at the right of the screen.
+Você pode notar diferentes cores e estilos no calendário. Isso é porque o OpenERP distingue entre eventos recorrentes, eventos que ocorrem em diversos dias e eventos que só acontecem uma vez.
+Eventos que ocorrem em diversos dias têm um fundo colorido, enquanto que os eventos únicos têm uma única fonte colorida. Cada evento tem uma cor que representa o usuário que criou a reunião. Você pode filtrar os diferentes usuários selecionando-os na lista à direita da tela.
 
 .. figure:: images/crm_calendar_month.png
    :scale: 90
@@ -264,46 +272,45 @@ selecting them from the list at the right of the screen.
 
    *Weekly Meeting Calendar*
 
-.. index:: calendars
+.. index:: calendários
 
-You can change the Calendar view for meetings and return to the list, form or gantt view by using the buttons at the top right. OpenERP's usual search tools and filters enable you to filter the events displayed in the calendar or, for example, to display the calendar for only some employees at a time.
+Você pode alterar a visão de Calendário para reuniões e retornar à visão de formulário, de lista, ou gantt usando os botões na parte superior direita. Ferramentas usuais OpenERP de busca e filtros permitem filtrar os eventos exibidos no calendário, ou, por exemplo, exibir o calendário para apenas alguns funcionários de cada vez.
 
-.. tip:: Related Partner
+.. tip:: Parceiros relacionados
 
-      When you hover your mouse cursor over a meeting in Calendar view, the related partner and the sales team will be displayed.
+      Quando você passa o cursor do mouse sobre uma reunião na visão Calendário, o parceiro relacionado e a equipe de vendas será exibida.
 
-Of course, you can access this OpenERP calendar from your smartphone. For more information about this feature, please refer to chapter :ref:`ch-sync1`.
+É claro que você pode acessar este calendário OpenERP do seu smartphone. Para mais informações sobre esse recurso, consulte o capítulo: ref: `ch-sync1`.
 
-OpenERP also allows you to manage incoming (`inbound`) and outgoing (`outbound`) calls. Even from the **Phone Calls** list view, you can directly edit a call (change the status, convert it to an opportunity or schedule a meeting). For every call, you can enter notes about the outcome. While on the phone with your prospect or customer, you can directly schedule a meeting, schedule another call or convert your call to an opportunity. There is no need for you to scroll to several menus to do what you have to: plan an action as a result of your call.
+O OpenERP também permite que você gerencie a entrada (inbound `) e a saída (outbound` `) das chamadas. Mesmo a partir da visão de lista **Chamadas**, você pode editar diretamente uma chamada (mudar o status, convertê-la em uma oportunidade ou agendar uma reunião). Para cada chamada, você pode criar notas sobre o resultado. Enquanto no telefone com seu prospecto ou cliente, você pode diretamente agendar uma reunião, marcar uma nova chamada ou converter a sua chamada para uma oportunidade. Não há necessidade de você se deslocar para vários menus para fazer o que você precisa: planeje uma ação como resultado da sua chamada.
 
-Call management may be used for other needs than planning, such as:
+O Gerenciamento de chamadas pode ser usado para outras necessidades de planejamento, tais como:
 
-* Entering customer calls so that you keep a record of the communication attached to a partner or a
-  sales opportunity,
+* Entrar chamadas de clientes para que você mantenha um registro da comunicação conectada a um parceiro ou uma
+   oportunidade de vendas,
 
-* Calling out to large lists of prospects,
+* Chamar uma grande lista de prospectos,
 
-* Scheduling recurring calls or next actions.
+* Agendar chamadas recorrentes ou próximas ações.
 
-.. note:: Schedule a Phone Call directly
+.. nota:: Agendando uma Chamada diretamente
 
-       Go to :menuselection:`Sales --> Phone Calls --> Inbound` to register incoming calls or `Outbound` to register outgoing calls.
+       Ir para: menuselection: `Vendas - Chamadas> Telefone -> 'Inbound' para registar as chamadas recebidas ou  'Outbound' para registrar chamadas de saída.
 
-The phone call will then be visible in the `History` tab of the **Partner** form to give you complete visibility of the
-events for a customer or supplier.
+O telefonema será visível na aba Histórico do formulário **Parceiro** e dará uma visibilidade completa dos eventos para um cliente ou fornecedor.
 
-Of course, OpenERP also allows you to schedule a phone call directly from an **Opportunity** form through the related ``Schedule/Log Call`` button.
+É claro que o OpenERP também permite que você programe uma chamada de telefone diretamente de um formulário  **Oportunidade** através do botão "Agenda / registro de chamadas".
 
-.. note:: Phone Calls in Meeting Calendar
+.. nota:: Chamadas no Calendário de Reuniões
 
-       To have one calendar with both your meetings and your phone calls, you may choose to enter phone calls as a meeting, with a specific meeting type, `Phone Call`.
+       Para ter um calendário com as suas reuniões e suas chamadas, você pode escolher entrar telefonemas como uma reunião, como um tipo de reunião específica, "Chamadas telefônicas".
 
-Scheduling Closing Dates
-------------------------
+Agendando datas de enceramento
+------------------------------
 
-To keep track of the coming sales pipeline, you should enter the expected closing date for each opportunity. By doing this, from the **Opportunities** screen you can easily filter your pipeline by ``Expected Closing`` (button in Group by). This is a clear way to forecast the expected revenues. You can also use this filter to check whether the expected closing date has been set.
+Para acompanhar o pipeline de vendas, você deve digitar a data de encerramento prevista para cada oportunidade. Ao fazer isso, a partir da tela **Oportunidades** você pode facilmente filtrar a sua pipeline por `` Encerramento esperado `` (botão no agrupar por). Esta é uma maneira clara para prever as receitas esperadas. Você também pode usar esse filtro para verificar se a data de encerramento prevista foi definida.
 
-Simply by adding an expected closing date, the sales team can manage the sales process more efficiently and effectively.
+Adicionando uma data limite esperada, a equipe de vendas pode gerenciar o processo de vendas mais eficiente e eficazmente.
 
 .. figure::  images/crm_opport_closing.jpeg
    :align: center

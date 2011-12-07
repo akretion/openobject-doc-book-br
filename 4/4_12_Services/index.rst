@@ -5,7 +5,7 @@
 .. _ch-services:
 
 ************************
-Deliver Quality Services
+Prestando serviços de qualidade
 ************************
 
  *This chapter focuses on the management of contracts, and the services associated with that.

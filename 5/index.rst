@@ -2,7 +2,7 @@
 .. _part-phys:
 
 #####################################################
-Manage your Warehouse and Get your Manufacturing Done
+Gerencie seu depósito e obtenha a fabricação
 #####################################################
 
  This part of the book concentrates on physical materials - the handling of stock and

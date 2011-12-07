@@ -1,6 +1,6 @@
 
 ########
-Foreword
+Prefácio
 ########
 
 Information Systems have played an increasingly visible role over the past several years in
@@ -19,7 +19,7 @@ For this you need a common language for shared references, policies and communic
 An ERP (Enterprise Resource Planning) system provides the ideal platform for this common reference
 point.
 
-Open Source software at the Service of Management
+O Software livre a serviço da Gestão
 =================================================
 
 Risks and integration costs are important barriers to all the advantages you gain from such systems.
@@ -62,7 +62,7 @@ the organization, synchronization and coherence of the software.
 
 And OpenERP offers great performance in all these areas!
 
-The OpenERP Solution
+A Solução OpenERP
 ====================
 
 Because of its modularity, collaborative developments in OpenERP have been cleanly integrated,
@@ -101,7 +101,7 @@ We've moved a long way from
 the days when the only people who could be expected to benefit from ERP were the owners of a widget
 factory on some remote industrial estate.
 
-Why this book?
+Por que este livro?
 --------------
 
 Many books set out to tell readers about the management of enterprise, and equally many aim to
@@ -129,7 +129,7 @@ It is likely that most readers will come from small- and medium-sized enterprise
 hundred staff), and independent companies, because of the breadth of functions that need to be
 analyzed and involved in change. The same principles also apply to larger companies, however.
 
-Structure of this book
+Estrutura do livro
 ======================
 
 Part One, :ref:`part1-steps`, starts with the installation of OpenERP. If you have already installed OpenERP you
@@ -234,7 +234,7 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			Follow Els on her blog http://training-openerp.blogspot.com/ or on twitter elsvanvossel.
 
 
-Dedication
+Dedicatória
 ==========
 
         *From Geoff Gardiner*

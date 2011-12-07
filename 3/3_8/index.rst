@@ -7,7 +7,7 @@
 .. _ch-financial:
 
 ******************
-Financial Analysis
+Análise Financeira
 ******************
 
  *This chapter is dedicated to statutory taxation and financial reporting from OpenERP.

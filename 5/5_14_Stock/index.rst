@@ -6,7 +6,7 @@
 .. _ch-stocks:
 
 **************
-Your Warehouse
+Seu depósito
 **************
 
  *OpenERP's stock management is at once very simple, flexible and complete.

@@ -5,7 +5,7 @@
 .. _ch-configacct:
 
 ********************************
-Configuring Accounts from A to Z
+Configurando contas de A a Z
 ********************************
 
  *Accounts must be configured to meet your company's needs.

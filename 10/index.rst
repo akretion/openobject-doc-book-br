@@ -1,6 +1,6 @@
 
 **********
-Conclusion
+Conclusão
 **********
 
 OpenERP has become established as the main free market-changing alternative for enterprise
@@ -30,7 +30,7 @@ they can concentrate on higher value-added work.
 We frequently receive the gratitude of senior management who get better results from their
 business because they have adopted OpenERP.
 
-You are Not Alone
+Você não está sozinho
 =================
 
 Many resources are at hand to accompany you on your OpenERP adventure.

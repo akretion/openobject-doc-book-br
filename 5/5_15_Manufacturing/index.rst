@@ -6,7 +6,7 @@
 .. _part3-man-manuf:
 
 *************************
-Defining your Master Data
+Definindo seus dados mestre
 *************************
 
  *The management of manufacturing described in this chapter covers
