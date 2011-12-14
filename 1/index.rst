@@ -1,32 +1,31 @@
 
 .. _part1-steps:
 
-########################
-Primeiros passos com o OpenERP
-########################
+############################
+Primeiros passos com OpenERP
+############################
 
- OpenERP is an impressive software system, being easy to use and yet providing great benefits
- in helping you manage your company.
- It is easy to install under both Windows and Linux compared to other enterprise-scale systems,
- and offers unmatched functionality.
+OpenERP é um sistema de software impressionante, sendo fácil de usar e ainda proporciona grandes benefícios
+para ajudar você a gerenciar sua empresa.
+É fácil de instalar em Windows e Linux em comparação com outros sistemas de escala empresarial,
+e oferece funcionalidade inigualável.
 
- The objective of this first part of the book is to help you start discovering OpenERP in practice.
+O objetivo desta primeira parte do livro é ajudar você a começar a descobrir OpenERP na prática.
 
- The first chapter, :ref:`ch-inst`, gives detailed guidance for installing it.
- If you are not a system administrator, or if you have already installed
- OpenERP, or if you are planning to use an online SaaS provider, then you can skip this chapter and
- move straight to the next chapter, :ref:`ch-guided`. 
- There we take you on a step-by-step guided tour using the information 
- in the demonstration database.
+O primeiro capítulo, :ref:`ch-inst`, dá orientação detalhada para instalá-lo.
+Se você não é um administrador de sistema, ou se você já tiver instalado
+OpenERP, ou se você estiver planejando usar um provedor de SaaS on-line, então você pode pular este capítulo,
+passe para o próximo capítulo, :ref:`ch-guided`. 
+Há que levá-lo em uma turnê passo-a-passo guiado utilizando as informações no banco de dados de demonstração.
  
- If you have already used OpenERP (or Tiny ERP) a bit then you can move to the third chapter in this part of the book.
- In :ref:`ch-real` you can try out a real case, from scratch in a new database,
- by developing a complete business workflow that runs from purchase to sale of goods.
+Se você já usou OpenERP (ou Tiny ERP) um pouco, então você pode passar para o terceiro capítulo desta parte do livro.
+Em :ref:`ch-real` você pode experimentar um caso real, a partir do zero em um novo banco de dados,
+através do desenvolvimento de um fluxo de trabalho de negócios completo que vai de compra para venda de bens.
  
- .. figure:: images/sect1_outline.png
-   :align: center
+.. figure:: images/sect1_outline.png
+  :align: center
 
-   *Options for reading this part of the book*
+   *Opções para a leitura desta parte do livro*
 
 .. toctree::
     :maxdepth: 1
@@ -37,30 +36,30 @@ Primeiros passos com o OpenERP
     1_2_Guided_Tour/index
     1_3_Real_Case/index
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica
 
 

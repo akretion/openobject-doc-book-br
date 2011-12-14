@@ -8,32 +8,32 @@
 How does it apply to your Business?
 ***********************************
 
- *Now that you have discovered some of the many possibilities of OpenERP from a tour of the
- demonstration database, you will develop a real case. An empty database provides the starting point
- for testing a classic workflow from product sales to purchase,
- completing your guided tour and your getting familiar with OpenERP.*
+ *Agora que você descobriu algumas das muitas possibilidades de OpenERP de uma turnê do
+  banco de dados de demonstração, você irá desenvolver um caso real. Um banco de dados vazio proporciona o ponto de partida
+  para testar um fluxo de trabalho clássico de vendas de produtos para compra,
+  completar a sua visita guiada e se familiarizar com seu OpenERP.*
 
-A database loaded with demonstration data is very useful to understand OpenERP's general
-capabilities. But to explore OpenERP through a lens of your own company's needs, you should start
-with an empty database. You will work in this chapter on a minimal database containing no
-demonstration data, so that there is no confusion about what you created. You will keep the
-database you have created, to allow you to build on it throughout the rest of this book
-if you want to.
+Um banco de dados carregado com dados de demonstração é muito útil para compreender OpenERP geral do
+capacidades. Mas para explorar OpenERP através de uma lente de necessidades de sua própria empresa, você deve começar
+com um banco de dados vazio. Você vai trabalhar neste capítulo sobre um banco de dados mínimos que não contenham
+dados de demonstração, de modo que não há confusão sobre o que você criou. Você vai manter o
+banco de dados que você criou, para que você possa construir sobre ela todo o resto deste livro
+se você quiser.
 
-You will develop a real case through the following phases:
+Você irá desenvolver um caso real através das fases seguintes:
 
-	#. Specify a real case;
+	#. Especificar um caso real;
 
-	#. Describe the functional needs;
+	#. Descrever as necessidades funcionais;
 
-	#. Configure the system with the essential modules;
+	#. Configurar o sistema com os módulos essenciais;
 
-	#. Carry out the necessary data loading;
+	#. Realizar o carregamento de dados necessários;
 
-	#. Test the system with your database.
+	#. Testar o sistema com seu banco de dados.
 
-The case is deliberately simple to provide you with a foundation for the more complex
-situations you might have to handle in your company. Throughout this chapter, we assume that you access OpenERP through its web interface. And it is also assumed (as in the rest of this book) that you are using the latest download of OpenERP version 6, the stable production version at the time of writing (not the trunk version, which is likely to have new and potentially unstable features).
+TO caso é deliberadamente simples para lhe fornecer uma base para o mais complexo
+situações você pode ter que lidar em sua empresa. Ao longo deste capítulo, assumimos que você acessa o OpenERP através sua interface web. E admitindo-se também (como no restante deste livro) que você está usando a última versãpo baixada do OpenERP (versão 6), a versão de produção estável no momento de escrever (não a versão do tronco, o que é provável que tenha recursos novos e potencialmente instável).
 
 .. raw:: html
 
@@ -49,29 +49,28 @@ situations you might have to handle in your company. Throughout this chapter, we
 
     </div>
 
-.. Copyright Â© Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand RosiÃ¨re, Belgium
-
+.. Publicado por Open Object Press, Grand Rosière, Bélgica

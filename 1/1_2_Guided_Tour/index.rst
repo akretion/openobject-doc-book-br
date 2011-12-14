@@ -5,36 +5,35 @@
 .. _ch-guided: 
 
 ***********
-Guided Tour
+Tour guiado
 ***********
 
- *Starting to discover OpenERP, using demonstration data supplied with the system, is a good way to
- familiarize yourself with the user interface.
- This guided tour provides you with an introduction to many of the available system features.*
+De partida para descobrir OpenERP, usando dados de demonstração fornecidos com o sistema, é uma boa maneira de
+se familiarizar com a interface do usuário.
+Esta visita guiada fornece uma introdução para muitas das características do sistema disponíveis.
  
-You would be forgiven a flicker of apprehension when you first sit at your computer to connect to
-OpenERP, since ERP systems are renowned for their complexity and for the time it takes to learn
-how to use them. These are, after all, Enterprise Resource Planning systems, capable of managing
-most elements of global enterprises, so they should be complicated, should not they? But even if this
-is often the case for proprietary software, OpenERP is a bit of an exception in the class of
-management software.
+Você estaria perdoado um lampejo de apreensão quando você sentar em seu computador para se conectar a
+OpenERP, uma vez que os sistemas ERP são famosos por sua complexidade e pelo tempo que leva para aprender
+como usá-los. Estes são, afinal de contas, sistemas de Enterprise Resource Planning, capaz de gerenciar
+a maioria dos elementos das empresas globais, de modo que deve ser complicado, não devem? Mas mesmo que isso
+é frequentemente o caso para o software proprietário, OpenERP é um pouco de uma exceção na classe de
+software de gestão.
 
-Even though OpenERP is a comprehensive software, the user interface and workflow management facilities are quite
-simple and intuitive to use. For this reason, OpenERP is one of the few software packages with
-reference customers in both very small businesses (typically requiring simplicity) and large
-accounts (typically requiring wide functional coverage).
+Mesmo que OpenERP é um software abrangente, a interface do usuário e instalações de gestão de fluxo de trabalho são bastante
+simples e intuitivo de usar. Por esta razão, OpenERP é um dos pacotes de software com poucos
+clientes de referência nas duas empresas muito pequenas (tipicamente requerem simplicidade) e grandes contas (tipicamente requerem ampla cobertura funcional).
 
-A two-phase approach provides a good guide for your first steps with OpenERP:
+A abordagem em duas fases fornece um bom guia para os seus primeiros passos com OpenERP:
 
-#. Using a database containing demonstration data to get an overview of OpenERP's functionality
-   (described in this chapter, :ref:`ch-guided`)
+#. Usando um banco de dados contendo dados de demonstração para obter uma visão geral da funcionalidade do OpenERP
+   (descritos neste capítulo, :ref:`ch-guided`)
 	
-#. Setting up a clean database to configure and populate a limited system for yourself (described in
-   the next chapter, :ref:`ch-real`).
+#. Criação de um banco de dados limpo para configurar e preencher um sistema limitado por si mesmo (descrito no
+    o próximo capítulo, :ref:`ch-real`).
 
-To read this chapter effectively, make sure that you have access to an OpenERP server. The
-description in this chapter assumes that you are using the OpenERP web client unless it states
-otherwise. The general functionality differs little from one client to the other.
+Para ler este capítulo eficientemente, certifique-se que você tem acesso a um servidor OpenERP. A
+descrição neste capítulo assume que você está usando o cliente web OpenERP a menos que estados
+contrário. A funcionalidade geral pouco difere de um cliente para o outro.
 
 .. raw:: html
 
@@ -52,29 +51,29 @@ otherwise. The general functionality differs little from one client to the other
 
     </div>
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica
 

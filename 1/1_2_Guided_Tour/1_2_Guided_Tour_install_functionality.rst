@@ -2,222 +2,222 @@
 .. index::
   single: module; new functionality
 
-Installing New Functionality
-============================
+Instalação de novas funcionalidades
+===================================
 
-All of OpenERP's functionality is contained in its many and various modules. Many of these, the
-core modules, are automatically loaded during the initial installation of the system and can be
-updated online later. Although they are mostly not installed in your database at the outset, they are
-available on your computer for immediate installation. Additional modules can also be loaded online
-from the official OpenERP site http://openerp.com. These modules are inactive when they are loaded
-into the system, and can then be installed in a separate step.
+Todas as funcionalidades do OpenERP está contida no seus módulos muitos e variados. Muitos destes, o
+módulos principais, são carregados automaticamente durante a instalação inicial do sistema e pode ser
+atualizados on-line mais tarde. Embora na maioria não são instalados em seu banco de dados no início, eles são
+disponíveis em seu computador para instalação imediata. Módulos adicionais também pode ser carregado on-line
+a partir do site oficial OpenERP http://openerp.com. Estes módulos são inativos quando são carregados
+no sistema, e pode ser instalado em uma etapa separada.
 
-You will start by checking if there are any updates available online that apply to your initial
-installation. Then you will install a CRM module to complete your existing database.
+Você vai começar verificando se há atualizações disponíveis on-line que se aplicam a sua inicial
+instalação. Então você vai instalar um módulo de CRM para completar o seu banco de dados existente.
 
 .. index::
   single: module; upgrading
 
-Updating the Modules list
--------------------------
+Atualizando a lista de módulos
+------------------------------
 
-Click :menuselection:`Administration --> Modules --> Update Modules List` to start the
-updating tool. The :guilabel:`Module Update` window opens notifying the user that
-OpenERP will look at the server side for adding new modules and updating
-existing ones.
+Clique :menuselection:`Administration --> Modules --> Update Modules List` para iniciar a
+atualização de ferramentas. A janela :guilabel:`Module Update` vai se abrir notificando o usuário OpenERP que vai olhar para o lado do servidor para adição de novos módulos e atualização
+os já existentes.
 
-Click :guilabel:`Update` to start the update on the server side. When it is
-complete, you will see a :guilabel:`Module update result` section indicating how many new modules were added
-and how many existing modules were updated. Click :guilabel:`Open Modules` to return to the updated list.
+Clique em :guilabel:`Update` para iniciar a atualização do lado servidor. Quando é
+completa, você verá uma seção :guilabel:`Module update result` indicando quantos novos módulos foram adicionados
+e quantos módulos existentes foram atualizados. Clique em :guilabel:`Open Modules` para retornar à lista atualizada.
 
-.. note:: Modules
+.. note:: Módulos
 
-	All the modules available on your computer can be found in the addons directory of your OpenERP
-	server. Each module there is represented by a directory carrying the name of the module or by a
-	file with the module name and .zip appended to it. The file is in ZIP archive format and replicates
-	the directory structure of unzipped modules.
+	Todos os módulos disponíveis no seu computador pode ser encontrado no diretório de addons do seu OpenERP
+servidor. Cada módulo há é representado por um diretório com o nome do módulo ou por um
+arquivo com o nome do módulo e .zip anexado a ele. O arquivo está em formato de arquivo ZIP e replica
+a estrutura de diretórios de módulos descompactado.
 
-.. tip:: Searching through the whole list
+.. tip:: Pesquisar toda a lista
 
-	The list of modules shows only the first available modules. In the web client you can search or
-	follow the First / Previous / Next / Last links to get to any point in the whole list, and you can
-	change the number of entries listed by clicking the row number indicators between :guilabel:`Previous` 
-	and :guilabel:`Next`
-	and selecting a different number from the default of 20.
+	A lista de módulos mostra apenas os primeiros módulos disponíveis. No cliente web você pode pesquisar ou
+seguir a primeira / anterior / próximo / últimos links  para chegar a qualquer ponto em toda a lista, e você pode
+alterar o número de entradas listadas, clicando no número da linha entre os indicadores :guilabel:`Previous` 
+	e :guilabel:`Next`
+	e selecione um número diferente do padrão de 20
 
-	If you use the GTK client you can search, as you would with the web client, or use the selection field
-	(currently showing 80) to
-	the top right of the window to change the number of entries returned by the search from its default
-	limit of 80, or its default offset of 0 (starting at the first entry) in the whole list.
+	Se você usar o cliente GTK você pode pesquisar, como você faria com o cliente web, ou usar o campo de seleção
+	(mostrando atualmente 80)
+no canto superior direito da janela para alterar o número de entradas retornadas pela busca do seu padrão
+limite de 80, ou seu deslocamento padrão de 0 em toda a lista(a partir de a primeira entrada).
 
 .. index::
   single: module; installing
 
-The Configuration / Reconfigure Wizard
+A configuração / Assistente para reconfigurar
 --------------------------------------
 
-One of the new features of OpenERP is the :guilabel:`Configuration` wizard. Once run, the :guilabel:`Reconfigure` shortcut will appear. This wizard provides an easy way to install modules, thanks to its user-friendly and easy-to-use interface. The user may invoke this wizard at his own convenience using the shortcut :guilabel:`Reconfigure`, found just below the database and user name in the web-client or in the Shortcut menu in the GTK client. The same Configuration dialog box appears that you may have encountered at the time of installing a new database. Why did we call it the :guilabel:`Reconfigure` wizard? Indeed, because it allows the user to review installed applications and install related additional features or simply to install new applications on the fly.
+Um dos novos recursos do OpenERP é o assistente :guilabel:`Configuration` . Uma vez executado, o atalho do :guilabel:`Reconfigure` irá aparecer. Este assistente fornece uma maneira fácil de instalar os módulos, graças ao seu user-friendly e easy-to-use interface. O usuário pode carregar este assistente em sua própria conveniência usando o atalho :guilabel:`Reconfigure`, encontrado logo abaixo do banco de dados e nome do usuário na web do cliente ou no menu de atalho no cliente GTK. A mesma caixa de diálogo de configuração parece que você pode ter encontrado no momento da instalação de um novo banco de dados. Por que nós chamamos o o assistente  :guilabel:`Reconfigure`? Na verdade, porque permite que o utilizador rever os aplicativos instalados e instalar recursos adicionais relacionados ou simplesmente para instalar novas aplicações em tempo real.
 
-When you go through the various steps in the wizard, you will come across some options that are checked and greyed. These are applications already installed. In the \ ``openerp_ch02`` \ database configuration, you may see that the \ ``Customer Relationship Management`` \ option is already checked because this Business Application has been installed in this database.
-Install extra applications simply by checking the corresponding options and clicking :guilabel:`Install` or click :guilabel:`Skip` to stop the configuration. You will eventually also come across the :guilabel:`CRM Application Configuration` step which you may use to add features to your CRM application. For now, select the \ ``Claims`` \ option and click :guilabel:`Configure`. This will in turn install the :mod:`crm_claim` module.
+Quando você passar por várias etapas no assistente, você vai encontrar algumas opções que são verificados e cinzento. Estes são aplicativos já instalados. Na configuração de banco de dados \ ``openerp_ch02`` \, você pode ver que a opção \ ``Gestão de Relacionamento com o Cliente`` \ já está marcada porque esse aplicativo comercial foi instalado neste banco de dados.
+
+Instalar aplicações extra simplesmente marcando as opções correspondentes e clicando :guilabel:`Install` ou clique em :guilabel:`Skip` para parar a configuração. Você acabará por também entrar em toda a :guilabel:`CRM Application Configuration` passo que você pode usar para adicionar funcionalidades ao seu aplicativo de CRM. Por agora, selecione a \ ``Claims`` \ opção e clique em :guilabel:`Configure`. Este, por sua vez instale o módulo :mod:`crm_claim`.
 
 .. figure:: images/reconfigure_wizard.png
    :scale: 75
    :align: center
 
-   *Reconfigure wizard showing Customer Relationship Management application as installed*
+   *Assistente de reconfigurar mostrando a aplicação Gestão de Relacionamento com o Cliente como instalado*
 
-You may continue adding features this way, skip configuration steps or simply exit from this wizard. When you feel the need to
-load your system with additional features, you may invoke the :guilabel:`Reconfigure` wizard again at any point.
+Você pode continuar adicionando funcionalidades desta maneira, pule as etapas de configuração ou simplesmente saia do assistente. Quando você sente a necessidade de
+carregar o sistema com recursos adicionais, você pode chamar o assistente :guilabel:`Reconfigure` novamente a qualquer momento.
 
-.. note:: You can also change the Configuration Wizard through the :menuselection:`Administration --> Configuration --> Configuration Wizards --> Configuration Wizards`.
+.. note:: Você também pode alterar o Assistente de Configuração através do :menuselection:`Administration --> Configuration --> Configuration Wizards --> Configuration Wizards`.
 
-Installing an Application / Module from the Modules list
+Instalando um aplicativo / Módulo da lista Módulos
 --------------------------------------------------------
 
 .. index::
    single: module; google maps
 
-You will now install a module named :mod:`google_map`, which will enable you to add a feature to the partner form to open the location directly in Google Maps. This is part of the core installation, so you do not need to load anything to make this work.
+Agora você vai instalar um módulo chamado :mod:`google_map`, o que permitirá que você adicione um recurso para a forma parceiro para abrir o local diretamente no Google Maps. Esta é parte da instalação do núcleo, assim você não precisa carregar nada para fazer este trabalho.
 
-Open the list of modules from :menuselection:`Administration --> Modules --> Modules`. Search for the module by entering the name :mod:`google_map` in the :guilabel:`Name` field on the search screen then clicking it in the list that appears to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its
-functionality. Click :guilabel:`Schedule for Installation` and the status of the module changes to :guilabel:`To be installed`.
+Abra a lista de módulos a partir de :menuselection:`Administration --> Modules --> Modules`. Pesquisa do módulo digitando o nome :mod:`google_map` no campo :guilabel:`Name` no ecrã de pesquisa, em seguida, clicando-o na lista que aparece para abri-lo. A forma que descreve o módulo dá-lhe informações úteis, como seu número de versão, seu status e uma revisão de sua
+funcionalidade. Clique em :guilabel:`Schedule for Installation` eo estado do módulo muda para :guilabel:`To be installed`.
 
-.. tip:: From now on you can schedule and install modules from list view too. Notice the buttons on the right side and the action button to install.
+.. tip:: A partir de agora você pode programar e instalar os módulos de visão de lista também. Observe os botões do lado direito eo botão de ação para instalar.
 
 .. figure:: images/install_google_map_module.png
    :scale: 75
    :align: center
 
-   *Installation of the Google Maps module*
+   *Instalação do módulo Google Maps*
 
 
-.. tip::  Technical Guide
+.. tip::  Guia Técnico
 
-	If you select a module in any of the module lists by clicking on a module line and then on
-	:guilabel:`Technical Guide` at the top right of the window, OpenERP produces a technical report
-	on that module. It is helpful only if the module is installed.
+	Se você selecionar um módulo em qualquer uma das listas do módulo, clicando em uma linha de módulo e, em seguida,no canto superior direito da janela
+	:guilabel:`Technical Guide`, o OpenERP produz um relatório técnico
+nesse módulo. É útil somente se o módulo está instalado.
 
-	This report comprises a list of all the objects and all the fields along with their descriptions.
-	The report adapts to your system and reflects any modifications you have made and all the other
-	modules you have installed.
+	Este relatório inclui uma lista de todos os objetos e todos os campos, juntamente com suas descrições.
+O relatório se adapta ao seu sistema e reflete as modificações que você fez e todos os outros
+módulos que você instalou.
 
-Then, either use the menu :menuselection:`Administration --> Modules --> Apply Scheduled Upgrades`, or from the :guilabel:`Actions` section click :guilabel:`Apply Scheduled Upgrades`, then :guilabel:`Start update` on the :guilabel:`Module Upgrade`
-form that appears. Close the window when the operation has completed. Return to the :guilabel:`Sales` menu; you will
-see the new menu :menuselection:`Products` has become available.
+Então, use o menu :menuselection:`Administration --> Modules --> Apply Scheduled Upgrades`, ou a partir da secção :guilabel:`Actions` clique em :guilabel:`Apply Scheduled Upgrades`, então :guilabel:`Start update` no :guilabel:`Module Upgrade`
+o formulário que aparece. Feche a janela quando a operação for concluída. Volte para o menu :guilabel:`Sales`; você irá
+ver o novo menu :menuselection:`Products` tornou-se disponível.
 
-.. tip::  Refreshing the menu in the GTK Client
+.. tip:: Atualizando o menu no cliente GTK
 
-	After an update in the GTK client you will have to open a new menu to refresh the content –
-	otherwise you will not see the new menu item. To do that, use the window menu :menuselection:`Form -->
-	Reload / Undo` or use the shortcut :kbd:`Ctrl+R`.
+	Depois de uma atualização no cliente GTK você terá que abrir um novo menu para atualizar o conteúdo –
+	caso contrário você não verá o novo item de menu. Para fazer isso, use o menu da janela :menuselection:`Form -->
+	Reload / Undo` ou use o atalho :kbd:`Ctrl+R`.
 
-Installing a Module with its Dependencies
------------------------------------------
+Instalar um módulo com as suas dependências
+-------------------------------------------
 
 .. index::
    single: module; stock
 
-Now install the Warehouse Management module using the same process as before.
-Start from :menuselection:`Administration --> Modules --> Modules`.
+Agora instale o módulo de Gestão de Armazém usando o mesmo processo como antes.
+Iniciar a partir de :menuselection:`Administration --> Modules --> Modules`.
 
-	#.  Get the list of modules, and search for the :mod:`stock` module in that list.
+	#.  Obter a lista de módulos, e procure o módulo :mod:`stock` nesta lista
 	
-	#.  Schedule the module for installation by clicking :guilabel:`Schedule for Installation`.
+	#.  Agendar o módulo para instalação clicando em :guilabel:`Schedule for Installation`.
 	
-	#.  Do the same for :mod:`account`. 
+	#.  Faça o mesmo para :mod:`account`. 
 	
-	#.  Click :guilabel:`Apply Scheduled Upgrades` on the action toolbar to the right.
+	#.  Clique na barra de ferramentas de ação para a direita. :guilabel:`Apply Scheduled Upgrades`.
 
-	#.  Click :guilabel:`Start update` to install both modules. 
+	#.  Clique em :guilabel:`Start update`para instalar os dois módulos.
 	
-	#.  After a few seconds, when the installation is complete, you may close this dialog box.
+	#.  Após alguns segundos, quando a instalação estiver completa, você pode fechar esta caixa de diálogo.
 	
-	#.  You will see details of all the features installed by the modules on a new
-	    :guilabel:`Features` tab on the module form. 
+	#.  Você vai ver detalhes de todos os recursos instalados pelos módulos em uma nova aba
+	    :guilabel:`Features` no formulário do módulo. 
 
-When you return to the :menuselection:`Warehouse` menu, you will find the new menu items under it like
-:menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments`, :menuselection:`Warehouse --> Products Moves`,  which are a part of the Warehouse management system. You will also see all the accounting functions that are now available in the :menuselection:`Accounting` menu.
+Quando você retornar ao menu :menuselection:`Warehouse`, você encontrará os novos itens de menu abaixo dele como
+:menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments`, :menuselection:`Warehouse --> Products Moves`,  que são uma parte do sistema de gestão de armazém. Você também verá todas as funções de contabilidade que estão agora disponíveis no menu :menuselection:`Accounting`.
 
-There is no particular relationship between the modules installed and the menus added. Most of the
-core modules add complete menus but some also add sub-menus to menus already in the system. Other
-modules add menus and sub-menus as they need. Modules can also add additional fields to existing
-forms, or simply additional demonstration data or some settings specific to a given requirement.
+Não há nenhuma relação particular entre os módulos instalados e os menus acrescentados. A maioria dos
+módulos principais adiciona menus completos, mas alguns também acrescenta sub-menus ao os menus já estão no sistema. Outros
+módulos adicionam menus e sub-menus como eles precisam. Os módulos podem também adicionar campos adicionais existentes
+formulários ou dados de demonstração adicional ou simplesmente algumas configurações específicas para um determinado requisito.
 
 .. index::
   single: module; dependencies
 ..
 
-.. note::  Dependencies Between Modules
+.. note::  Dependências entre os módulos
 
-	The module form shows two tabs before it is installed. 
-	The first tab gives basic information about the module, and the
-	second gives a list of modules that this module depends on. So when you install a module, OpenERP
-	automatically selects all the necessary dependencies to install this module.
+	O formulário de módulos mostra duas abas antes de ser instalado
+	O primeira guia dá informações básicas sobre o módulo, e a
+segunda dá uma lista de módulos que este módulo depende. Então, quando você instalar um módulo, o OpenERP
+seleciona automaticamente todas as dependências necessárias para instalar este módulo.
 
-	That is also how you develop the profile modules: they simply define a list of modules that you want
-	in your profile as a set of dependencies.
+	Que é também a forma como você desenvolve os módulos perfil: eles simplesmente definir uma lista de módulos que você quer
+em seu perfil como um conjunto de dependências.
 
-Although you can install a module and all its dependencies at once, you cannot remove them in one
-fell swoop – you would have to uninstall module by module. Uninstalling is more complex than
-installing because you have to handle existing system data.
+Embora você possa instalar um módulo e todas as suas dependências de uma só vez, você não pode removê-los em uma
+só vez –você teria que desinstalar o módulo a módulo. Desinstalação é mais complexa do
+instalar, porque você tem que lidar com os dados do sistema existente.
 
-.. note::  Uninstalling Modules
+.. note::  Módulos de desinstalação
 
-	Although it works quite well, uninstalling modules is not perfect in OpenERP. It is not guaranteed
-	to return the system exactly to the state it was in before installation.
+	Embora ele funciona muito bem, desinstalar módulos não é perfeito no OpenERP. Não é garantido
+para retornar o sistema exatamente ao estado em que estava antes da instalação.
 
-	So it is recommended that you make a backup of the database before installing your new modules so
-	that you can test the new modules and decide whether they are suitable or not. If they are not, then
-	you can return to your backup. If they are, then you will probably still reinstall the modules on
-	your backup so that you do not have to delete all your test data.
+	Por isso, é recomendável que você faça um backup do banco de dados antes de instalar seus novos módulos, para o
+que você pode testar os novos módulos e decidir se eles são adequados ou não. Se eles não forem, então
+você pode voltar para o seu backup. Se forem, então você provavelmente ainda reinstale os módulos do
+o seu backup para que você não tenha que apagar todos os dados de teste.
 
-	If you wanted to uninstall, you would use the menu :menuselection:`Administration --> Modules
-	--> Modules` and then uninstall them in the inverse order of their
-	dependencies: ``stock``, ``account``.
+	Se você quiser desinstalar, você usaria o menu :menuselection:`Administration --> Modules
+	--> Modules` e, em seguida, desinstalá-los na ordem inversa das suas
+dependências: ``stock``, ``account``.
 
-Installing Additional Functionality
------------------------------------
+Instalando Funcionalidade adicionais
+------------------------------------
 
-To discover the full range of OpenERP's possibilities, you can install many additional modules.
-Installing them with their demonstration data provides a convenient way of exploring the whole core
-system. When you build on the \ ``openerp_ch02``\   database, you will automatically include
-demonstration data because you checked the :guilabel:`Load Demonstration Data` checkbox when you originally
-created the database.
+Para descobrir toda a gama de possibilidades OpenERP, você pode instalar vários módulos adicionais.
+Instalá-los com seus dados de demonstração fornece uma maneira conveniente de explorar todo o núcleo
+do sistema. Quando você constrói sobre o banco de dados \ ``openerp_ch02``\, você vai incluir automaticamente
+dados de demonstração, porque você marcou a caixa de seleção  :guilabel:`Load Demonstration Data` quando você originalmente
+criou o banco de dados.
 
 .. index::
    single: module; importing
 ..
 
-Click :menuselection:`Administration --> Modules --> Modules` to give you an
-overview of all of the modules available for installation.
+Clique em :menuselection:`Administration --> Modules --> Modules` para lhe dar uma
+visão geral de todos os módulos disponíveis para instalação.
 
-To test several modules, you will not have to install them all one by one. You can use the dependencies
-between modules to load several at once.
+Para testar vários módulos, você não terá que instalá-los todos um por um. Você pode usar as dependências
+entre os módulos para carregar vários de uma vez.
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica
 

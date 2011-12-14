@@ -5,69 +5,69 @@
 
 .. _sect-dbcreate:
 
-Database Creation
-=================
+Criação de banco de dados
+=========================
 
-Use the technique outlined in this section to create a new database, \ ``openerp_ch01`` \. This
-database will contain the demonstration data provided with OpenERP and a large proportion of the
-core OpenERP functionality. You will need to know your super administrator password for this – or
-you will have to find somebody who does have it to create this database.
+Use a técnica descrita nesta seção para criar um novo banco de dados, \ ``openerp_ch01`` \. Este
+banco de dados conterá os dados de demonstração fornecidos com OpenERP e uma grande proporção do
+núcleo funcionalidade OpenERP. Você vai precisar saber a senha do super administrador para este – ou
+você terá que encontrar alguém que o tenha para criar este banco de dados.
 
 .. index::
    single: password; super-administrator
    single: password; superadmin
 
-.. note:: The Super-administrator Password
+.. note:: A senha do Super-administrador
 
-   Anyone who knows the super-administrator password has complete access to the data on the server
-   – able to read, change and delete any of the data in any of the databases there.
+  Qualquer pessoa que conheça a senha de super-administrador tem acesso completo aos dados no servidor
+   – capaz de ler, alterar e excluir qualquer um dos dados em qualquer das bases de dados lá.
 
-   After first installation, the password is ``admin``. This is the hard-coded default, and
-   is used if there is no accessible server configuration file. If your system has been 
-   set up so that the server configuration file can be written to by the server, then
-   you can change the password through the client. Or you could deliberately make the 
-   configuration file read-only so that there is no prospect of changing it from the client.
-   Either way, a server systems administrator can change it if you forget it.
+   Após a primeira instalação, a senha é ``admin``. Este é o padrão embutido, e
+   é usado se não houver nenhum arquivo de configuração acessíveis servidor. Se o seu sistema tenha sido
+configurar para que o arquivo de configuração do servidor pode ser gravado pelo servidor, então
+você pode alterar a senha através do cliente. Ou você pode deliberadamente fazer o
+arquivo de configuração somente leitura, para que não há perspectiva de alterá-lo a partir do cliente.
+De qualquer forma, um servidor de administrador de sistemas pode mudá-lo se você esquecê-la.
    
-   So if your system is set to allow it, you can change the superadmin password through the GTK client
-   from the menu :menuselection:`File --> Databases --> Administrator Password`, or through the
-   web client by logging out (click the :guilabel:`Logout` link), clicking :guilabel:`Databases` on the
-   login screen, and then clicking the :guilabel:`Password` button on the Management screen. 
+   Portanto, se seu sistema está configurado para permitir que ele, você pode alterar a senha superadmin através do cliente GTK
+    a partir do menu :menuselection:`File --> Databases --> Administrator Password`, ou através do
+cliente web por efetuar logout (clique no :guilabel:`Logout` link), clicando :guilabel:`Databases` na
+    tela de login, e em seguida clicando no botão na tela de Gestão. :guilabel:`Password` 
    
-   The location of the server configuration file is typically defined by starting the server with 
-   the ``--config`` command line option.
+   A localização do arquivo de configuração do servidor é normalmente definido ao iniciar o servidor com
+    a opção de linha de comando``--config``.
 
 .. figure:: images/change_superadmin_pwd.png
    :scale: 65
    :align: center
 
-   *Changing the super-administrator password through the web client*
+   *Alterando a senha de super administrador através do cliente web*
 
 .. _sect-creatingdb:
 
-Creating the Database
----------------------
+Criando o banco de dados
+------------------------
 
-If you are using the GTK client, choose :menuselection:`File --> Databases --> New database`  in
-the menu at the top left. Enter the super-administrator password, then the name of the new database
-you are creating.
+Se você estiver usando o cliente GTK, escolha :menuselection:`File --> Databases --> New database`  no
+o menu no canto superior esquerdo. Digite a senha do super administrador, então o nome do novo banco de dados que
+você está criando.
 
 .. figure:: images/create_new_db_GTK.png
    :scale: 75
    :align: center
 
-   *Creating a new database through the GTK client*  
+   *Criando um novo banco de dados através do cliente GTK*  
 
-If you are using the web client, click :guilabel:`Databases` on the login screen, then
-:guilabel:`Create` on the database management page. Enter the super-administrator password, and the
-name of the new database you are creating.
+Se você estiver usando o cliente da Web, clique na tela de login :guilabel:`Databases`, então na página de gerenciamento de banco de dados
+:guilabel:`Create`. Digite a senha do administrador-super, eo
+nome do novo banco de dados que você está criando.
   
-In both cases, you will see a checkbox that determines whether you load demonstration data or not.
-The consequences of checking this box or not affect the **whole use** of this database.
+Em ambos os casos, você verá uma caixa de seleção que determina se você carregar dados de demonstração ou não.
+As conseqüências de marcar essa caixa ou não afetar a **utilização inteira** deste banco de dados.
 
-In both cases, you will also see that you can choose the Administrator password. This makes your 
-database quite secure because you can ensure that it is unique from the outset.
-(In fact many people find it hard to resist ``admin`` as their password!)
+Em ambos os casos, você também vai ver que você pode escolher a senha do administrador. Isso faz com que o seu
+banco de dados seja bastante seguro, pois você pode garantir que ele é único, desde o início.
+(Na verdade muitas pessoas acham difícil resistir ``admin`` como a sua senha!)
 
 Database openerp_ch01
 ---------------------
@@ -75,9 +75,9 @@ Database openerp_ch01
 .. index::
    pair: account; user
 
-Wait for the message showing that the database has been successfully created, along with the user
-accounts and passwords (\ ``admin/XXXX``\   and \ ``demo/demo``\  ). Now that you have created this
-database, you can extend it without having to know the super-administrator password.
+Aguarde a mensagem mostrando que o banco de dados foi criado com sucesso, junto com o usuário
+contas e senhas (\ ``admin/XXXX``\  e \ ``demo/demo``\  ). Agora que você criou esse
+banco de dados, você pode estendê-lo sem ter que saber a senha de super administrador.
 
 .. index::
    single: access; LDAP
@@ -85,213 +85,211 @@ database, you can extend it without having to know the super-administrator passw
    pair: password; username
    single: access; user
 
-.. tip::   User Access
+.. tip::   Acesso de Usuário
 
-	The combination of username/password is specific to a single database. If you have administrative
-	rights to a database you can modify all users.
+	A combinação de usuário / senha é específica para um único banco de dados. Se você tiver direitos administrativos
+de um banco de dados você pode modificar todos os usuários.
 
  	.. index::
 	   single: module; users_ldap
 
-	Alternatively, you can install the :mod:`users_ldap` module, which manages the authentication of users
-	in LDAP (the Lightweight Directory Access Protocol, a standard system), and connect it to several
-	OpenERP databases. Using this, many databases can share the same user account details.
+	Alternativamente, você pode instalar o módulo :mod:`users_ldap`, que gerencia a autenticação de usuários
+no LDAP (the Lightweight Directory Access Protocol, a standard system), e conectá-lo a vários
+Bancos de dados OpenERP. Usando isso, muitos bancos de dados podem compartilhar a mesma conta detalhes do usuário.
 
-.. note::  Failure to Create a Database
+.. note::  Falha para criar um banco de dados
 
-	How do you know if you have successfully created your new database?
-	You are told if the database creation has been unsuccessful.
-	If you have entered a database name using prohibited characters (or no name, or too short a name),
-	you will be alerted by the dialog box :guilabel:`Bad database name!` explaining how to correct the error.
-	If you have entered the wrong super-administrator password or a name already in use
-	(some names can be reserved without your knowledge), you will be alerted by the dialog box
+	Como você sabe se você criou com sucesso o seu novo banco de dados?
+Você é dito se a criação de banco de dados não foi bem sucedida.
+Se você tiver digitado um nome de banco de dados usando caracteres proibidos (ou o nome de nenhum, ou um nome muito curto),
+	você será alertado pela caixa de diálogo :guilabel:`Bad database name!` explicando como corrigir o erro.
+	Se você digitou a senha de super-administrador errado ou um nome já em uso
+	(alguns nomes podem ser reservados sem o seu conhecimento), você será alertado pela caixa de diálogo
 	:guilabel:`Error during database creation!`.
 
-Since this is the first time you have connected to this database, you will be asked a series of questions to
-define the database parameters. You may choose to :guilabel:`Skip Configuration Wizards` or
-:guilabel:`Start Configuration`. If you choose to configure your application, you may proceed with the
-following steps:
+Pois esta é a primeira vez que você se conecta a este banco de dados, você será solicitado uma série de perguntas para
+definir os parâmetros do banco de dados. Você pode optar por :guilabel:`Skip Configuration Wizards` ou
+:guilabel:`Start Configuration`. Se você optar por configurar seu aplicativo, você poderá prosseguir com a
+seguintes passos:
 
-	#.  :guilabel:`Configure Your Interface` : select \ ``Simplified`` \ and click :guilabel:`Next`.
+	#.  :guilabel:`Configure Your Interface` : selecione \ ``Simplified`` \ e clique em :guilabel:`Next`.
 
-	#.  :guilabel:`Configure Your Company Information` : replace the proposed default of \ ``OpenERP S.A.`` \
-	    by your own company name, complete as much of your address as you like. You can set the currency that
-	    your company uses or leave the default setting. You may also add your company logo which will
-	    be visible on reports and other documents. Click :guilabel:`Next`.
+	#.  :guilabel:`Configure Your Company Information` : substitua o padrão proposto \ ``OpenERP S.A.`` \
+	    pelo seu próprio nome da empresa, completo, tanto do seu endereço de como você gosta. Você pode definir a moeda que
+sua empresa utiliza ou deixe a configuração padrão. Você também pode adicionar o logotipo da empresa que irá
+ser visível nos relatórios e outros documentos. Clique em :guilabel:`Next`.
 
-	#.  :guilabel:`Install Applications` : check the applications you need and then click :guilabel:`Install`.
-	    For now, do not install any application.
+	#.  :guilabel:`Install Applications` : verifique os aplicativos que você precisa e clique em :guilabel:`Install`.
+	    Por enquanto, não instale qualquer aplicativo.
 
-Once configuration is complete, you are connected to your OpenERP system. Its functionality is very
-limited because you have selected a :guilabel:`Simplified` interface with no application installed,
-but this is sufficient to demonstrate that your installation is working.
+Uma vez que a configuração estiver concluída, você está conectado ao seu sistema OpenERP. Sua funcionalidade é muito
+limitada, porque você tem selecionado uma interface com nenhuma aplicação instalada :guilabel:`Simplified`,
+mas isto é suficiente para demonstrar que a instalação está funcionando.
 
 .. figure:: images/define_main_co_dlg.png
    :align: center
    :scale: 80
 
-   *Defining your company during initial database configuration*
+   *Definição de sua empresa durante a configuração do banco de dados inicial*
 
 .. index::
    single: database; manage
 
 .. _sect-dbmanage:
 
-Managing Databases
-------------------
+Gerenciando bancos de dados
+---------------------------
 
-As a super-administrator, you do not only have rights to create new databases, but also to:
+Como um super administrador , você não só tem direitos para criar novos bancos de dados, mas também para:
 
-* backup databases,
+* Bancos de dados de backup,
 
-* delete databases,
+* excluir bancos de dados,
 
-* restore databases.
+* restaurar bancos de dados.
 
-All of these operations can be carried out from the menu :menuselection:`File --> Databases...`
-in the GTK client, or from the :guilabel:`Databases` button in the web client's 
+Todas estas operações podem ser realizadas a partir do menu :menuselection:`File --> Databases...`
+no cliente GTK, ou a partir do botão :guilabel:`Databases` no web do cliente
+
 :guilabel:`Login` screen.
 
 .. index::
    single: database; backup
 
-.. tip:: Backup (copy) a Database
+.. tip:: Backup (cópia) de um  banco de dados
 
-        To make a copy of a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
-        Then click the :guilabel:`Backup` button, select the database you want to copy and enter the super-administrator
-	password. Click the :guilabel:`Backup` button to confirm that you want to copy the database.
+        Para fazer uma cópia de um banco de dados, vá para a web :guilabel:`Login`tela e clique no botão :guilabel:`Databases`.
+        Em seguida, clique no botão :guilabel:`Backup` , selecione o banco que deseja copiar e digite a senha do super admistrador. Clique no botão :guilabel:`Backup` para confirmar que você deseja copiar o banco de dados.
 
 .. index::
    single: database; drop
 
-.. tip:: Drop (delete) a Database
+.. tip:: Drop (excluir) um banco de dados
 
-        To delete a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
-        Then click the :guilabel:`Drop` button, select the database you want to delete and enter the super-administrator
-	password. Click the :guilabel:`Drop` button to confirm that you want to delete the database.
+        Para excluir um banco de dados, vá na tela web :guilabel:`Login`  e clique no botão :guilabel:`Databases`.
+        Em seguida, clique no botão :guilabel:`Drop`, selecione o banco que deseja excluir e insera a senha do super administrador. Clique no botão :guilabel:`Drop` para confirmar que você deseja excluir o banco de dados.
 
 .. index::
    single: database; restore
 
-.. tip:: Restore a Database
+.. tip:: Restaurar um banco de dados
 
-        To restore a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
-        Then click the :guilabel:`Restore` button, click the :guilabel:`Choose File` button to select the database
-        you want to restore. Give the database a name and enter the super-administrator	password.
-	Click the :guilabel:`Restore` button to confirm that you want to install a new copy of the selected database.
-	To restore a database, you need to have an existing copy, of course.
+        Para restaurar um banco de dados, vá na tela web :guilabel:`Login` e clique no botão :guilabel:`Databases`.
+        Em seguida, clique no botão :guilabel:`Restore`, clique no botão :guilabel:`Choose File` para selecionar o banco de dados
+        que deseja restaurar. Dê o banco de dados de um nome e digitar a senha de super administrador.
+	Clique no botão :guilabel:`Restore` para confirmar que você deseja instalar uma nova cópia do banco de dados selecionado.
+Para restaurar um banco de dados, você precisa ter uma cópia existente, é claro.
 
 .. index::
    single: database; duplicate
 
-.. tip::   Duplicating a Database
+.. tip::   Duplicação de um banco de dados
 
-	To duplicate a database, you can:
+	Para duplicar um banco de dados, você pode:
 
-        #. make a backup file on your PC from this database.
+        #. fazer um arquivo de backup em seu PC a partir deste banco de dados.
 
-        #. restore this database from the backup file on your PC, and give it a new name.
+        #. restaurar este banco de dados do arquivo de backup no seu PC, e dar-lhe um novo nome.
 
-	This can be a useful way of making a test database from a production database. You can try out the
-	operation of a new configuration, new modules, or just the import of new data.
+	Esta pode ser uma maneira útil de fazer um banco de dados de ensaio de um banco de dados de produção. Você pode experimentar a
+operação de uma nova configuração, novos módulos, ou apenas a importação de novos dados.
 
 .. index::
-   single: access
+   single: Acesso
 
-A system administrator can configure OpenERP to restrict access to some of these database functions
-so that your security is enhanced in normal production use.
+Um administrador de sistema pode configurar OpenERP para restringir o acesso a algumas dessas funções de banco de dados
+de modo que sua segurança está reforçada em uso em produção normal.
 
-You are now ready to use databases from your installation to familiarize yourself with the
-administration and use of OpenERP.
+Agora você está pronto para usar bancos de dados de sua instalação para se familiarizar com a
+administração e utilização de OpenERP.
 
-New OpenERP Functionality
-=========================
+Nova funcionalidade OpenERP
+===========================
 
-The database you have created and managed so far is based on the core OpenERP functionality that you
-installed. The core system is installed in the file system of your OpenERP application server, but
-only installed into an OpenERP database as you require it, as is described in the next chapter, :ref:`ch-guided`.
+O banco de dados que você criou e conseguiu até agora é com base na funcionalidade do núcleo OpenERP que você está
+instalado. O núcleo do sistema é instalado no sistema de arquivos do seu servidor de aplicação OpenERP, mas
+instalado somente em um banco de dados OpenERP como você precisar, como é descrito no próximo capítulo, :ref:`ch-guided`.
 
-What if you want to update what is there, or extend what is there with additional modules?
+E se você quer atualizar o que está lá, ou ampliar o que está lá com módulos adicionais?
 
-* To update what you have, you would install a new instance of OpenERP using the same techniques as
-  described earlier in this section, :ref:`sect-dbcreate`.
+* Para atualizar o que você tem, seria necessário instalar uma nova instância OpenERP usando as mesmas técnicas
+   descrito anteriormente nesta seção, :ref:`sect-dbcreate`.
 
-* To extend what you have, you would install new modules in the ``addons`` directory of your current
-  OpenERP installation. There are several ways of doing that.
+* Para estender o que você tem, seria necessário instalar novos módulos no ``addons`` diretório de sua atual
+   instalação OpenERP. Existem várias maneiras de fazer isso.
 
 .. index::
    pair:  system; administrator
 
-In both cases you will need to be a \ ``root`` \ user or \ ``Administrator`` \ of your
-OpenERP application server.
+Em ambos os casos, você precisa ser um \ ``root`` \ usuário ou \ ``Administrator`` \ de seu servidor de aplicativos OpenERP.
 
-Extending OpenERP
+Estendendo OpenERP
 -----------------
 
-To extend OpenERP you will need to copy modules into the \ ``addons`` \ directory. That is in
-your server's \ ``openerp-server`` \ directory (which differs between Windows, Mac and some of the
-various Linux distributions and not available at all in the Windows all-in-one installer).
+Para estender OpenERP você precisará copiar os módulos para o diretório  \``addons``\. Que está em
+de seu diretório do servidor \ ``openerp-server`` \ (o que difere entre Windows, Mac e algumas das
+várias distribuições Linux e não está disponível em todos os no Windows tudo em um instalador).
 
 .. index::
    single: module; product
    single: module; purchase
 
-If you look there you will see existing modules such as :mod:`product` and :mod:`purchase`. A
-module can be provided in the form of files within a directory or a a zip-format file containing
-that same directory structure.
+Se você olhar lá você vai ver módulos existentes, tais como :mod:`product` and :mod:`purchase`. Um
+módulo pode ser fornecido na forma de arquivos dentro de um diretório ou um arquivo zip contendo formato
+que a estrutura mesmo diretório.
 
-You can add modules in two main ways – through the server, or through the client.
+Você pode adicionar módulos de duas maneiras principais - através do servidor, ou através do cliente.
 
 .. index::
    pair:  system; administration
 
-To add new modules through the server is a conventional system administration task. As \ ``root`` \
-user or another suitable user, you would put the module in the \ ``addons`` \ directory and change its
-permissions to match those of the other modules.
+Para adicionar novos módulos através do servidor é uma tarefa de administração sistema convencional. Como usuário \ ``root`` \
+ ou outro usuário adequado, você deve colocar o módulo no diretório \ ``addons`` \ e mudar suas
+permissões para coincidir com as dos outros módulos.
 
-To add new modules through the client you must first change the permissions of the \ ``addons`` \
-directory of the server, so that it is writeable by the server. That will enable you to install
-OpenERP modules using the OpenERP client (a task ultimately carried out on the application
-server by the server software).
+Para adicionar novos módulos por meio do cliente você deve primeiro alterar as permissões do diretório \ ``addons`` \
+do servidor, de modo que é gravável pelo servidor. Que permitirá que você instale
+Módulos OpenERP usando o cliente OpenERP (uma tarefa realizada em última instância sobre a aplicação
+servidor, o software do servidor).
 
 .. index::
    pair:  filesystem; permissions
 
-.. tip:: Changing Permissions
+.. tip:: Permissões de mudança
 
-	A very simple way of changing permissions on the Linux system you are using to develop an OpenERP
-	application is to execute the command sudo chmod 777 <path_to_addons> (where <path_to_addons> is
-	the full path to the addons directory, a location like /usr/lib/python2.5/site-packages/openerp-
+	Uma maneira muito simples de alterar as permissões no sistema Linux você está usando para develop OpenERP
+uma aplicação está para executar o comando sudo chmod 777 <path_to_addons> (where <path_to_addons> é
+o caminho completo para o diretório de addons, um local como /usr/lib/python2.5/site-packages/openerp-
 	server/addons).
 
-Any user of OpenERP who has access to the relevant administration menus can then upload any new
-functionality, so you would certainly disable this capability for production use. You will see examples of
-this uploading as you make your way through this book.
+Qualquer usuário de OpenERP quem tem acesso aos menus de administração relevante pode, então, fazer upload de qualquer novo
+funcionalidade, de modo que você certamente desativar esse recurso para uso em produção. Você vai ver exemplos de
+este upload como você faz seu caminho através deste livro.
 
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica
 
