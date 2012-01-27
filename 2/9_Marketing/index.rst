@@ -1,133 +1,133 @@
 
 .. _part3-crm-market:
 
-################################
-Driving your Marketing Campaigns
-################################
+###################################
+Dirigir suas campanhas de marketing
+###################################
 
 .. index::
-   single: Actions
-   single: Activity
-   single: Workflow
-   single: Object
-   single: Criteria
-   single: Conditions
-   single: Workitem
-   single: Startflag
+   single: Ações
+   single: Atividade
+   single: Fluxo de trabalho
+   single: Objeto
+   single: Critérios
+   single: Condições
+   single: Item de trabalho
+   single: Iniciar bandeira
    single: Boolean
-   single: Dot Notation
-   single: Attributes
+   single: Ponto de Notação
+   single: Atributos	
    single: Marketing
-   single: Campaigns
+   single: campanhas
 
 .. _ch-market:
 
-Lead Automation with Marketing Campaigns
-========================================
+Levar automação com Campanhas de Marketing
+==========================================
 
-OpenERP offers a set of modules allowing you to easily create and track your Marketing Campaigns.
-With the **Marketing** application, you define your direct marketing campaigns, allowing you to automate your lead communication. You can install the module through the Reconfigure wizard, then select Marketing.
+O OpenERP oferece um conjunto de módulos que lhe permite facilmente criar e controlar campanhas de marketing.
+Com a aplicação **Marketing**, você define suas campanhas de marketing direto, permitindo que você automatize sua comunicação chumbo. Você pode instalar o módulo através do assistente Reconfigure, em seguida, selecione Marketing.
 
-Campaigns can be displayed in List or Diagram view. The Diagram view allows you to clearly see the marketing actions (represented by a node) and the applied conditions (represented by an arrow).
+Campanhas podem ser exibidos na visualização em Lista ou Diagrama. O modo de exibição Diagrama permite ver claramente as ações de marketing (representado por um nó) e as condições aplicadas (representado por uma seta).
 
 .. figure::  images/market_diagram.jpeg
    :scale: 100
    :align: center
 
-   *Diagram View of a Campaign*
+   *Ver diagrama de uma campanha*
 
-A marketing campaign is an event or an activity that will help you manage and reach your partners with specific messages. A campaign can have many activities that will be triggered from a specific situation, for instance a response from a contact to an email you sent. The result of such a response (action) could be the sending of an email, for which a template has previously been created in OpenERP.
+Uma campanha de marketing é um evento ou uma atividade que vai ajudar você a gerenciar e alcançar seus parceiros com mensagens específicas. A campanha pode ter muitas atividades que serão desencadeadas a partir de uma situação específica, por exemplo, uma resposta de um contato para um e-mail que você enviou. O resultado de tal resposta (ação) poderia ser o envio de um e-mail, para o qual um modelo já havia sido criado em OpenERP.
 
-To use the email functionality, you have to configure your email account. This is explained in the chapter :ref:`ch-crm-fetchmail-install`.
+Para usar a funcionalidade de e-mail, você tem que configurar sua conta de e-mail. Isto é explicado no capítulo :ref:`ch-crm-fetchmail-install`.
 
-Example of a Complete Marketing Campaign
-----------------------------------------
+Exemplo de uma campanha de marketing completo
+---------------------------------------------
 
-Suppose we are an insurance company that wants to launch a marketing campaign to generate new leads. The company launches a campaign on its website and proposes potential customers to get a free offer for their car insurance.
+Suponha que nós somos uma companhia de seguros que quer lançar uma campanha de marketing para gerar novos leads. A empresa lança uma campanha em seu site e propõe clientes em potencial para obter uma oferta gratuita para o seu seguro automóvel.
 
-Each time a customer registers himself through the contact form, a lead is created in OpenERP. For further information about web contact forms, please refer to the chapter :ref:`contform`.
+Cada vez que um cliente registra-se através do formulário de contato, uma ligação é criada no OpenERP. Para mais informações sobre formas de contato web, por favor consulte o capítulo :ref:`contform`.
 
-The salesperson responsible for Car Insurances triggers the marketing campaign by sending an introductory email of all the insurance services we offer and thanking for subscribing for the free Car Insurance Offer.
+O vendedor responsável por Seguros de carro desencadeia a campanha de marketing através do envio de um e-mail introdutório de todos os serviços de seguros que oferecemos e agradecendo subscrição da Oferta livre do seguro de carro.
 
-Based on the response, the insurance company plots whether the lead is interested in:
+Com base na resposta, as parcelas companhia de seguros se a liderança está interessada em:
 
-* Buying a Car Insurance,
+* Comprar um seguro de carro,
 
-* Information about other Insurance policies,
+* Informações sobre outras apólices de seguro,
 
-* Buying the book about Keeping your Children Safe.
+* Comprar o livro sobre como manter suas crianças seguras.
 
-According to the replies we receive from the leads, we send an email catering their respective needs.
+Acordo com as respostas que recebemos da leva, enviamos um e-mail catering para suas respectivas necessidades.
 
-* If they respond back to such an email, the lead is converted into an opportunity. When the lead buys a car insurance, the lead becomes our partner and is created as a customer in OpenERP.
+* Se eles respondem de volta para esse e-mail, a lead é convertida em uma oportunidade. Quando a lead compra um seguro de carro, a lead torna-se nosso parceiro e é criado como um cliente em OpenERP.
 
-* If we do not receive an answer, they get a reminder regarding the offer a week later. If they still do not answer, our salesperson gives a voluntary call to ask about their needs. 
+* Se não receber uma resposta, que recebem um lembrete sobre a oferta uma semana mais tarde. Se eles ainda não responder, o nosso vendedor dá uma chamada de voluntários para perguntar sobre suas necessidades. 
 
-See it as a flowchart allowing us to trigger a respective activity for every possible cue. The chances of leads going unattended become very low, and for every lead, we have a predefined method of handling it.
+Vê-lo como um fluxograma que nos permite desencadear uma respectiva actividade para cada possível pista. As chances de se tornar autônoma leva indo muito baixo, e para cada chumbo, temos um método pré-definido de manuseá-lo.
 
-Moreover, we can measure the method according to our goals. Based on the goals we can evaluate the effectiveness of our campaign and analyze whether there is room for improvement.
+Além disso, podemos medir o método de acordo com nossos objetivos. Com base nos objetivos, podemos avaliar a eficácia da nossa campanha e analisar se há espaço para melhorias.
 
 .. tip:: Campaign Example
 
         To a get an example of a complete campaign in OpenERP, you can install the :mod:`marketing_campaign_crm_demo` module.
 
-Designing your Campaigns
+Projetar seu Campanhas
+----------------------
+
+Projetando uma campanha de marketing é principalmente um processo a longo prazo eo sucesso de qualquer campanha depende da pesquisa e da eficácia na seleção de seu público-alvo para a campanha. Existem certas questões que cada marketeer sempre pede ao projetar uma campanha.
+
+* Qual seria a nossa campanha de marketing?
+
+* Quem seria o público-alvo?
+
+* Como poderíamos medir a eficácia da nossa campanha?
+ 
+A campanha OpenERP é baseada no princípio da *lead automação*. Uma lead é criada de acordo com uma resposta específica por um cliente para um estímulo. Um exemplo: enchendo a calculadora do seguro de carro em seu site pode criar uma liderança na OpenERP.
+
+O primeiro passo é definir a campanha, ex: the sequence of steps to be performed. a seqüência de etapas a serem executadas. Ao definir a campanha, vamos desencadear um conjunto de actividades na aplicação **Campanha de Marketing** do OpenERP.
+
+Da automação da lead, que define a seqüência de passos que devemos seguir, os modos de criar e processar essas atividades e os custos envolvidos nesta campanha. Depois de cada atividade e com base na sua respectiva estímulos, podemos acionar o próximo evento da campanha em causa.
+ 
+Segmentar suas campanhas
 ------------------------
 
-Designing a marketing campaign is mostly a long term process and the success of any campaign depends on the research and the effectiveness in selecting your target audience for the campaign. There are certain questions that every marketeer always asks while designing a campaign.
+Os dois pontos mais importantes para qualquer campanha de sucesso são a adopção de uma metodologia concreta de execução e escolher o segmento direito: um loop alvo de clientes a quem a nossa campanha seria dirigida (ex. seu público-alvo). Foco inadequado no segmento errado resultaria na campanha que está sendo falhou e os nossos esforços chegam aos ouvidos de surdos.
 
-* What would be our marketing campaign?
+Através da guia `Segment` no módulo **Campaign**, podemos definir nosso segmento para cada atividade de campanha. Na verdade, é perfeitamente possível que a cada passo para baixo, o segmento fica reduzida em termos de número. Você também pode sincronizar os passos campanha inteira de acordo com os segmentos definidos.
 
-* Who would be the target audience?
+Nossa companhia de seguros quer atacar o mercado espanhol, e irá definir um segmento chamado Leads espanhol. Claro que você quer que seu segmento a ser válido para ligações provenientes de Espanha só. Para conseguir isso, vá para a visão em lista **Leads**. Filtro de todas as ligações para a Espanha (tipo *Espanha* no campo `País`), certifique-se de limpar a equipe de vendas, de modo que todas as ligações provenientes de Espanha será selecionado. Clique em `Save Filter`e chamá-lo, por exemplo, *Spanish Leads*. Agora volte para o menu **Campaigns** e abrir o `Segment`, em seguida, clique no campo ``Filter`` para selecionar *Spanish Leads*. O segmento de agora só se aplicam a leva espanhol.
 
-* How would we measure the effectiveness of our campaign?
- 
-The OpenERP campaign is based on the principle of *lead automation*. A lead is created according to a specific response by a customer towards a stimulus. An example: filling the car insurance calculator on your website may create a lead in OpenERP.
+Como você pode ver, o módulo **Marketing Campaign** está intimamente sincronizada com a aplicação de negócio **Customer Relationship Management**. Vamos considerar o segmento que atendem na campanha, como Leads em OpenERP. Objetivos são fixados para cada campanha, que seria considerado como um estado desejado. Uma vez que uma liderança atenda os critérios objetivos de metas, mudamos o estado liderado por convertê-la em um **Opportunity**, o que significa que devemos dar atenção.
 
-The first step is to define the campaign, i.e. the sequence of steps to be performed. By defining the campaign, we trigger a set of activities in the **Marketing Campaign** application of OpenERP.
+Uma vez que a liderança satisfaz o nosso objetivo final, iríamos considerá-lo como um parceiro / cliente e fechar que levam.
 
-From the lead automation, we define the sequence of steps we ought to follow, the modes of creating and processing these activities and the cost involved in this campaign. After each activity and based on its respective stimuli, we can trigger the next event of the campaign concerned.
- 
-Segmenting your Campaigns
--------------------------
-
-The two most important points for any successful campaign are the adoption of a concrete methodology of execution and choosing the right segment: a target loop of customers to whom our campaign would be directed (i.e. your target audience). Inappropriate focus on the wrong segment would result in the campaign being misfired and our efforts would reach deaf ears.
-
-Through the `Segment` tab in the **Campaign** module, we can define our segment for each Campaign activity. Indeed, it is perfectly well possible that with every step downwards, the segment gets narrowed in terms of number. You can also synchronize the entire campaign steps according to the defined segments.
-
-Our insurance company wants to attack the Spanish market, and will define a segment called Spanish Leads. Of course you would want your segment to be valid for leads coming from Spain only. To achieve this, go to the **Leads** list view. Filter all the leads for Spain (type *Spain* in the `Country` field), make sure to clear the salesteam, so that all leads coming from Spain will be selected. Then click `Save Filter` and call it for instance *Spanish Leads*. Now return to the **Campaigns** menu and open the `Segment`, then click the ``Filter`` field to select *Spanish Leads*. The segment will now only apply to Spanish leads.
-
-As you can see, the **Marketing Campaign** module is closely synchronized with the **Customer Relationship Management** Business Application. Let us consider the segment we cater in the campaign as Leads in OpenERP. Goals are set for each campaign, which would be considered as a desired state. Once a lead meets our objective criteria of goals, we change the lead status by converting it into an **Opportunity**, meaning that we should give focused attention. 
-
-Once the lead satisfies our final objective, we would consider it as a partner/customer and close that lead.
-
-Email Templates
+Modelos de e-mail
 ---------------
 
-OpenERP allows you to create your own email templates. You can use the Expression Builder to have the variables created for you. Suppose you would like to add the Contact Name in the email, but of course, this will be a different name for each email.
+OpenERP permite que você crie seu próprio e-mail modelos. Você pode usar o Construtor de Expressões para ter as variáveis ​​criadas para você. Suponha que você gostaria de adicionar o nome do contato no e-mail, mas claro, isso vai ser um nome diferente para cada e-mail.
 
-In the Expression Builder, in ``Field``, select Contact Name. Automatically, the ``Expression`` will be filled. Copy the value from the expression and paste it in your email, e.g. Dear ${object.contact_name}. So your email will start with Dear followed by the name of the contact. This way you automatically create personalized emails.
+No Construtor de Expressões, no ``Campo``, selecionar Nome do contato. Automaticamente, a ``expressão`` será preenchida. Copie o valor da expressão e cole no seu e-mail, ex. Caro ${object.contact_name}. Para que o seu e-mail vai começar com Caro, seguido do nome do contato. Desta forma, você cria automaticamente e-mails personalizados..
 
-For each email template, you can have OpenERP generate a Wizard Action / Button that will be related to the object. So if you choose to do marketing campaigns for leads, the action will be added to the right side panel of the **Lead** form.
+Para cada modelo de e-mail, você pode ter OpenERP gerar uma Ação do Assistente / Botão que estará relacionada com o objeto. Então, se você optar por fazer campanhas de marketing para leads, a ação será adicionada ao painel lateral direito do formulário **Lead**
 
-.. tip:: Configuring Marketing Campaigns
+.. tip:: Configurando Campanhas de Marketing
 
-      Please notice that it requires some technical knowledge to configure Marketing Campaigns.
-      To be able to see, create, edit campaign, users need to be in the `Marketing / User` group.
+     Por favor, observe que ele exige algum conhecimento técnico para configurar campanhas de marketing.
+       Para ser capaz de ver, criar, editar campanha, os usuários precisam estar no grupo `Marketing / User`
 
-Setting up your Marketing Campaigns
------------------------------------
+Criação de suas campanhas de marketing
+--------------------------------------
 
 .. figure::  images/crm_market_campaign.png
    :scale: 75
    :align: center
 
-   *Marketing Campaign*
+   *Campanha de Marketing*
 
-0. Introduction
+0. Introdução
 
-A campaign defines a workflow of activities that items/objects entering the campaign will go through. Items are selected by segments. Segments are automatically processed every few hours and inject new items into the campaign, according to a given set of criteria.
-It is possible to watch the campaign as it is running, by following the campaign "workitems". A workitem represents a given object/item passing through a given campaign activity. See it as a step that still can go either way. Workitems are left behind when the item proceeds to the next activities. This allows an easy analysis and reporting on the running campaign.
+A campanha define um fluxo de trabalho de atividades que os itens/objetos de entrar na campanha vai passar. Itens são selecionados por segmentos. Segmentos são processados ​​automaticamente a cada poucas horas e injetar novos itens na campanha, de acordo com um determinado conjunto de critérios.
+É possível assistir a campanha como ele está sendo executado, seguindo a campanha "itens de trabalho". Um item de trabalho representa um determinado objeto/item de passar por uma atividade de determinada campanha. Vê-la como um passo que ainda pode ir de qualquer maneira. Itens de trabalhos são deixados para trás quando o item prossegue com as atividades que vem. Isto permite uma fácil análise e elaboração de relatórios sobre a campanha em execução.
 Each activity may execute an action upon activation depending on a dynamic condition. When the condition is not met, the workitem is cancelled/deleted; if the condition is met, the action is executed, the workitem is marked as Done, and propagated to the next activities.
 
 1. Campaigns (:menuselection:`Marketing --> Campaigns --> Campaigns`)

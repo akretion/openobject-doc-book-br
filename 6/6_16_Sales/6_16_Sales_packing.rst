@@ -1,100 +1,100 @@
 
-Packaging
+Embalagem
 =========
 
-Products can be managed in several packaged forms. For example, if you sell
-batteries you can define the following packages for a given battery product:
+Produtos podem ser gerenciados em várias formas embalados. Por exemplo, se você vender
+baterias você pode definir os seguintes pacotes para um produto dado bateria:
 
-* Piece: a battery,
+* Peça: uma bateria,
 
-* Blister Pack: a pack of 4 batteries,
+* Pacote Blister: um pacote de 4 pilhas,
 
-* Pack of 100 blisters: 400 batteries,
+* Pacote de 100 bolhas: 400 batteries,
 
-* Palette: 40 packs for a total of 16,000 batteries.
+* Paleta: 40 pacotes para um total de 16 mil baterias.
 
-OpenERP's package management enables you to sell the same product in several different forms. The
-salesperson could sell separately, one battery or a palette of batteries. In the order, you can
-select the default packaging type as a function of the quantities ordered.
+O gerenciamento OpenERP  de pacotes permite-lhe vender o mesmo produto em várias formas diferentes. o
+vendedor poderia vender separadamente, uma bateria ou uma paleta de baterias. No fim, você pode
+selecione o tipo de embalagem padrão em função das quantidades encomendadas.
 
-For example, if the customer wants to buy 30,000 batteries, the salesperson can select the ``palette`` package. OpenERP will then propose to sell 32,000 batteries, which corresponds to two palettes. Or the salesperson can select 75 packs.
+Por exemplo, se o cliente quer comprar 30 mil baterias, o vendedor pode selecionar o pacote ``paleta``. O OpenERP proporá ao vender 32 mil baterias, o que corresponde a duas paletas. Ou o vendedor pode escolher 75 pacotes.
 
-The available packages are defined in the product form, in the :guilabel:`Packaging` tab. The first item on the
-list is the one that will be used by default.
+Os pacotes disponíveis são definidos no formulário do produto, na aba :guilabel:`Packaging`. O primeiro item da
+lista é a que será usada por padrão.
 
-Once a package has been defined on the order, OpenERP will throw up an alert if the ordered
-quantities do not correspond to the proposed packages. The quantity must be a multiple of the field
-:guilabel:`Quantity by Package` defined on the packaging form.
+Uma vez que um pacote foi definido no fim, OpenERP irá lançar um alerta, se o ordenado
+quantidades não correspondem aos pacotes propostos. A quantidade deve ser um múltiplo do campo
+:guilabel:`Quantity by Package` definido na formulário de embalagem.
 
 .. figure:: images/sale_warning_packaging.png
    :scale: 75
    :align: center
 
-   *Alert on the Quantities sold compared to the Packaging*
+   *Alerta sobre as quantidades vendidas em comparação com a embalagem*
 
-Do not confuse the management of packaging with the management of multiple units of measure. The
-Unit of Measure is used to manage the stock differently according to the various units. 
-With packages, the stock is always managed by individual items, but information about the package to use is supplied
-to the storesperson along with that item.
+Não confunda a gestão de embalagens com a gestão de várias unidades de medida. o
+Unidade de medida é usada para gerenciar o estoque de maneira diferente de acordo com as várias unidades.
+Com os pacotes, o estoque é sempre gerenciado por itens individuais, mas as informações sobre o pacote para utilização é fornecida
+ao vendedor juntamente com esse item.
 
-Even if the effects are the same, the printed documents will be different. The two following
-operations have the same effect on stock movement levels, but will be printed differently
-on the sales order and the packing order as where quantities are concerned:
+Mesmo se os efeitos são os mesmos, os documentos impressos serão diferentes. Os dois seguintes
+operações têm o mesmo efeito sobre os níveis de movimento de estoque, mas será impresso de maneira diferente
+sobre o pedido de vendas e no pedido em que as quantidades de embalagem como estão em causa:
 
-* 32,000 batteries, delivered on two palettes,
+* 32 mil baterias, emitido em duas paletas,
 
-* 2 palettes of batteries, with no information about packaging.
+* 2 paletas de baterias, sem informações sobre embalagem.
 
-If the customer wants to order a palette and 10 packs, the salesperson can put two order
-lines on the sales order using the same product with different units of measure.
+Se o cliente quer pedir uma paleta e 10 pacotes, o vendedor pode colocar duas linhas de pedido
+no pedido de venda usando o mesmo produto com diferentes unidades de medida.
 
-It is sometimes more useful to define different products than to define several possible packages for
-the same product. A case of beer in a supermarket is a good example. A case holds 24 bottles, plus
-the empty case itself. The customer can buy bottles by the piece or a case of 24 bottles at one go.
+Às vezes é mais útil para definir produtos diferentes para definir vários pacotes possíveis para
+o mesmo produto. Uma caixa de cerveja em um supermercado é um bom exemplo. Um caso detém 24 garrafas, além de
+o caso esvaziar-se. O cliente pode comprar garrafas à peça ou um caso de 24 garrafas de uma só vez.
 
-You could define two packages for the ``Bottle of beer`` : ``PCE`` and ``case`` . But this
-representation does not let you manage the stock and price of empty cases. So you might instead
-prefer a Bill of Materials, defining and using three different products:
+Você pode definir dois pacotes para a ``Garrafa de cerveja`` : ``PCE`` e ``caixa`` . Mas esta
+representação não permite que você gerencie o estoque e preço de caso vazio. Então você pode em vez disso
+preferir um Lista de materiais, definindo e usando três diferentes produtos:
 
-* the empty case for the beer,
+* o caso vazio para a cerveja,
 
-* the bottle of beer,
+* a garrafa de cerveja,
 
-* the case of 24 bottles of beer.
+* A caixa de 24 garrafas de cerveja.
 
-You also define the bill of materials below which determines the make-up of the case of 24 beers:
+Você também define a lista de materiais abaixo do qual determina a make-up do caso de 24 cervejas
 
-* Case of 24 bottles of beer: 1 unit,
+* Caixa de 24 garrafas de cerveja: 1 unidade,
 
-* Bottle of beer: 24 units,
+* Garrafa de cerveja: 24 unidades,
 
-* Empty case of beer: 1 unit.
+* Caixa vazia de cerveja: 1 unidade.
 
-Each of these three products has a different price. The products ``Bottle of beer`` and ``Empty case of beer`` have a stock level that needs to be managed. The ``Case of 24 bottles of beer`` has no stock because, if you sell the product, OpenERP automatically moves the stock in two lines, one for the empty case and the other for the 24 individual bottles of beer. For more information on bills of materials,
-see chapter :ref:`ch-mnf`.
+Cada um destes três produtos tem um preço diferente. Os produtos ``Garrafa de cerveja`` e ``Caixa vazia de cerveja`` ter um nível de estoque que precisa ser gerenciado. A ``Caixa de 24 garrafas de cerveja`` não tem estoque, pois, se você vender o produto, OpenERP move automaticamente o estoque em duas linhas, uma para a caixa vazia e outra para as 24 garrafas individuais de cerveja. Para mais informações sobre listas de materiais,
+veja o capítulo :ref:`ch-mnf`.
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica

@@ -4,16 +4,16 @@
 
 .. _ch-purchase:
 
-**********************
+***********************
 Conduzindo suas compras
-**********************
+***********************
 
- *In the preceding chapters you saw how to use customer invoices and delivery notes in OpenERP.
- This chapter is about the management of purchases, the process ahead of these two operations.
- You will now see how OpenERP handles and simplifies this and the control of purchases from
- suppliers.*
+ *Nos capítulos anteriores você viu como usar faturas de clientes e notas de entrega no OpenERP.
+  Este capítulo é sobre a gestão de compras, o processo de frente destas duas operações.
+  Agora você vai ver como OpenERP lida  e simplifica este eo controle das compras de
+  fornecedores.*
 
-For this chapter you can continue using the database already created or you should start with a fresh database that includes demonstration data, with :mod:`purchase` and its dependencies installed and no particular chart of accounts configured. 
+Para este capítulo, você pode continuar usando o banco de dados já criados ou você deve começar com um novo banco de dados que inclui dados de demonstração, com :mod:`purchase` e suas dependências instaladas e nenhum gráfico particular de contas configuradas. 
 
 
 .. raw:: html
@@ -29,28 +29,28 @@ For this chapter you can continue using the database already created or you shou
 
     </div>
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica

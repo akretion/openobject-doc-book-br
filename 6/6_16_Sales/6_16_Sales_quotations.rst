@@ -1,76 +1,76 @@
 
-Managing your Sales Quotations
-==============================
+Gestão Orçamentos de Vendas
+===========================
 
-In OpenERP, a quotation and an order are handled in the same form (a Sales Order), but in different states. You
-can consider an order to be a quotation that has evolved, because it has been confirmed by the
-customer. Or, conversely, that a quotation is an order that has not been validated or cancelled yet.
-Both your quotations and sales orders can be opened using the menu :menuselection:`Sales
+Em OpenERP, uma citação e uma ordem são tratados da mesma forma (um pedido de venda), mas em estados diferentes. você
+pode considerar um pedido a ser uma cotação que tem evoluído, porque tem sido confirmado pelo
+cliente. Ou, inversamente, que uma cotação é um pedido que não foi validado ou cancelado ainda.
+Ambos suas cotações e pedidos de vendas pode ser aberto usando o menu :menuselection:`Sales
 --> Sales --> Sales Orders`.
 
-To enter details of a new quotation, you can use the menu :menuselection:`Sales -->
-Sales --> Sales Orders` and then select :guilabel:`New`. OpenERP opens a new window
-allowing you to enter data into a new blank quotation form. You can also create a quotation directly from an opportunity, as explained in a previous chapter.
+Para inserir os detalhes de uma nova cotação, você pode usar o menu :menuselection:`Sales -->
+Sales --> Sales Orders` em seguida, selecione :guilabel:`New`. OpenERP abre uma nova janela
+o que lhe permite inserir dados em um novo formulário de cotação em branco. Você também pode criar uma cotação diretamente de uma oportunidade, como foi explicado no capítulo anterior.
 
 .. figure:: images/sale_quotation_new.png
    :scale: 75
    :align: center
 
-   *New Quotation*
+   *Nova cotação*
 
-Some information is automatically specified by the system:
+Algumas informações são automaticamente especificada pelo sistema:
 
-* an internal reference for the quotation or order,
+* uma referência interna para a cotação ou pedido,
 
-* the sales point that the order will be delivered from,
+* o ponto de vendas que a encomenda será entregue a partir de,
 
-* the order date,
+* a data do pedido,
 
-* the pricelist for the current sales order.
+* A tabela de preços para o pedido de vendas atual.
 
-You can modify any of that information before validating the quotation. The customer
-reference is shown in the header of the order. This optional field is for the customer's own reference –
-if the customer does not supply one, just leave it empty.
+Você pode modificar qualquer dessas informações antes de validar a cotação. o cliente
+referência é mostrado no cabeçalho do pedido. Este campo é opcional para referência do próprio cliente –
+se o cliente não fornecer uma, apenas deixá-lo vazio.
 
-You then enter all the data about the order in the :guilabel:`Sales Order` tab. Start by entering
-the customer name, by selecting the correct customer from the list of customers in the system. From the quotation, you can
-create a new customer on the fly if necessary – press :kbd:`<F1>` in the empty :guilabel:`Customer` field to do that, or type the name, press the `Tab` key and then click `Create`. Indeed, when you type a name or part of a name in the ``Customer`` field, and OpenERP does not find a corresponding customer, you will see the `Create` button appear to allow you to directly create the customer with the name you entered.
+Você, então, inserir todos os dados sobre a ordem na guia :guilabel:`Sales Order`. Comece por digitar
+o nome do cliente, selecionando o cliente correto na lista de clientes no sistema. A partir da citação, você pode
+criar um novo cliente na mosca, se necessário – pressione :kbd:`<F1>` no campo vazio :guilabel:`Customer` para fazer isso, ou digite o nome, pressione a tecla `Tab` e depois clique `Create`. Na verdade, quando você digita um nome ou parte de um nome no campo ``Customer``, e OpenERP não encontrar um cliente correspondente, você verá o botão `Create` aparecem para permitir que você criar diretamente o cliente com o nome digitado.
 
-Once the customer name has been selected, different fields of the order are completed
-automatically, based on the configuration of the partner form for that customer:
+Uma vez que o nome do cliente foi selecionado, diferentes campos do pedido estão concluídos
+automaticamente, com base na configuração do formulário de sócio para que o cliente:
 
-* :guilabel:`Ordering Contact` : person handling the order at the customer end. By default, OpenERP
-  proposes the Ordering Contact at the selected partner.
+* :guilabel:`Ordering Contact` :pessoa que manuseia o pedido no final do cliente. Por padrão, OpenERP
+propõe o contato Pedido ao parceiro selecionado
 
-* :guilabel:`Delivery Address` : address used on the delivery order. By default, OpenERP proposes
-  the delivery address from the partner form. If no specific delivery address is defined, the default
-  address will be used instead.
+* :guilabel:`Delivery Address` : endereço usado no pedido de entrega. Por padrão, OpenERP propõe
+   o endereço de entrega do formulário de sócio. Se nenhum endereço de entrega específica é definida, o padrão
+   endereço será utilizado em seu lugar.
 
-* :guilabel:`Invoice Address` : address used to send the invoice to the customer. By default, OpenERP
-  proposes the address labelled :guilabel:`Invoice` from the partner form. If no specific invoice address is defined, the default
-  address will be used instead.
+* :guilabel:`Invoice Address` :endereço usado para enviar a fatura para o cliente. Por padrão, o OpenERP
+   propõe o endereço rotulados :guilabel:`Invoice` a partir do formulário do parceiro. Se nenhum endereço e fatura específica é definida, por padrão
+   endereço será utilizado em seu lugar.
 
-* :guilabel:`Pricelist` : will determine both the currency of the quotation and the price that will
-  be used for each product.
+* :guilabel:`Pricelist` : irá determinar tanto a moeda da cotação eo preço que será
+   ser usado para cada produto.
 
-* :guilabel:`Payment Term` : available in the :guilabel:`Other Information` tab, it shows the payment
-  method that the customer will follow, for example ``30 Days End of Month``.
+* :guilabel:`Payment Term` : disponível na aba :guilabel:`Other Information`, ele mostra o pagamento
+   método que o cliente irá seguir, por exemplo ``30 Days End of Month``.
 
-You can modify any of these fields on the order as you go.
+Você pode modificar qualquer um destes campos no pedido que você vá.
 
-You can also set an analytic account for your order. This account will be used during invoicing
-to generate accounting entries corresponding to the invoice automatically. This is extremely useful
-for assigning revenues to the project or case specified by this order.
+Você também pode configurar uma conta analítica para o seu fim. Esta conta será usada durante o faturamento para
+gerar lançamentos contábeis correspondentes à fatura automaticamente. Isto é extremamente útil
+para atribuição de receitas para o projeto ou caso especificado por este pedido.
 
-.. tip::  Analytic Accounts
+.. tip::  Contas analíticas
 
-   If you are managing by task, the analytic account to be selected is the one that corresponds to
-   the project for the order.
-   The sales carried out by the order can be allocated to the project so that profitability
-   calculations can be made.
+   Se você estiver gerenciando por tarefa, a conta analítica a ser selecionado é aquele que corresponde a
+    o projeto para o pedido.
+   As vendas realizadas pela o pedido podem ser alocados para o projeto de modo que a rentabilidade
+    cálculos podem ser feitos.
 
-Once the information has been entered, you can enter data for the order lines. To do that, create a
-new order line as shown in the figure :ref:`fig-slinf`.
+Uma vez que a informação tenha sido inserido, você pode inserir dados para as linhas do pedido. Para fazer isso, crie uma
+nova linha de pedido, como mostrado na figura :ref:`fig-slinf`.
 
 .. _fig-slinf:
 
@@ -78,113 +78,112 @@ new order line as shown in the figure :ref:`fig-slinf`.
    :scale: 75
    :align: center
 
-   *Entering a New Sales Order Line*
+   *Entrando em uma nova linha de pedido de vendas*
 
-First of all, select the product that is to be sold to the customer. OpenERP shows some
-useful information in the list of products to help you making a sales quotation:
+Primeiro de tudo, escolha o produto que está a ser vendido para o cliente. OpenERP mostra alguns
+informações úteis para a lista de produtos para ajudar você a fazer uma cotação de venda:
 
-* :guilabel:`Real Stock` : physically present in your warehouses. This value depends on the Shop (sales
-  point) selected in the order header. Different shops can be linked to different warehouses,
-  giving different stock levels, or can use the same warehouse.
+* :guilabel:`Real Stock` : fisicamente presente em seus armazéns. Este valor depende da Loja (ponto 
+  de vendas) selecionados no cabeçalho do pedido. Lojas diferentes podem ser ligadas a diferentes armazéns.
 
-* :guilabel:`Virtual Stock` : shows a salesperson the quantity that can be sold, taking into account
-  both stock reserved for other orders and the number of products planned to arrive in the short term.
+* :guilabel:`Virtual Stock` : mostra um vendedor a quantidade que pode ser vendido, tendo em conta
+   ambas as ações reservadas para outras ordens eo número de produtos planejados para chegar a curto prazo.
 
-* :guilabel:`Public Price` : the basic sales price for the given product. It provides a basis for the
-  salesperson to be able to judge whether to offer a discount to the customer, and how much the
-  discount should be.
+* :guilabel:`Public Price` : o preço de venda básico para o determinado produto. Ele fornece uma base para o
+   vendedor para poder julgar se a oferecer um desconto para o cliente, e quanto de
+   desconto deve ser
 
-* :guilabel:`Pricelist` : (may not be shown, depending on the installed modules) depends on the pricing conditions attached to the customer, calculated on the list price. This is the price that is proposed by default in the customer quotation, unless it has been modified by the salesperson.
+* :guilabel:`Pricelist` : (não pode ser mostrado, dependendo dos módulos instalados) depende das condições de preços anexada ao cliente, calculada sobre o preço de lista. Este é o preço que é proposto por padrão na cotação dos clientes, a menos que tenha sido modificado pelo vendedor.
 
-* :guilabel:`Cost Price` : shows the cost price of the product. If the salesperson sells at less
-  than this amount, the company incurs a loss.
+* :guilabel:`Cost Price` : mostra o preço de custo do produto. Se o vendedor vende por menos
+   do que este montante, a empresa incorre em uma perda.
 
 .. figure:: images/sale_product_list.png
    :scale: 75
    :align: center
 
-   *Selecting a Product in a Sales Order Line*
+   *seleção de um produto em uma linha de pedido de vendas*
 
-Once the product to be sold to the customer has been selected, OpenERP automatically
-completes all the other required fields: quantity, unit of measure, description, unit price,
-discount, procurement method, lead times and applicable taxes. All of this information comes from
-the product form.
+Uma vez que o produto a ser vendido para o cliente tenha sido selecionado, automaticamente o OpenERP
+completa de todos os outros campos obrigatórios: numa unidade de medida, descrição, preço unitário,
+desconto, método de aquisição, prazos de entrega e impostos aplicáveis. Todas essas informações vem no
+formulário do produto..
 
 .. index::
    single: module; product_visible_discount
 
-.. tip:: Visible Discount
+.. tip:: Desconto visível
 
-   If a discounted price is taken from a price list, by default that figure is shown as the
-   sales price to the customer. He will see a discount of 0% along with the unit price that is different
-   from the list price.
-   If you install the module :mod:`product_visible_discount` from ``extra-addons``,
-   you can configure whether you want to make the discount
-   explicitly visible in an order form as a percentage difference from the list price,
-   or just show a reduced unit price as in the default configuration.
+   Se um preço com desconto é retirado de uma lista de preços, por padrão, essa figura é mostrado como o
+    preço de venda ao cliente. Ele vai ver um desconto de 0%, juntamente com o preço unitário que é diferente
+    do preço de lista.
+   Se você instalar o módulo :mod:`product_visible_discount` from ``extra-addons``,
+   você pode configurar se você quiser fazer o desconto
+    explicitamente visível em um formulário de pedido como uma diferença percentual em relação ao preço de lista,
+    ou apenas mostrar um preço unitário reduzido que na configuração padrão.
 
-When you enter a quotation, the selected product is presented in the language of the user so that he can see
-what he is selling. The description of the product sold can also be expressed in the customer's language.
-The translation to the customer's language is used on the quotation or order when it is printed.
+Quando você entra em uma cotação, o produto escolhido é apresentado na linguagem do cliente para que ele possa ver
+o que ele está vendendo. A descrição do produto vendido pode também ser expressa na linguagem do cliente.
+A tradução para o idioma do cliente é usada na cotação ou np pedido quando ele é impresso.
 
 .. figure:: images/sale_line_translation.png
    :scale: 75
    :align: center
 
-   *Selling a Product in a Partner Language that differs from the User Language*
+   *Venda de um produto em um idioma parceiro que difere da língua do usuário*
 
-.. note:: One-off Sales
+.. note:: Vendas únicas 
 
-   If a product is sold to a customer only once, you do not have to create a completely new
-   product form just for that sale.
-   You can manually complete all the information in the order without actually creating a product:
-   description, price, quantity, lead time, taxes.
-   In this case, OpenERP will not generate a delivery note because the a pure description is not a product, and so it is not in stock.
+   Se um produto é vendido a um cliente apenas uma vez, você não tem que criar um formulário de produtos completamente novo
+    apenas para essa venda.
+    Você pode concluir manualmente todas as informações no pedido sem realmente criar um produto:
+   descrição, quantidade, preço, prazo de entrega, impostos.
+    Neste caso, OpenERP não irá gerar uma nota de entrega, porque a descrição pura não é um produto, e por isso não está em estoque.
 
-When all of the products are entered, you can print the quotation and send it to the customer. To do
-this, click the :guilabel:`Quotation / Order` link in the :guilabel:`Reports` section to the right.
-OpenERP opens the quotation in PDF to enable to you to check it before printing.
+Quando todos os produtos são introduzidos, você pode imprimir a cotação e enviá-lo para o cliente. para fazer
+isso, clique no link :guilabel:`Quotation / Order` na seção :guilabel:`Reports` para a direita.
+O OpenERP abre a cotação em PDF para que você possa verificá-lo antes de imprimir.
 
 .. figure:: images/sale_print.png
    :scale: 75
    :align: center
 
-   *Printing a Sales Quotation*
+   *Impressão de uma cotação de venda*
 
-When the order is confirmed by the customer, you can confirm the quotation to turn in into a sales order. You can also just cancel the window without confirming the order to leave it in quotation state. To see all the current quotations, you can use the menu :menuselection:`Sales --> Sales --> Sales Orders` and click the :guilabel:`Quotations` filter button.
+Quando o pedido é confirmado pelo cliente, você pode confirmar a cotação para entregar em um pedido de vendas. Você também pode simplesmente cancelar a janela sem confirmar o pedido para deixá-lo em estado de cotação. Para ver todas as cotações atuais, você pode usar o menu :menuselection:`Sales --> Sales --> Sales Orders` e clique no botão de filtro :guilabel:`Quotations`.
 
-To follow the process for your order, you can click on the process view (indicated by a question mark) from the order form. OpenERP
-shows you an interactive process view of that order. For more information about its use,
-look at :ref:`ch-process`.
+Para acompanhar o processo de seu pedido, você pode clicar na visão de processos (indicado por um ponto de interrogação) do formulário de encomenda. O OpenERP
+mostra uma visão de processos interativos desse pedido. Para mais informações sobre o seu uso,
+olhe para :ref:`ch-process`.
 
 .. figure:: images/sale_process.png
    :scale: 75
    :align: center
 
-   *Process View for a Sales order*
+   *Visão em processo para um pedido de venda*
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica

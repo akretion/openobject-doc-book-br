@@ -1,37 +1,37 @@
 
-All the Elements of a Complete Workflow
-=======================================
+Todos os elementos de um fluxo de trabalho completo
+===================================================
 
-The supplier or purchase order is the document that lets you manage price negotiations, control supplier invoices, handle goods receipts and synchronize all of these documents.
+O pedido do fornecedor ou de compra é o documento que permite que você gerencie as negociações de preços, controle de faturas de fornecedores, lidar com entradas de mercadorias e sincronizar todos esses documentos.
 
-Let us start by looking at the following order workflow:
+Vamos começar a olhar para o fluxo de trabalho seguinte ordem:
 
-#. Price request to the supplier,
+#. Pedido de preços para o fornecedor,
 
-#. Confirmation of purchase,
+#. Confirmação da compra,
 
-#. Receipt and control of products,
+#. Recepção e controle de produtos,
 
-#. Control of invoicing.
+#. Controle de faturamento.
 
-Setting up your Database
-------------------------
+Criação de seu banco de dados
+-----------------------------
 
-To set up a system for these examples, create a new database with demonstration data in it, and
-select the :guilabel:`Extended` interface when you log in as the *admin* user. You can enter your own
-company details when asked, or just use the default if you want.
+Para configurar um sistema para estes exemplos, crie um novo banco de dados com dados de demonstração em que, e
+selecione a interface :guilabel:`Extended` quando você logar como o usuário *admin*. Você pode inserir seus próprios
+detalhes da empresa quando solicitado, ou simplesmente usar o padrão se quiser.
 
 .. index::
    single: module; purchase
 
-Then, using the Configuration Wizard, select :guilabel:`Purchase Management` in the :guilabel:`Install Applications` section to install the :mod:`purchase` module, which also installs several other modules as dependencies. Continue
-the remainder of this chapter logged in as the *admin* user.
+Em seguida, usando o Assistente de Configuração, selecione :guilabel:`Purchase Management` na seção :guilabel:`Install Applications` para instalar o módulo :mod:`que também instala vários outros módulos como dependências. continue
+o restante deste capítulo logado como o usuário *admin*.
 
-Price Request from the Supplier
--------------------------------
+Pedido de preço do Fornecedor
+-----------------------------
 
-To enter data for a new supplier price request (i.e. request for quotation), use the menu :menuselection:`Purchases --> Purchase Management -->
-Request for Quotation`. When you click :guilabel:`New`, OpenERP opens a blank request for quotation form that you use for requesting prices from a supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement created by OpenERP, you will find a reference to the document that generated the request in the :guilabel:`Origin` field.
+Para inserir dados para um novo pedido de preço do fornecedor (i.e. solicitação de cotação), use o menu :menuselection:`Purchases --> Purchase Management -->
+Request for Quotation`. Quando você clicar em :guilabel:`New`, OpenERP abre uma solicitação em branco para um formulário de cotação que você usa para solicitar os preços de um fornecedor. isso é mostrado na figura :ref:`fig-pfrm`. Se o preço pedido veio de uma aquisição automática criado por OpenERP, você vai encontrar uma referência ao documento que gerou o pedido no campo :guilabel:`Origin`.
 
 .. _fig-pfrm:
 
@@ -44,362 +44,359 @@ Request for Quotation`. When you click :guilabel:`New`, OpenERP opens a blank re
 .. index::
    single: module; warning
 
-.. note:: Managing Alerts
+.. note:: Gerenciando alertas
 
-        If you install the :mod:`warning` module, you will be able to define alerts that appear when the purchaser enters a price request or order. You can set alerts on the product and on the supplier.
+        Se você instalar o módulo :mod:`warning`, você será capaz de definir alertas que aparecem quando o comprador entra um pedido de preço ou ordem. Você pode definir alertas sobre o produto e ao fornecedor.
 
-The internal reference, the date and the warehouse the products should be delivered to, are completed automatically by OpenERP, but you can change these values if needed. Next, when you select a supplier, OpenERP automatically completes the contact address for the supplier. The pricelist is also automatically completed from the pricelist in the supplier form. This should bring in all of the conditions that you have negotiated with the supplier for a given period.
+A referência interna, a data eo armazém, os produtos deverão ser entregues, sejam concluídas automaticamente pelo OpenERP, mas você pode alterar esses valores, se necessário. Em seguida, quando você selecionar um fornecedor, OpenERP completa automaticamente o endereço de contato para o fornecedor. A tabela de preços também é preenchida automaticamente a partir da lista de preços, no formulário do fornecedor. Isso deve trazer todas as condições que você tem negociado com o fornecedor para um determinado período.
 
-.. tip:: Supplier Selection
+.. tip:: Seleção de fornecedor
 
-        Searching for a supplier is limited to all of the partners in the system that have the :guilabel:`Supplier` checkbox checked. If you do not find your supplier, it might be worth checking the whole list of all partners to make sure that the supplier does not yet exist without the Supplier checkbox being checked.
+        À procura de um fornecedor está limitada a todos os parceiros no sistema que tem a caixa de seleção marcada :guilabel:`Supplier`. Se você não encontrar o seu fornecedor, pode valer a pena verificar a lista completa de todos os parceiros para se certificar de que o fornecedor ainda não existe sem a caixa de seleção do fornecedor a ser verificada.
 
-Once the main body of the purchase order has been completed, you can enter the product lines.
+Uma vez que o corpo principal do pedido de compra tenha sido concluído, você pode digitar as linhas de produtos.
 
 .. figure:: images/purchase_line_form.png
    :scale: 75
    :align: center
 
-   *Purchase Order Line*
+   *Linha do Pedido de Compra*
 
-When you have selected the product, OpenERP automatically completes the other fields in the form:
+Quando você tiver selecionado o produto, OpenERP completa automaticamente os outros campos do formulário:
 
-* :guilabel:`Product UoM`, taken from the :guilabel:`Purchase Unit of Measure` field in the product form,
+* :guilabel:`Product UoM`, tomado a partir do campo :guilabel:`Purchase Unit of Measure` no formulário de produto,
 
-* The :guilabel:`Description` of the product in the supplier's language,
+* A :guilabel:`Description` do produto em linguagem do fornecedor,
 
-* :guilabel:`Scheduled Date`, calculated from the order date and the delivery lead time for the supplier (for the given product),
+* :guilabel:`Scheduled Date`, calculado a partir da data do pedido eo tempo de entrega para o fornecedor (para o determinado produto),
 
-* :guilabel:`Unit Price`, taken from the supplier's pricelist,
+* :guilabel:`Unit Price`, tirado da lista de preços do fornecedor,
 
-* :guilabel:`Taxes`, taken from the information on the product form and partner form,
-  depending on the rules seen in :ref:`Financial Analysis <ch-financial>`.
+* :guilabel:`Taxes`, tomado a partir da informação sobre a forma de produtos e formulário sócio,
+  dependendo das regras visto em :ref:`Financial Analysis <ch-financial>`.
 
-.. tip:: Product Wording and Code
+.. tip:: Escrevendo o produto e Código
 
-        When you enter supplier names in the product form, you can set a name and a product code for each individual supplier. If you do that, OpenERP will then use those details instead of your own internal product names for that selected supplier.
+        Quando você digitar nomes de fornecedores no formulário de produto, você pode definir um nome e um código de produto para cada fornecedor individual. Se você fizer isso, OpenERP irá então usar esses detalhes ao invés de seus próprios nomes de produtos internos para o fornecedor selecionado.
 
-If you work with management by case, you can also set the analytic account that should be used to
-report all the purchase costs. The costs will then be reported at the receipt of the supplier
-invoice.
+Se você trabalha com gestão por caso, você também pode configurar a conta analítica que deve ser usado para
+relatório de todos os custos de aquisição. Os custos serão então notificados com o recibo do fornecedor
+fatura.
 
 .. index::
    single: module; purchase_analytic_analysis
 
-.. tip:: Management by Case
+.. tip:: Gestão por Processo
 
-   Analytic accounts can be very useful for all companies that manage costs by case, by site, by
-   project or by folder.
-   To work with several analytic axes, you should install the module :mod:`purchase_analytic_plans`,
-   by selecting :guilabel:`Purchase Analytic Plans` in the :guilabel:`Reconfigure` wizard and clicking
+   Contas analíticas pode ser muito útil para todas as empresas que gerenciam os custos em caso, por site, por
+    projeto ou por pasta.
+   Para trabalhar com vários eixos de análise, você deve instalar o módulo :mod:`purchase_analytic_plans`,
+   selecionando :guilabel:`Purchase Analytic Plans` no assistente :guilabel:`Reconfigure` e clicando
    :guilabel:`Configure`.
 
 .. index::
    single: module; account_analytic_default
    single: module; purchase_analytic_plans
 
-To make sure that the analytic account is automatically selected according to the partner, the date, the
-products or the user, you can install the module :mod:`account_analytic_default` (which is installed
-automatically as a dependency of :mod:`purchase_analytic_plans`).
+Para se certificar de que a conta analítica é selecionado automaticamente de acordo com o parceiro, a data, o
+produtos ou o usuário, você pode instalar o módulo :mod:`account_analytic_default` (que é instalado
+automaticamente como uma dependência do :mod:`purchase_analytic_plans`).
 
-In the :guilabel:`Notes` tab of the product line, you can enter a note that will be attached when the order
-confirmation or price quotation is printed. This note can be predefined on the product form to
-automatically appear on each order for that product. For example, you can enter “Do not forget to send
-by express delivery as specified in our contract reference 1234.”
+Na aba :guilabel:`Notes` da linha de produtos, você pode digitar uma nota que será anexada quando a ordem de
+cotação de confirmação ou o preço é impresso. Esta nota pode ser pré-definidos sobre a forma de produtos para
+aparecem automaticamente em cada pedido para esse produto. Por exemplo, você pode entrar “Não se esqueça de enviar
+pela entrega expressa, conforme especificado no nosso contrato de referência 1234.”
 
-Once the document has been completed, you can print it as a price estimate to send to
-the supplier. You can set a note for the attention of the supplier in the form's third tab.
+Uma vez que o documento tenha sido concluído, você pode imprimi-lo como uma estimativa de preço para enviar para
+o fornecedor. Você pode definir uma nota para a atenção do fornecedor na terceira aba do formulário.
 
 .. figure:: images/purchase_quotation.png
    :scale: 75
    :align: center
 
-   *Printing the Supplier Price Quotation*
+   *Impressão da Cotação do Fornecedor*
 
-Then leave the document in the ``Request for Quotation`` state. When you receive a response from the supplier, use the menu
-:menuselection:`Purchases --> Purchase Management --> Requests for Quotation`. Select the
-order and complete its details.
+Em seguida, deixar o documento no estado ``Pedido de Cotação``. Quando você receber uma resposta do fornecedor, use o menu
+:menuselection:`Purchases --> Purchase Management --> Requests for Quotation`. Selecione o
+pedido e conclua os seus detalhes.
 
-When you want to approve the order, use the button :guilabel:`Convert to Purchase Order`. The price
-request then passes into the ``Approved`` state. 
-No further changes are possible.
+Quando você quiser aprovar o pedido, use o botão :guilabel:`Convert to Purchase Order`. o preço
+pedido, em seguida, passa para o estado ``Approved``. 
+Nenhuma alterações a mais serão possíveis.
 
 .. figure:: images/purchase_process.png
    :scale: 75
    :align: center
 
-   *Purchase Order Process*
+   *Processo de Pedido de Compra*
 
-Goods Receipt
--------------
+Recebimento de mercadorias
+--------------------------
 
-Once the order has been approved, OpenERP automatically prepares the goods receipt order in the
-draft state for you. To get a list of the products you are waiting for from your suppliers, use the
+Uma vez que o pedido foi aprovado, OpenERP automaticamente prepara um pedido na entrada de mercadorias em
+estado de rascunho para você. Para obter uma lista dos produtos que você está esperando de seus fornecedores, use o
 menu :menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments`.
 
-.. tip:: Purchasing Services
+.. tip:: Serviços de compra
 
-    If you buy services from your supplier, OpenERP does not generate a goods receipt note.
-    There is no service receipt equivalent to a goods receipt.
+    Se você comprar os serviços do seu fornecedor, OpenERP não gera uma nota de entrada de mercadorias.
+     Não há recebimento de serviço equivalente a uma entrada de mercadorias.
 
-Select the document that corresponds to the item that you are receiving. Usually, the goods receipt
-note is found by making a search on the order reference or the supplier name. You can then confirm
-the receipt of the products.
+Selecione o documento que corresponde ao item que você está recebendo. Normalmente, o recebimento da mercadoria
+nota é encontrada fazendo uma pesquisa sobre a referência ao pedido ou o nome do fornecedor. Você pode então confirmar
+o recebimento dos produtos.
 
-As described in :ref:`ch-stocks`, if you receive only part of the order, OpenERP
-manages the remainder of that order.
-A second receipt note is then automatically created for the goods not received.
-You can cancel it if you think that you will never receive the remaining products.
+Conforme descrito na :ref:`ch-stocks`, se você receber apenas uma parte do pedido OpenERP
+gerencia o restante desse pedido.
+Uma nota recebimento segundo é então criada automaticamente para as mercadorias não recebidas.
+Você pode cancelá-lo se você acha que você nunca vai receber os produtos restantes.
 
-After receiving the goods, OpenERP will show you which orders are open and the state of their
-receipt and invoicing if you return to the list of orders.
+Depois de receber a mercadoria, OpenERP irá mostrar-lhe que as ordens estão abertas eo estado de seus
+recebimento e faturamento, se você voltar à lista de pedidos.
 
 .. figure:: images/purchase_list.png
    :scale: 75
    :align: center
 
-   *List of Open Orders, and their Receipt and Invoice Status*
+   *Lista de Pedidos em Aberto, e seus Recebimento e status da fatura*
 
-Control of Invoicing
---------------------
+Controle de Faturamento
+-----------------------
 
-To control supplier invoicing, OpenERP provides three systems as standard, which can differ order
-by order:
+Para controlar o faturamento do fornecedor, OpenERP oferece três sistemas como padrão, que podem diferir pedido
+por pedido:
 
-* :guilabel:`From Order` : invoicing based on quantities ordered,
+* :guilabel:`From Order` : faturamento com base em quantidades encomendadasd,
 
-* :guilabel:`From Picking` : invoicing based on quantities received,
+* :guilabel:`From Picking` : faturamento com base em quantidades recebidas,
 
-* :guilabel:`Manual` : manual invoicing.
+* :guilabel:`Manual` : faturamento manual.
 
-The mode of invoicing control is set in the second tab of the purchase order in the field
+O modo de controle de faturamento é definido na guia segundo o pedido no campo
 :guilabel:`Invoicing Control`.
 
 .. figure:: images/purchase_form_tab2.png
    :scale: 75
    :align: center
 
-   *Purchase Order, Invoice Control*
+   *Pedido de Compra, Controle da fatura*
 
-.. tip:: Default Value
+.. tip:: Valor padrão
 
-   A company generally uses a single invoicing control method for all of its invoices.
-   So you are advised to set a default value in the :guilabel:`Invoicing Control` field after
-   installation.
+  Um empresa geralmente usa um método único de controle faturamento para todas as suas faturas.
+   Então, você é aconselhado a definir um valor padrão no campo :guilabel:`Invoicing Control` após a
+instalação.
 
-Control based on Orders
------------------------
+Controle baseado em pedidos
+---------------------------
 
-If you selected your invoicing control based on orders, OpenERP will automatically generate a
-supplier invoice in the draft state when the order is confirmed. You can obtain a list of invoices
-waiting using the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices` and enabling
-the ``Draft`` filter.
+Se você selecionou o seu controle faturamento com base em pedidos, OpenERP irá gerar automaticamente um
+fatura do fornecedor no estado de rascunho quando o pedido for confirmado. Você pode obter uma lista de faturas em
+espera utilizando o menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices` e permitindo o filtro ``Draft``.
 
-When you receive a paper invoice from your supplier, all you need to do is validate the invoice pre-
-generated by the system. Do not forget to check the price and the quantities. When the invoice is
-confirmed, the accounting entries represent the cost of purchase and are automatically entered into
-the system.
+Quando você receber uma fatura no papel a partir do seu fornecedor, tudo que você precisa fazer é validar a fatura pre-
+gerada pelo sistema. Não se esqueça de verificar o preço e as quantidades. Quando a fatura é
+confirmada, os lançamentos contábeis representam o custo de aquisição e são automaticamente colocados no sistema.
 
-The supplier order is automatically set as ``Paid`` when you pay the supplier invoice.
+O pedido do fornecedor é automaticamente definido como ``Paid`` quando você pagar a fatura do fornecedor.
 
-This method of controlling invoices is often used in service companies, because the invoiced amounts
-correspond to the ordered amounts. In logistics, by contrast, you most often work with invoicing
-controlled by goods receipt.
+Este método de controle de faturas é frequentemente utilizado em empresas de serviços, porque valores faturados
+correspondem aos montantes solicitados. Em logística, ao contrário, na maioria das vezes você trabalha com faturamento
+controlado por entrada de mercadorias.
 
-Control based on Goods Receipt
-------------------------------
+Controle baseado em entrada de mercadorias
+------------------------------------------
 
-To control your supplier invoices based on goods receipt, set the field :guilabel:`Invoicing
-Control` on the second tab of the order to :guilabel:`From Picking`.
+Para controlar o seu fornecedor de faturas com base na entrada de mercadorias, defina o campo :guilabel:`Invoicing
+Control` na segunda aba do pedido de :guilabel:`From Picking`.
 
-In this case, no invoice, draft state or any other, is generated by the order. On the goods receipt
-note, the field :guilabel:`Invoice Control` is set to :guilabel:`To Be Invoiced`.
+Neste caso, nenhuma fatura, no estado de rascunho ou qualquer outro, é gerada pelo pedido. Sobre a entrada de mercadorias
+nota, o campo :guilabel:`Invoice Control` is set to :guilabel:`To Be Invoiced`.
 
-The storesperson can then receive different orders. If he wants to generate the draft invoice for a
-goods receipt, he can click the action :guilabel:`Create Invoice`. OpenERP then asks you for the
-journal for this invoice. It then opens that or the generated invoices (in the case of creating
-invoices for several receipts at one time) which enables you to modify it before confirming it.
+A pessoa armazena poderá então receber ordens diferentes. Se ele quer gerar a fatura para um projecto
+entrada de mercadorias, ele pode clicar a ação :guilabel:`Create Invoice`. OpenERP pede-lhe para a
+revisão para esta fatura. Ele então abre isso ou as faturas geradas (no caso de criação de
+faturas de vários recibos de uma só vez) que lhe permite modificá-lo antes de a confirmar.
 
-This approach is useful when you receive the invoice at the same time as the item from the supplier.
-Usually, invoices are sent by post some days later. In this case, the storesperson leaves the item
-unchanged without generating an invoice. Then, once per day or once per week the accountant will
-create the draft invoices based on all the receipts for the day. To do that, he uses the menu
+Essa abordagem é útil quando você receber a fatura, ao mesmo tempo que o item do fornecedor.
+Normalmente, as faturas são enviadas por correio alguns dias depois. Neste caso, a pessoa armazenada deixa o item
+inalterada, sem gerar uma fatura. Então, uma vez por dia ou uma vez por semana o contador vai
+criar o projeto com base em faturas de todos os recibos para o dia. Para fazer isso, ele usa o menu
 :menuselection:`Purchases --> Invoice Control --> Purchase Lines Not Invoiced`. 
-He clicks the action :guilabel:`Create invoices` to generate all draft invoices from
-the list of receipts that have not yet been invoiced.
+Ele clica a ação :guilabel:`Create invoices` para gerar todas as faturas projecto de
+a lista de receitas que ainda não foram faturados.
 
 .. index::
    single: accountant
 
-At that point, the accountant can decide if he wants to generate an invoice per item or group all items
-for the same partner into the same invoice.
+Nesse ponto, o contabilista pode decidir se ele quer gerar uma fatura por item ou grupo de todos os itens
+para o mesmo parceiro na mesma fatura.
 
-Invoices are then handled just like those controlled from ``On Order``. Once the invoice arrives at
-the accounting service, he just compares it with the invoices waiting to control what the supplier
-invoices you.
+As Faturas são então tratadas assim como aquelas controlada a partir de ``On Order``. Uma vez que a fatura chega a
+o serviço de contabilidade, ele apenas compara-lo com as faturas à espera de controlar o que o fornecedor
+faturas você.
 
 .. index::
    single: module; delivery
 
-.. tip:: Delivery Charges
+.. tip:: Taxas de entrega
 
-   To manage delivery charges, install the module :mod:`delivery` using the :guilabel:`Reconfigure` wizard
-   and selecting :guilabel:`Delivery Costs` in :guilabel:`Sales Application Configuration` section.
-   This will automatically add delivery charges to the creation of the draft invoice as a function
-   of the products delivered or ordered.
+   Para gerenciar custos de entrega, instalar o módulo de assistente:mod:`delivery` using the :guilabel:`Reconfigure`
+   e selecionando :guilabel:`Delivery Costs` na seção :guilabel:`Sales Application Configuration`.
+   Isso irá adicionar automaticamente taxas de entrega para a criação da factura projecto como uma função
+    dos produtos entregues ou encomendadas.
 
 .. index:: 
    single: tender
    single: purchase; tender
 
-Tenders
--------
+Propostas
+---------
 
 .. index::
    single: module; purchase_tender
 
-To manage tenders, you should use the module :mod:`purchase_requisition`, installed via the
-:guilabel:`Purchase Requisition` option in the :guilabel:`Reconfigure` wizard.
-This lets you create several
-supplier price requests for a single supply requirement. Once the module is installed, OpenERP adds
-a new :menuselection:`Purchase Requisitions` menu in :menuselection:`Purchases --> Purchase Management`. You can then define the new tenders.
+Para gerenciar propostas, você deve usar o módulo :mod:`purchase_requisition`, instalados através da opção
+:guilabel:`Purchase Requisition` no assistente :guilabel:`Reconfigure`.
+Isto permite-lhe criar diversos
+fornecedores pedidos preço para uma exigência de fornecimento único. Assim que o módulo está instalado, acrescenta OpenERP
+um novo menu :menuselection:`Purchase Requisitions` em :menuselection:`Purchases --> Purchase Management`. Você pode então definir os novos concursos.
 
 .. figure:: images/purchase_tender.png
    :scale: 75
    :align: center
 
-   *Defining a Tender*
+   *Definição de uma proposta*
 
-To enter data for a new tender, use the menu :menuselection:`Purchases --> Purchase Management -->
-Purchase Requisitions` and select :guilabel:`New`. OpenERP then opens a new blank tender form. The reference number
-is set by default and you can enter information about your tender in the other fields.
+Para inserir dados para um novo concurso, use o menu :menuselection:`Purchases --> Purchase Management -->
+Purchase Requisitions` e selecione :guilabel:`New`.OpenERP então abre um formulário novo concurso em branco. O número de referência
+é definido por padrão e você pode inserir informações sobre o seu concurso nos outros campos.
 
-If you want to enter a supplier's response to your tender request, add a new
-draft purchase order into the list on the :guilabel:`Quotation` tab of your tender document. 
-If you want to revise a supplier price in response to negotiations, edit any 
-appropriate purchase order that you have left in the draft state and link that to the tender. 
+Se você deseja inserir uma resposta do fornecedor à sua solicitação de concurso, adicione um novo
+projecto de ordem de compra para a lista na guia :guilabel:`Quotation` do seu documento de concurso. 
+Se você quiser rever o preço do fornecedor em resposta às negociações, editar qualquer
+pedido de compra apropriado que você deixou no estado de rascunho e ligação à proposta.
 
-When one of the orders about a tender is confirmed, all of the other orders are automatically
-cancelled by OpenERP if you selected the Purchase Requisition (exclusive) type. That enables you to accept just one order for a particular tender. If you select Multiple requisitions, you can approve several purchase orders without cancelling other orders from this tender.
+Quando um dos pedidos sobre a proposta seja confirmada, todas as outras ordens são automaticamente
+cancelado por OpenERP se você selecionou o tipo de requisição de compra (exclusivo). Que lhe permite aceitar apenas um pedido para uma proposta específica. Se você selecionar múltiplas requisições, você pode aprovar vários pedidos de compra sem cancelar outros pedidos deste concurso.
 
-Price Revisions
----------------
+Revisões de preços
+------------------
 
-OpenERP supports several methods of calculating and automatically updating product costs:
+OpenERP suporta diversos métodos de cálculo e atualizando automaticamente os custos do produto:
 
-* Standard Price: manually fixed, and
+* Preço Padrão: manualmente fixo, e
 
-* Standard Price: revalued automatically and periodically,
+* Preço Padrão: reavaliado de forma automática e periodicamente,,
 
-* Average Price: updated at each receipt to the warehouse.
+* Preço Médio: atualizados em cada recibo para o armazém..
 
-This cost is used to value your stock and represents your product costs. Included in that cost is
-everything directly related to the received cost. You could include such elements as:
+Este custo é utilizado para avaliar o seu estoque e representa os custos do seu produto. Incluídos no que o custo é
+tudo diretamente relacionado com o custo recebida. Você poderia incluir elementos como:
 
-* supplier price,
+* preço do fornecedor,
 
-* delivery charges,
+* taxas de entrega,
 
-* manufacturing costs,
+* custos de fabricação,
 
-* storage charges.
+* taxas de armazenagem.
 
-Standard Price
-^^^^^^^^^^^^^^
+Preço Padrão
+^^^^^^^^^^^^
 
-The mode of price management for the product is shown in the tab :guilabel:`Information` on the product form.
-On each individual product, you can select if you want to work in ``Standard Price`` or on weighted ``Average Price``.
+O modo de gestão de preços para o produto é mostrado no guia :guilabel:`Information` na formalário de produto.
+Em cada produto, você pode selecionar se você quer trabalhar em ``Standard Price`` ou ponderada ``Average Price``.
 
-.. tip:: Simplified Interface
+.. tip:: Interface simplificada
 
-   If you work in the ``Simplified`` interface mode you will not see the field that lets you
-   manage the price calculation mode for a product. In that case, the default value is ``Standard Price``.
+   Se você trabalha no modo de interface ``Simplified`` você não vai ver o campo que lhe permite
+    gerenciar o modo de cálculo do preço de um produto. Nesse caso, o valor padrão é ``Standard Price``.
 
-The ``Standard Price`` setting means that the product cost is fixed manually for each product in the field
-:guilabel:`Cost Price`. This is usually revalued once a year based on the average of purchase costs
-or manufacturing costs.
+As configurações ``Standard Price``significa que o custo do produto é fixo manualmente para cada produto no campo
+:guilabel:`Cost Price`. Isso geralmente é reavaliado uma vez ao ano com base na média dos custos de aquisição
+ou os custos de fabricação.
+Você geralmente usa os custos padrão para gerenciar os produtos cujo preço dificilmente se altera ao longo de
+do ano. Por exemplo, o custo-padrão pode ser usado para gerenciar livros, ou o custo do pão.
 
-You usually use standard costs to manage products where the price hardly changes over the course of
-the year. For example, the standard cost could be used to manage books, or the cost of bread.
+TOs custos que podem ser fixos para todo o ano trazer algumas vantagens:
 
-Those costs that can be fixed for the whole year bring certain advantages:
+* você pode basear o preço de venda sobre o custo do produto e, então, trabalhar com margens, em vez de
+   um preço fixo por produto,
 
-* you can base the sale price on the product cost and then work with margins rather than 
-  a fixed price per product,
-
-* accounting is simplified because there is a direct relationship between the value of stock and the
-  number of items received.
+* contabilidade é simplificado, pois há uma relação direta entre o valor das ações e os
+   número de itens recebidos.
 
 .. index::
    single: module; product_extended
 
-To get an automated periodic revaluation of the standard price you can use the action :guilabel:`Update`
-on the product form, enabling you to update prices of all the selected products. 
-OpenERP then recalculates the price of the products as a function of the cost of raw materials and the
-manufacturing operations given in the routing.
+Para se ter uma reavaliação periódica automatizada do preço padrão que você pode usar a ação :guilabel:`Update`
+no formalário de produto, permitindo que você atualize os preços de todos os produtos selecionados.
+OpenERP então recalcula o preço dos produtos em função do custo das matérias-primas e os
+operações de manufatura dada no roteamento.
 
-Average Price
+Preço Médio
 ^^^^^^^^^^^^^
 
-Working with standard prices does not lend itself well to the management of the cost price of products
-when the prices change a lot with the state of the market. This is the case for many commodities and
-energy.
+rabalhando com preços normais não se presta bem para a gestão do preço de custo dos produtos
+quando os preços mudam muito com o estado do mercado. Este é o caso de muitas commodities e
+energia.
 
-In this case, you would want OpenERP to automatically set the price in response to each goods receipt movement
-into the warehouse. The deliveries (exit from stock) have no impact on the product price.
+Neste caso, você iria querer OpenERP para definir automaticamente o preço em resposta a cada movimento de entrada de mercadorias
+para o armazém. Os fornecimentos (saída do estoque) hnão têm nenhum impacto sobre o preço do produto.
 
-.. tip:: Calculating the Price
+.. tip:: Cálculo do preço
 
-   At each goods receipt, the product price is recalculated using the following accounting formula:
-   NP = (OP * QS + PP * QR) / (QS + QR), where the following notation is used:
+   Em cada entrada de mercadorias, o preço do produto é recalculado utilizando a fórmula contábil abaixo:
+   NP = (OP * QS + PP * QR) / (QS + QR), onde a seguinte notação é usada:
 
-   * NP: New Price,
+   * NP: Novo Preço,
 
-   * OP: Old Price,
+   * OP: Preço Antigo,
 
-   * QS: Quantity actually in Stock,
+   * QS: Quantidade efectivamente no estoque,
 
-   * PP: Price Paid for the quantity received,
+   * PP: Preço pago para a quantidade recebida,
 
-   * QR: Quantity Received.
+   * QR: Quantidade recebida.
 
-If the products are managed as a weighted average, OpenERP will open a
-window that lets you specify the price of the product received at each goods receipt. 
-The purchase price is, by default,
-set from the purchase order, but you can change the price to add the cost of
-delivery to the various received products, for example.
+Se os produtos são gerenciados como uma média ponderada, OpenERP irá abrir uma
+janela que permite que você especifique o preço do produto recebido em cada entrada de mercadorias.
+O preço de compra é, por padrão,
+definido a partir do pedido de compra, mas você pode alterar o preço para adicionar o custo do
+entrega aos diversos produtos recebidos, por exemplo.
 
 .. figure:: images/purchase_pmp.png
    :scale: 75
    :align: center
 
-   *Goods Receipt of Products managed in Weighted Average*
+   *Bens de recepção de produtos gerenciados no Médio Ponderado*
 
-Once the receipt has been confirmed, the price is automatically recalculated and entered on the
-product form.
+Uma vez que o recebimento foi confirmado, o preço é recalculado automaticamente e entraram no
+formulário de produtos.
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright © Open Object Press. Todos os direitos reservados.
 
-.. You may take electronic copy of this publication and distribute it if you don't
-.. change the content. You can also print a copy to be read by yourself only.
+.. Você pode levar cópia eletrônica desta publicação e distribuí-lo se você não
+.. mudar o conteúdo. Você também pode imprimir uma cópia para ser lido somente por você.
 
-.. We have contracts with different publishers in different countries to sell and
-.. distribute paper or electronic based versions of this book (translated or not)
-.. in bookstores. This helps to distribute and promote the OpenERP product. It
-.. also helps us to create incentives to pay contributors and authors using author
-.. rights of these sales.
+.. Temos contratos com editoras diferentes em países diferentes para vender e
+.. distribuir versões em papel ou eletrônicas baseadas deste livro (traduzido ou não)
+.. em livrarias. Isso ajuda a distribuir e promover os produtos OpenERP. Também
+.. nos ajuda a criar incentivos para pagar os colaboradores e autores com
+.. os direitos do autor com essas vendas.
 
-.. Due to this, grants to translate, modify or sell this book are strictly
-.. forbidden, unless Tiny SPRL (representing Open Object Press) gives you a
-.. written authorisation for this.
+.. Devido a isso, concede a traduzir, modificar ou vender este livro é estritamente
+.. proibido, a menos que Tiny SPRL(representando Open Object Press) lhe der uma
+.. autorização por escrito para isso.
 
-.. Many of the designations used by manufacturers and suppliers to distinguish their
-.. products are claimed as trademarks. Where those designations appear in this book,
-.. and Open Object Press was aware of a trademark claim, the designations have been
-.. printed in initial capitals.
+.. Muitas das designações usadas pelos fabricantes e fornecedores para distinguir seus
+.. produtos são as marcas registradas. Onde essas designações aparecem neste livro,
+.. e Open Object Press tinha conhecimento de uma reivindicação da marca registrada, as designações foram
+.. nas letras maiúsculas iniciais.
 
-.. While every precaution has been taken in the preparation of this book, the publisher
-.. and the authors assume no responsibility for errors or omissions, or for damages
-.. resulting from the use of the information contained herein.
+.. Embora toda precaução foi tomada na preparação deste livro, a editora
+.. e os autores não assumem nenhuma responsabilidade por erros ou omissões, ou por danos
+.. resultantes do uso das informações aqui contidas.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Publicado por Open Object Press, Grand Rosière, Bélgica
