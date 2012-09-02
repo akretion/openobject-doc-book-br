@@ -8,10 +8,8 @@
 Conduzindo suas compras
 ***********************
 
- *Nos capítulos anteriores você viu como usar faturas de clientes e notas de entrega no OpenERP.
-  Este capítulo é sobre a gestão de compras, o processo de frente destas duas operações.
-  Agora você vai ver como OpenERP lida  e simplifica este eo controle das compras de
-  fornecedores.*
+ *Nos capítulos anteriores você viu como usar faturas de clientes e notas de entrega no OpenERP. 
+ Este capítulo é sobre a gestão de compras, o processo de frente destas duas operações. Agora você vai ver como OpenERP lida  e simplifica este eo controle das compras de fornecedores.*
 
 Para este capítulo, você pode continuar usando o banco de dados já criados ou você deve começar com um novo banco de dados que inclui dados de demonstração, com :mod:`purchase` e suas dependências instaladas e nenhum gráfico particular de contas configuradas. 
 
@@ -24,6 +22,7 @@ Para este capítulo, você pode continuar usando o banco de dados já criados ou
 
    6_17_Purchases_workflow
    6_17_Purchases_analysis
+   6_17_Purchases_analytic
 
 .. raw:: html
 
