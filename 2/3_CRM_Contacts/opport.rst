@@ -17,7 +17,7 @@ Informaços como retorno esperado, fase da oportunidade, data esperada para o fe
 Oportunidades pedem ser conectadas com o email: novos emails podem criar oprtunidades, cada um deles busca automaticamente o histórico da conversa com o cliente.
 Você e sua equipe de vendas poderão planejar encontros e chamadas telefônicas a partir de oportunidades, convertê-los em cotações, administrar documentos relacionados, seguir todas as atividades relacionadas aos clientes e muito mais.
 
-.. dica:: Anexos
+.. tip:: Anexos
 
       Por padrão, você pode manter os anexos no OpenERP para ter certeza que todos os documentos relacionados estarão diretamente acessíceis. 
       Do lado direito da tela, sob "Anexos", clique em "Adicionar" para começar a ligar os documentos a sua oportunidade. Com botão "Pesquisar", você 
@@ -52,7 +52,7 @@ O parceiro criado é automaticamente anexado ao prospecto, o que permite que voc
 
 Você também pode combinar o passo de criar um parceiro e direcionar a conversão do prospecto para a criação de uma oportunidade através da funcionalidade "Converter em oportunidade".
 
-.. dica:: Converter em Oportunidade
+.. tip:: Converter em Oportunidade
 
       Quando você clica em "Converter em Oportunidade" e o endereço de email do contato é preenchido, o OpenERP irá conferir se o email
       corresponde a algum endereço de email de um parceiro já existente. Se sim, o OpenERP irá propor a fusão do novo contato com o parceiro
@@ -100,7 +100,7 @@ O OpenERP permite que você faça isso definindo "Equipes de Vendas". Uma equipe
  
 *Para cada equipe de vendas, você pode designar um usuário responsável e um endereço de email que será usado quando foram criados ou respondidos emails do OpenERP. Isto será proposto por padrão no OpenERP quando você criar um evento para esse cliente.
 
-.. nota:: Equipes de Vendas
+.. note:: Equipes de Vendas
         Para definir suas Equipes de Vendas, vá em: menuselection: Vendas --> Configuração --> Vendas --> Equipes de Vendas.
 
 Vamos pegar o exemplo de um banco para explicar como você pode definir suas equipes de vendas. Um banco possui diversos departamentos, como Seguros, Contabilidade, Ativos, Gestão de Crédito. Cada departamento pode ser dividido em subdepartamentos. Para Seguros, poderia ser Seguro de Empresas e Seguro de residências. A estrutura hierárquica da sua equipe de vendas poderia ser:
@@ -184,7 +184,7 @@ Quando um prospecto foi transformado em oportunidade, esta pode ser atribuída p
 
 O OpenERP, também permite que você automatise esses passos no sue ciclo de vendas. Com "Automatizar regras" você pode dizer ao sistema, por exemplo, para automaticamente atribuir oportunidades para um vendedor ou para mudar o status de uma oportunidade de acordo com critérios específicos.
 
-.. nota:: Ações Automatizadas
+.. note:: Ações Automatizadas
 
        Para acessar as regras do CRM, use :menuselection: Vendas 
        To access the CRM rules, use the :menuselection:`Sales --> Configuration --> Automated Actions --> Automated Actions` menu.
@@ -230,7 +230,7 @@ Como explicado no capítulo :ref:`crm-flow`, você pode agendar uma reunião dir
 
 Para facilitar a leitura, Thomas irá agendar uma nova reunião a partir de uma oportunidade aqui e definir Luc, o gerente de vendas, como a pessoa responsável pela reunião. Ele quer enviar um lembrete a Luc 1 dia antes da reunião começar.
 
-.. nota:: Programar uma reunião a partir de uma oportunidade
+.. note:: Programar uma reunião a partir de uma oportunidade
 
    Para planejar a reunião, Thomas clica no botão 'Agendar Reunião' em "Oportunidade" e depois clica no botão "Semana" na visão de Calendário. Ele usa a função de arrastar e soltar para agendar a reunião para Luc. Ele planeja a próxima reunião para quarta-feira 14:00-3:00. Ele coloca Luc como a pessoa responsável e define um lembrete para ser enviado um dia antes do início da reunião. Ele também altera a "Data da próxima Ação" na oportunidade para a data da reunião.
 
@@ -241,7 +241,7 @@ Outra forma de introduzir um pedido de reunião, é usar diretamente o calendár
 Na janela **Reunião**, insira os dados de reunião, tais como resumo da reunião, tipo, duração. Nas exibições semanais e diárias, você também pode pressionar o botão esquerdo do mouse no calendário e deslizar o mouse para criar um evento de várias horas. O OpenERP em seguida abrirá uma tela de entrada para uma nova reunião.
 Você pode adicionar lembretes (ou `` Alarmes ``) para as suas reuniões e enviar convites, seja para pessoas de sua própria empresa, contatos parceiros ou pessoas externas (apenas especificar o endereço de e-mail diretamente no convite). Você pode enviar convites antes ou após a confirmação de uma reunião. Quer a partir da reunião em si ou a partir d visão "Convites para eventos" no menu: menuselection: `Vendas -> Configuração -> Calendário - Convites> Evento`, você pode acompanhar e alterar o status do participante. Se você não puder comparecer a uma reunião, você pode delegá-la a um de seus colegas.
 
-.. dicas:: Alarmes ou Lembretes de Reuniões
+.. tip:: Alarmes ou Lembretes de Reuniões
 
      Adicione seus próprios alarmes através de: menuselection: `Vendas -> Configuração -> Calendário -> Alarmes`. Você pode querer ser avisado com uma semana de antecedência da reunião, então tudo que você tem a fazer é criar seu próprio alarme. A imagem abaixo mostra como fazer isso.
      
@@ -293,7 +293,7 @@ O Gerenciamento de chamadas pode ser usado para outras necessidades de planejame
 
 * Agendar chamadas recorrentes ou próximas ações.
 
-.. nota:: Agendando uma Chamada diretamente
+.. note:: Agendando uma Chamada diretamente
 
        Ir para: menuselection: `Vendas - Chamadas> Telefone -> 'Inbound' para registar as chamadas recebidas ou  'Outbound' para registrar chamadas de saída.
 
@@ -301,7 +301,7 @@ O telefonema será visível na aba Histórico do formulário **Parceiro** e dar�
 
 É claro que o OpenERP também permite que você programe uma chamada de telefone diretamente de um formulário  **Oportunidade** através do botão "Agenda / registro de chamadas".
 
-.. nota:: Chamadas no Calendário de Reuniões
+.. note:: Chamadas no Calendário de Reuniões
 
        Para ter um calendário com as suas reuniões e suas chamadas, você pode escolher entrar telefonemas como uma reunião, como um tipo de reunião específica, "Chamadas telefônicas".
 
