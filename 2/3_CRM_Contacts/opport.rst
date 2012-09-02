@@ -25,7 +25,7 @@ Você e sua equipe de vendas poderão planejar encontros e chamadas telefônicas
       Se você também quer que os deocumentos sejam indexados (menos imagens), você deve instalar a "Knowledge Application".
 
 Convertendo Prospectos em Clientes ou Oportunidades
---------------------------------------------------
+---------------------------------------------------
 
 Se o vendedor pensa que o prospeco é uma verdadeira oportunidade, prosseguindo o contato que ele teve com o prospecto, ele pode facilmente converter o prospecto em um parceiro/oportunidade utilizanndo o bota:guilabel: converter em oportunidade.
 
@@ -42,9 +42,9 @@ Para criar apenas um parceiro, clique em "Criar" próximo ao campo "Cliente". Vo
 
 O OpenERP mostra uma janela com as opções:
 
-*criar um novo parceiro,
+* criar um novo parceiro,
 
-*fundir o contato com um parceiro existente.
+* fundir o contato com um parceiro existente.
 
 O OpenERP abre um formulário que contém as informações do prospecto. Nessa etapa você pode completar os detalhes do contato ou adicionar outras informações ao parceiro.
 
@@ -60,14 +60,14 @@ Você também pode combinar o passo de criar um parceiro e direcionar a convers�
 
 Clicando em "Converter Oportunidade" e o parceiro já existe, o OpenERP abre uma janela com as opções:
 
-*criar um novo parceiro,
+* criar um novo parceiro,
 
-*fundir o contato com um parceiro existente.
+* fundir o contato com um parceiro existente.
 
 O OpenERP mostra o título da oportunidade (retirada da descrição do prospecto) e do parceiro.
 Tenha certeza de haver colocado o retorno esperado e a taxa de sucesso (probabilidade) disse ses converter em vendas.
 
-.. figure:: figure:: images/crm_lead_convert.png
+.. figure:: images/crm_lead_convert.png
    :scale: 80
    :align: center
 
@@ -96,9 +96,9 @@ O OpenERP permite que você faça isso definindo "Equipes de Vendas". Uma equipe
 
 * Você pode agrupar sua equipe de vendas de acordo com sua hierarquia. Isso permite que você tenha uma visão das suas vendas em diferentes níveis (local, regional, nacional, por exemplo).
 
-*Algumas equipes de vendas podem gerir suas oportunidades através de diferentes ciclos de vendas. Por exemplo, uma concessonária que venda para clientes pessoa física e jurídica terá diferentes ciclos de vendas.
+* Algumas equipes de vendas podem gerir suas oportunidades através de diferentes ciclos de vendas. Por exemplo, uma concessonária que venda para clientes pessoa física e jurídica terá diferentes ciclos de vendas.
  
-*Para cada equipe de vendas, você pode designar um usuário responsável e um endereço de email que será usado quando foram criados ou respondidos emails do OpenERP. Isto será proposto por padrão no OpenERP quando você criar um evento para esse cliente.
+* Para cada equipe de vendas, você pode designar um usuário responsável e um endereço de email que será usado quando foram criados ou respondidos emails do OpenERP. Isto será proposto por padrão no OpenERP quando você criar um evento para esse cliente.
 
 .. note:: Equipes de Vendas
         Para definir suas Equipes de Vendas, vá em: menuselection: Vendas --> Configuração --> Vendas --> Equipes de Vendas.
@@ -218,7 +218,7 @@ Quando você responde a uma oportunidade da aba "Comunicação & História", voc
 
 Planejar suas próximas ações também se refere ao preenchimento de campos ou à realização de ações manualmente, sem a interferência de regras automatizadas. É importante que você preencha todos os campos oportunidade com precisão. Para garantir um bom acompanhamento e priorizar suas oportunidades, certifique-se de registrar a "Data da próxima ação" e a "Próxima Ação" em Oportunidade. Na tela *Oportunidades*, você pode agrupar seus resultados de pesquisa por esses campos, para que você saiba exatamente como planejar o seu trabalho.
 
-Você pode usar os filtros para agrupar por "Prioridade" e então clicar na coluna  ``Data da próxima ação" para classificar pela data da próxima ação e para facilmente acompanhar suas oportunidades e saber exatamente o que você tem que fazer.
+Você pode usar os filtros para agrupar por "Prioridade" e então clicar na coluna  ``Data da próxima ação`` para classificar pela data da próxima ação e para facilmente acompanhar suas oportunidades e saber exatamente o que você tem que fazer.
 
 
 Planejando suas reuniões e chamadas telefônicas 
@@ -239,7 +239,7 @@ Você também pode agendar uma reunião diretamente de um formulário *cliente*.
 Outra forma de introduzir um pedido de reunião, é usar diretamente o calendário de reuniões a partir do menu: menuselection: `Vendas -> Reuniões -> Reuniões`. Você pode usar mensais, semanais ou diárias para planejar uma reunião, selecionando os botões correspondentes. Você também pode clicar em um dia na janela Navegador para agendar uma reunião.
 
 Na janela **Reunião**, insira os dados de reunião, tais como resumo da reunião, tipo, duração. Nas exibições semanais e diárias, você também pode pressionar o botão esquerdo do mouse no calendário e deslizar o mouse para criar um evento de várias horas. O OpenERP em seguida abrirá uma tela de entrada para uma nova reunião.
-Você pode adicionar lembretes (ou `` Alarmes ``) para as suas reuniões e enviar convites, seja para pessoas de sua própria empresa, contatos parceiros ou pessoas externas (apenas especificar o endereço de e-mail diretamente no convite). Você pode enviar convites antes ou após a confirmação de uma reunião. Quer a partir da reunião em si ou a partir d visão "Convites para eventos" no menu: menuselection: `Vendas -> Configuração -> Calendário - Convites> Evento`, você pode acompanhar e alterar o status do participante. Se você não puder comparecer a uma reunião, você pode delegá-la a um de seus colegas.
+Você pode adicionar lembretes (ou ``Alarmes``) para as suas reuniões e enviar convites, seja para pessoas de sua própria empresa, contatos parceiros ou pessoas externas (apenas especificar o endereço de e-mail diretamente no convite). Você pode enviar convites antes ou após a confirmação de uma reunião. Quer a partir da reunião em si ou a partir d visão "Convites para eventos" no menu: menuselection: `Vendas -> Configuração -> Calendário - Convites> Evento`, você pode acompanhar e alterar o status do participante. Se você não puder comparecer a uma reunião, você pode delegá-la a um de seus colegas.
 
 .. tip:: Alarmes ou Lembretes de Reuniões
 
@@ -282,12 +282,11 @@ Você pode alterar a visão de Calendário para reuniões e retornar à visão d
 
 É claro que você pode acessar este calendário OpenERP do seu smartphone. Para mais informações sobre esse recurso, consulte o capítulo: ref: `ch-sync1`.
 
-O OpenERP também permite que você gerencie a entrada (inbound `) e a saída (outbound` `) das chamadas. Mesmo a partir da visão de lista **Chamadas**, você pode editar diretamente uma chamada (mudar o status, convertê-la em uma oportunidade ou agendar uma reunião). Para cada chamada, você pode criar notas sobre o resultado. Enquanto no telefone com seu prospecto ou cliente, você pode diretamente agendar uma reunião, marcar uma nova chamada ou converter a sua chamada para uma oportunidade. Não há necessidade de você se deslocar para vários menus para fazer o que você precisa: planeje uma ação como resultado da sua chamada.
+O OpenERP também permite que você gerencie a entrada (`inbound`) e a saída (`outbound`) das chamadas. Mesmo a partir da visão de lista **Chamadas**, você pode editar diretamente uma chamada (mudar o status, convertê-la em uma oportunidade ou agendar uma reunião). Para cada chamada, você pode criar notas sobre o resultado. Enquanto no telefone com seu prospecto ou cliente, você pode diretamente agendar uma reunião, marcar uma nova chamada ou converter a sua chamada para uma oportunidade. Não há necessidade de você se deslocar para vários menus para fazer o que você precisa: planeje uma ação como resultado da sua chamada.
 
 O Gerenciamento de chamadas pode ser usado para outras necessidades de planejamento, tais como:
 
-* Entrar chamadas de clientes para que você mantenha um registro da comunicação conectada a um parceiro ou uma
-   oportunidade de vendas,
+* Entrar chamadas de clientes para que você mantenha um registro da comunicação conectada a um parceiro ou uma oportunidade de vendas,
 
 * Chamar uma grande lista de prospectos,
 
@@ -295,7 +294,7 @@ O Gerenciamento de chamadas pode ser usado para outras necessidades de planejame
 
 .. note:: Agendando uma Chamada diretamente
 
-       Ir para: menuselection: `Vendas - Chamadas> Telefone -> 'Inbound' para registar as chamadas recebidas ou  'Outbound' para registrar chamadas de saída.
+       Ir para: menuselection: `Vendas - Chamadas> Telefone -> Inbound` para registar as chamadas recebidas ou  'Outbound' para registrar chamadas de saída.
 
 O telefonema será visível na aba Histórico do formulário **Parceiro** e dará uma visibilidade completa dos eventos para um cliente ou fornecedor.
 
