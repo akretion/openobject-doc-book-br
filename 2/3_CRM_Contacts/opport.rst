@@ -2,7 +2,7 @@
 .. _part2-crm-opport:
 
 Otimizando seu Ciclo de Vendas através de Oportunidades
-======================================================
+=======================================================
 
 Enquanto um prospecto representa um primeiro contato qua ainda deve ser qualificado, uma oprtunidade de vendas representa um contrato em potencial. Cada oprtunidade deve ser acompanhada por um vendedor (ou pela equipe de vendas) que deverá qualificar a oprtunidade, realizando uma cotação ou cancelando a oportunidade. 
 
