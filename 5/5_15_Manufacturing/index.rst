@@ -5,9 +5,9 @@
 
 .. _part3-man-manuf:
 
-*************************
+***************************
 Definindo seus dados mestre
-*************************
+***************************
 
  *The management of manufacturing described in this chapter covers
  planning, ordering, stocks and the manufacturing or assembly of products from raw materials and

@@ -21,13 +21,10 @@ de endereço para um parceiro. Você pode facilmente vincular vários Endereços
 
 .. note:: Tipo de Endereço
 
-        Se você tem vários contatos para o mesmo parceiro, você pode dizer ao OpenERP qual dos contatos será usado em 
-alguns docunentos (e.g. Uma Cotação) através do ``Tipo de Endereço``.
+        Se você tem vários contatos para o mesmo parceiro, você pode dizer ao OpenERP qual dos contatos será usado em alguns docunentos (e.g. Uma Cotação) através do ``Tipo de Endereço``.
 
 	Por exemplo, um parceiro (*Empresa*) pode ter um endereço de entrada que difere do endereço de faturamento da empresa.
-	Se o tipos de endereços estão atribuídos corretamente, OpenERP pode automaticamente selecionar o endereço adequado durante 
-a criação do documento – uma Fatura é endereçada para um contato que tenha sido atribuído o tipo de endereço da fatura,
-caso contrário, para o endereço padrão.
+	Se o tipos de endereços estão atribuídos corretamente, OpenERP pode automaticamente selecionar o endereço adequado durante a criação do documento – uma Fatura é endereçada para um contato que tenha sido atribuído o tipo de endereço da fatura, caso contrário, para o endereço padrão.
 
 O conceito de parceiro no OpenERP é muito mais flexível do que em muitos outros aplicativos de gerenciamento. Por que? 
 Porque um parceiro pode ser o seu fornecedor e seu cliente, ao mesmo tempo.
@@ -37,14 +34,11 @@ Graças a isso, você não precisa atualizar seu catálogo de endereços várias
 O formulário de parceiro inclui informações sobre a empresa, como sua razão social, seu idioma principal, e se a empresa
 é um \ ``Cliente`` \ e/ou um \ ``Fornecedor`` \. O formulário de parceiro é composto de várias guias,
 
-* A guia :guilabel:`Geral` contém informações sobre diferentes contatos do parceiro, endereços, comunicação e as categorias que
-o parceiro pertence,
+* A guia :guilabel:`Geral` contém informações sobre diferentes contatos do parceiro, endereços, comunicação e as categorias que o parceiro pertence,
 
 * A Guia :guilabel:`Vendas e compras` contém informações como o vendedor padrão e equipe de vendas, e site,
 
-* A guia :menuselection:`Histórico` fornece visibilidade sobre todo o ``histórico das comunicações`` (Reuniões, Campanha de Marketing, 
-leads e oportunidades, telefonemas, emails) com o parceiro. Os eventos nos quais o parceiro esteve envolvido em são criados
-automaticamente por documentos diferentes, como chamadas telefônicas, leads, reuniões,
+* A guia :menuselection:`Histórico` fornece visibilidade sobre todo o ``histórico das comunicações`` (Reuniões, Campanha de Marketing, leads e oportunidades, telefonemas, emails) com o parceiro. Os eventos nos quais o parceiro esteve envolvido em são criados automaticamente por documentos diferentes, como chamadas telefônicas, leads, reuniões,
 
 * A guia :menuselection:`Notas` para comentários.
 
@@ -74,8 +68,7 @@ também para pesquisar parceiros.
 
 .. note:: Obrigatório
 
-        Campos azuis são sempre obrigatórios, significando que você tem que introduzir um valor. É impossível salvar as alterações,
-enquanto os campos azuis não frem preenchidos.
+        Campos azuis são sempre obrigatórios, significando que você tem que introduzir um valor. É impossível salvar as alterações, enquanto os campos azuis não frem preenchidos.
 
 Você deve pelo menos digitar o ``Nome`` da empresa no formulário do parceiro. Alguns campos são campos de texto, os outros campos
 podem ser vinculados aos dados existentes que tenham sido inseridos em outros lugares, como ``Países``.
@@ -96,8 +89,7 @@ Crie um cliente contendo os seguintes dados:
 
 .. tip:: Email
 
-      Se você usar um gateway de e-mail, o Outlook ou o Thunderbird Plugin, não se esquecer de informar um endereço de e-mail para 
-cada contato, para que o gateway possa anexar automaticamente e-mails recebidos para o parceiro correto.
+      Se você usar um gateway de e-mail, o Outlook ou o Thunderbird Plugin, não se esquecer de informar um endereço de e-mail para cada contato, para que o gateway possa anexar automaticamente e-mails recebidos para o parceiro correto.
 
 Para atualizar um parceiro, abra o formulário correspondente, selecione `Editar` e alterar os campos necessários. 
 Como explicado anteriormente, quando uma empresa é simultaneamente um cliente e um fornecedor, 
@@ -106,8 +98,8 @@ para os clientes quanto para os fornecedores.
 
 .. note:: Caixas de Selelão
 
-       Por que é tão importante definir corretamente as caixas de seleção de Cliente e do Fornecedor no parceiro?
-Estes checkboxes visam permitir ao OpenERP selecionar rapidamente os parceiros que devem ser exibidos em algumas caixas suspensas. 
+       Por que é tão importante definir corretamente as caixas de seleção de Cliente e do Fornecedor no parceiro? Estes checkboxes visam permitir ao OpenERP selecionar rapidamente os parceiros que devem ser exibidos em algumas caixas suspensas. 
+
 Um exemplo: quando você seleciona um parceiro numa cotação de venda, o OpenERP só irá permitir que você selecione na lista de clientes. 
 E é exatamente para isso que a caixa de seleção Cliente é utilizada.
 
@@ -125,8 +117,7 @@ no menu :menuselection:`Vendas --> Livro de Endereços --> Enderços`.
 
 .. tip:: Mesmo Contato, Diferentes Parceiros
 
-        Você tem contatos que trabalham para diversas empresas, e precisa de estar vinculado a vários parceiros?
-Confira o capítulo :ref:`ch-contact`.
+        Você tem contatos que trabalham para diversas empresas, e precisa de estar vinculado a vários parceiros? Confira o capítulo :ref:`ch-contact`.
 
 Personalizando Campos do Parceiro
 ---------------------------------
@@ -172,18 +163,15 @@ O envio de e-mail em massa geralmente é iniciado a partir de uma lista, porque 
 
 .. note:: Campanhas
 
-        Para correspondência em massa, talvez você prefira usar o aplicativo de Marketing Direto, que oferece grandes funcionalidades 
-(consulte o capítulo :ref:`part3-crm-market`).
+        Para correspondência em massa, talvez você prefira usar o aplicativo de Marketing Direto, que oferece grandes funcionalidades (consulte o capítulo :ref:`part3-crm-market`).
 
 Outra ação permite enviar rapidamente uma mensagem de SMS.
 
 .. tip::  Envia uma mensagem SMS
 
-        Para enviar uma mensagem SMS a partir do padrão Open ERP você terá que fazer um pedido de SMS de grandes quantidades da
-operadora Clickatell ™ http://clickatell.com.
+        Para enviar uma mensagem SMS a partir do padrão Open ERP você terá que fazer um pedido de SMS de grandes quantidades da operadora Clickatell ™ http://clickatell.com.
 
-        Para enviar uma mensagem SMS a um parceiro ou uma seleção de vários parceiros, primeiro selecione os parceiros no
-Modo de lista, então clique no ícone da ação :guilabel:`Enviar SMS`.
+        Para enviar uma mensagem SMS a um parceiro ou uma seleção de vários parceiros, primeiro selecione os parceiros no Modo de lista, então clique no ícone da ação :guilabel:`Enviar SMS`.
 
 .. index:: Filtro
 
@@ -196,8 +184,7 @@ Clique no botão à direita (o ícone da pessoa) para ver os clientes que são s
 
 .. tip:: Limites
 
-        Se você deseja exibir mais do que os 20 parceiros exibidos por padrão, clique na opção ``1 a 20 de - XX`` na parte
-inferior da tela para poder alterar o limite.
+        Se você deseja exibir mais do que os 20 parceiros exibidos por padrão, clique na opção ``1 a 20 de - XX`` na parte inferior da tela para poder alterar o limite.
 
 Os filtros também permitem definir rapidamente as listas de clientes para os quais você quer fazer ações específicas.
 Através da opção ``Novo Filtro``, você também pode adicionar seus próprios filtros para qualquer área relacionada ao formulário
@@ -205,8 +192,7 @@ de ``Cliente``.
 
 .. note:: Filtros
 
-        Você pode facilmente criar seus próprios filtros frequentemente utilizados por pré-filtragem dos dados da forma que desejar
-e em seguida, usar a opção Salvar filtro.
+        Você pode facilmente criar seus próprios filtros frequentemente utilizados por pré-filtragem dos dados da forma que desejar e em seguida, usar a opção Salvar filtro.
 
 .. _partner-categ:
 
@@ -233,8 +219,7 @@ e em todas as suas subcategorias.
 
 .. note:: Categorias
 
-        Para criar uma nova categoria, vá para :menuselection:`Vendas --> Configuração --> Catálogo de Endereços --> Categorias de
-Parceiros` e clique no botão `Novo`.
+        Para criar uma nova categoria, vá para :menuselection:`Vendas --> Configuração --> Catálogo de Endereços --> Categorias de Parceiros` e clique no botão `Novo`.
 
 Porque as categorias podem ser organizadas de acordo com uma estrutura de árvore, você pode aplicar uma
 ação em qualquer nível da estrutura: uma promoção de marketing, por exemplo, pode ser aplicada a todos os clientes,

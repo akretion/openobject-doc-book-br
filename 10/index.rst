@@ -31,7 +31,7 @@ We frequently receive the gratitude of senior management who get better results 
 business because they have adopted OpenERP.
 
 Você não está sozinho
-=================
+=====================
 
 Many resources are at hand to accompany you on your OpenERP adventure.
 

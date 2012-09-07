@@ -25,9 +25,7 @@ detalhes da empresa quando solicitado, ou simplesmente usar o padrão se quiser.
 .. index::
    single: module; purchase
 
-Em seguida, usando o Assistente de Configuração, selecione :guilabel:`Purchase Management` na seção :guilabel:`Install Applications`
-para instalar o módulo :mod:`que também instala vários outros módulos como dependências. Continue
-o restante deste capítulo logado como o usuário *admin*.
+Em seguida, usando o Assistente de Configuração, selecione :guilabel:`Purchase Management` na seção :guilabel:`Install Applications` para instalar o módulo :mod:`Purchaise Module` que também instala vários outros módulos como dependências. Continue o restante deste capítulo logado como o usuário *admin*.
 
 Pedido de preço do Fornecedor
 -----------------------------
@@ -52,8 +50,7 @@ campo :guilabel:`Origin`.
 
 .. note:: Gerenciando alertas
 
-        Se você instalar o módulo :mod:`warning`, você será capaz de definir alertas que aparecem quando o comprador entra um pedido 
-de preço ou ordem. Você pode definir alertas sobre o produto e o fornecedor.
+        Se você instalar o módulo :mod:`warning`, você será capaz de definir alertas que aparecem quando o comprador entra um pedido de preço ou ordem. Você pode definir alertas sobre o produto e o fornecedor.
 
 A referência interna, a data e o armazém dos produtos que deverão ser entregues, são concluídas automaticamente pelo OpenERP, 
 mas você pode alterar esses valores, se necessário. Em seguida, quando você selecionar um fornecedor, o OpenERP completa automaticamente 
@@ -62,9 +59,7 @@ no formulário do fornecedor. Isso deve trazer todas as condições que você te
 
 .. tip:: Seleção de fornecedor
 
-        A procura de um fornecedor está limitada a todos os parceiros no sistema que tem a caixa de seleção marcada 
-:guilabel:`Supplier`. Se você não encontrar o seu fornecedor, pode valer a pena verificar a lista completa de todos 
-os parceiros para se certificar de que o fornecedor ainda não existe sem a caixa de seleção do fornecedor a ser verificada.
+        A procura de um fornecedor está limitada a todos os parceiros no sistema que tem a caixa de seleção marcada :guilabel:`Supplier`. Se você não encontrar o seu fornecedor, pode valer a pena verificar a lista completa de todos os parceiros para se certificar de que o fornecedor ainda não existe sem a caixa de seleção do fornecedor a ser verificada.
 
 Uma vez que o corpo principal do pedido de compra tenha sido concluído, você pode digitar as linhas de produtos.
 
@@ -89,24 +84,16 @@ Quando você tiver selecionado o produto, o OpenERP completa automaticamente os 
 
 .. tip:: Escrevendo o produto e Código
 
-        Quando você digitar nomes de fornecedores no formulário de produto, você pode definir um nome e um código de produto 
-para cada fornecedor individual. Se você fizer isso, o OpenERP irá então usar esses detalhes ao invés de seus próprios nomes de 
-produtos internos para o fornecedor selecionado.
+        Quando você digitar nomes de fornecedores no formulário de produto, você pode definir um nome e um código de produto para cada fornecedor individual. Se você fizer isso, o OpenERP irá então usar esses detalhes ao invés de seus próprios nomes de produtos internos para o fornecedor selecionado.
 
-Se você trabalha com gestão por caso, você também pode configurar a conta analítica que deve ser usada para o
-relatório de todos os custos de aquisição. Os custos serão então notificados com o recibo do fornecedor
-fatura.
+Se você trabalha com gestão por caso, você também pode configurar a conta analítica que deve ser usada para o relatório de todos os custos de aquisição. Os custos serão então notificados com o recibo do fornecedor fatura.
 
 .. index::
    single: module; purchase_analytic_analysis
 
 .. tip:: Gestão por Processo
 
-   Contas analíticas podem ser muito úteis para todas as empresas que gerenciam os custos por caso, por site, por
-    projeto ou por pasta.
-   Para trabalhar com vários eixos de análise, você deve instalar o módulo :mod:`purchase_analytic_plans`,
-   selecionando :guilabel:`Purchase Analytic Plans` no assistente :guilabel:`Reconfigure` e clicando
-   :guilabel:`Configure`.
+   Contas analíticas podem ser muito úteis para todas as empresas que gerenciam os custos por caso, por site, por projeto ou por pasta. Para trabalhar com vários eixos de análise, você deve instalar o módulo :mod:`purchase_analytic_plans`, selecionando :guilabel:`Purchase Analytic Plans` no assistente :guilabel:`Reconfigure` e clicando :guilabel:`Configure`.
 
 .. index::
    single: module; account_analytic_default
@@ -196,10 +183,7 @@ O modo de controle de faturamento é definido na guia segundo o pedido no campo
    *Pedido de Compra, Controle da fatura*
 
 .. tip:: Valor padrão
-
-  Uma empresa geralmente usa um método único de controle de faturamento para todas as suas faturas.
-   Então, você é aconselhado a definir um valor padrão no campo :guilabel:`Invoicing Control` após a
-instalação.
+  Uma empresa geralmente usa um método único de controle de faturamento para todas as suas faturas.Então, você é aconselhado a definir um valor padrão no campo :guilabel:`Invoicing Control` após a instalação.
 
 Controle baseado em pedidos
 ---------------------------
@@ -255,10 +239,7 @@ faturas você.
 
 .. tip:: Taxas de entrega
 
-   Para gerenciar custos de entrega, instalar o módulo de assistente:mod:`delivery` using the :guilabel:`Reconfigure`
-   e selecionando :guilabel:`Delivery Costs` na seção :guilabel:`Sales Application Configuration`.
-   Isso irá adicionar automaticamente taxas de entrega para a criação da fatura projeto como uma função
-    dos produtos entregues ou encomendadas.
+   Para gerenciar custos de entrega, instalar o módulo de assistente:mod:`delivery` using the :guilabel:`Reconfigure` e selecionando :guilabel:`Delivery Costs` na seção :guilabel:`Sales Application Configuration`. Isso irá adicionar automaticamente taxas de entrega para a criação da fatura projeto como uma função dos produtos entregues ou encomendadas.
 
 .. index:: 
    single: tender
@@ -327,14 +308,10 @@ Em cada produto, você pode selecionar se você quer trabalhar em ``Standard Pri
 
 .. tip:: Interface simplificada
 
-   Se você trabalha no modo de interface ``Simplified`` você não vai ver o campo que lhe permite
-    gerenciar o modo de cálculo do preço de um produto. Nesse caso, o valor padrão é ``Standard Price``.
+   Se você trabalha no modo de interface ``Simplified`` você não vai ver o campo que lhe permite gerenciar o modo de cálculo do preço de um produto. Nesse caso, o valor padrão é ``Standard Price``.
 
-A configuração ``Standard Price``significa que o custo do produto é fixo manualmente para cada produto no campo
-:guilabel:`Cost Price`. Isso geralmente é reavaliado uma vez ao ano com base na média dos custos de aquisição
-ou dos custos de fabricação.
-Você geralmente usa os custos padrão para gerenciar os produtos cujo preço dificilmente se altera ao longo
-do ano. Por exemplo, o custo-padrão pode ser usado para gerenciar livros, ou o custo do pão.
+A configuração ``Standard Price`` significa que o custo do produto é fixo manualmente para cada produto no campo :guilabel:`Cost Price`. Isso geralmente é reavaliado uma vez ao ano com base na média dos custos de aquisição ou dos custos de fabricação.
+Você geralmente usa os custos padrão para gerenciar os produtos cujo preço dificilmente se altera ao longo do ano. Por exemplo, o custo-padrão pode ser usado para gerenciar livros, ou o custo do pão.
 
 Os custos que podem ser fixos para todo o ano trazem algumas vantagens:
 

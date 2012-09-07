@@ -4,9 +4,9 @@
 
 .. _ch-hr:
 
-***************
+***************************
 Funcionalidades chave de RH
-***************
+***************************
 
  *This chapter describes OpenERP's main Human Resources and Employee Services features.
  Most of the solutions discussed after this chapter concern management by

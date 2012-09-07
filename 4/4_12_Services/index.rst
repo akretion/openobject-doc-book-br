@@ -1,12 +1,11 @@
-
 .. index::
    single: Deliver Quality Services
 
 .. _ch-services:
 
-************************
+********************************
 Prestando serviços de qualidade
-************************
+********************************
 
  *This chapter focuses on the management of contracts, and the services associated with that.
  The complete process of managing services is studied here: from defining prices and contracts to
@@ -30,7 +29,7 @@ no particular chart of accounts configured.
 
     </div>
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright ÂŠ Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
 .. change the content. You can also print a copy to be read by yourself only.
@@ -54,5 +53,5 @@ no particular chart of accounts configured.
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand RosiĂ¨re, Belgium
 

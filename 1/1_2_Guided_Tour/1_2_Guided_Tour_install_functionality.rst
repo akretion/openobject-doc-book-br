@@ -31,46 +31,27 @@ e quantos módulos existentes foram atualizados. Clique em :guilabel:`Open Modul
 
 .. note:: Módulos
 
-	Todos os módulos disponíveis no seu computador podem ser encontrados no diretório de addons do seu servidor OpenERP.
-Cada módulo é representado por um diretório com o nome do módulo ou por um
-arquivo com o nome do módulo e .zip anexado a ele. O arquivo está em formato de arquivo ZIP e replica
-a estrutura de diretórios de módulos descompactado.
+	Todos os módulos disponíveis no seu computador podem ser encontrados no diretório de addons do seu servidor OpenERP. Cada módulo é representado por um diretório com o nome do módulo ou por um arquivo com o nome do módulo e .zip anexado a ele. O arquivo está em formato de arquivo ZIP e replica a estrutura de diretórios de módulos descompactado.
 
 .. tip:: Pesquisar toda a lista
 
-	A lista de módulos mostra apenas os primeiros módulos disponíveis. No cliente web você pode pesquisar ou
-seguir o primeiro / anterior / próximo / últimos links  para chegar a qualquer ponto em toda a lista, e você pode
-alterar o número de entradas listadas, clicando no número da linha entre os indicadores :guilabel:`Previous` 
-	e :guilabel:`Next`
-	e selecione um número diferente do padrão de 20
+	A lista de módulos mostra apenas os primeiros módulos disponíveis. No cliente web você pode pesquisar ou seguir o primeiro / anterior / próximo / últimos links  para chegar a qualquer ponto em toda a lista, e você pode alterar o número de entradas listadas, clicando no número da linha entre os indicadores :guilabel:`Previous` e :guilabel:`Next` e selecione um número diferente do padrão de 20
 
-	Se você usar o cliente GTK você pode pesquisar, como você faria com o cliente web, ou usar o campo de seleção
-	(mostrando atualmente 80)
-no canto superior direito da janela para alterar o número de entradas retornadas pela busca do seu padrão
-limite de 80, ou seu deslocamento padrão de 0 em toda a lista (a partir de a primeira entrada).
+	Se você usar o cliente GTK você pode pesquisar, como você faria com o cliente web, ou usar o campo de seleção	(mostrando atualmente 80) no canto superior direito da janela para alterar o número de entradas retornadas pela busca do seu padrão limite de 80, ou seu deslocamento padrão de 0 em toda a lista (a partir de a primeira entrada).
 
 .. index::
   single: module; installing
 
 A configuração / Assistente para reconfigurar
---------------------------------------
+---------------------------------------------
 
-Um dos novos recursos do OpenERP é o assistente :guilabel:`Configuration` . Uma vez executado, o atalho do :guilabel:`Reconfigure
- irá aparecer. Este assistente fornece uma maneira fácil de instalar os módulos, graças ao seu user-friendly e easy-to-use interface.
-O usuário pode carregar este assistente em sua própria conveniência usando o atalho :guilabel:`Reconfigure`, encontrado logo abaixo do 
-banco de dados e nome do usuário na web do cliente ou no menu de atalho no cliente GTK. Aparece a mesma caixa de diálogo de configuração
- do momento da instalação de um novo banco de dados. Por que nós chamamos o o assistente  :guilabel:`Reconfigure`? Na verdade, 
-porque permite que o utilizador reveja os aplicativos instalados e instale recursos adicionais relacionados ou simplesmente  
-instale novas aplicações em tempo real.
+Um dos novos recursos do OpenERP é o assistente :guilabel:`Configuration` . Uma vez executado, o atalho do :guilabel:`Reconfigure irá aparecer. Este assistente fornece uma maneira fácil de instalar os módulos, graças ao seu user-friendly e easy-to-use interface.
+O usuário pode carregar este assistente em sua própria conveniência usando o atalho :guilabel:`Reconfigure`, encontrado logo abaixo do  banco de dados e nome do usuário na web do cliente ou no menu de atalho no cliente GTK. Aparece a mesma caixa de diálogo de configuração do momento da instalação de um novo banco de dados. Por que nós chamamos o o assistente  :guilabel:`Reconfigure`? Na verdade, porque permite que o utilizador reveja os aplicativos instalados e instale recursos adicionais relacionados ou simplesmente instale novas aplicações em tempo real.
 
 Quando você passar por várias etapas no assistente, você vai encontrar algumas opções que são marcadas como verificadas (em cinza).
-Estes são aplicativos já instalados. Na configuração de banco de dados \ ``openerp_ch02`` \, você pode ver que a opção \ ``Gestão 
-de Relacionamento com o Cliente`` \ já está marcada porque esse aplicativo comercial foi instalado neste banco de dados.
+Estes são aplicativos já instalados. Na configuração de banco de dados \ ``openerp_ch02`` \, você pode ver que a opção \ ``Gestão de Relacionamento com o Cliente`` \ já está marcada porque esse aplicativo comercial foi instalado neste banco de dados.
 
-Instalar aplicações extra simplesmente marcando as opções correspondentes e clicando :guilabel:`Install` ou clique em :guilabel:`Skip`
-para parar a configuração. Você acabará por também entrar em toda a :guilabel:`CRM Application Configuration`
-passo que você pode usar para adicionar funcionalidades ao seu aplicativo de CRM. Por agora, selecione a \ ``Claims`` \ opção e 
-clique em :guilabel:`Configure`. Este, por sua vez instala o módulo :mod:`crm_claim`.
+Instalar aplicações extra simplesmente marcando as opções correspondentes e clicando :guilabel:`Install` ou clique em :guilabel:`Skip` para parar a configuração. Você acabará por também entrar em toda a :guilabel:`CRM Application Configuration` passo que você pode usar para adicionar funcionalidades ao seu aplicativo de CRM. Por agora, selecione a \ ``Claims`` \ opção e clique em :guilabel:`Configure`. Este, por sua vez instala o módulo :mod:`crm_claim`.
 
 .. figure:: images/reconfigure_wizard.png
    :scale: 75
@@ -79,11 +60,9 @@ clique em :guilabel:`Configure`. Este, por sua vez instala o módulo :mod:`crm_c
    *Assistente de reconfigurar mostrando a aplicação Gestão de Relacionamento com o Cliente como instalado*
 
 Você pode continuar adicionando funcionalidades desta maneira, pule as etapas de configuração ou simplesmente saia do assistente.
-Quando você sente a necessidade de carregar o sistema com recursos adicionais, você pode chamar o assistente :guilabel:`Reconfigure`
-novamente a qualquer momento.
+Quando você sente a necessidade de carregar o sistema com recursos adicionais, você pode chamar o assistente :guilabel:`Reconfigure` novamente a qualquer momento.
 
-.. note:: Você também pode alterar o Assistente de Configuração através do :menuselection:`Administration --> Configuration --> 
-Configuration Wizards --> Configuration Wizards`.
+.. note:: Você também pode alterar o Assistente de Configuração através do :menuselection:`Administration --> Configuration --> Configuration Wizards --> Configuration Wizards`.
 
 Instalando um aplicativo / Módulo da lista Módulos
 --------------------------------------------------------
@@ -99,8 +78,7 @@ o nome :mod:`google_map` no campo :guilabel:`Name` na tela de pesquisa, em segui
 A descrição do módulo dá informações úteis, como seu número de versão, seu status e uma revisão de sua
 funcionalidade. Clique em :guilabel:`Schedule for Installation` e o estado do módulo muda para :guilabel:`To be installed`.
 
-.. tip:: A partir de agora você pode programar e instalar os módulos de visão de lista também. Observe os botões do lado
-direito e o botão de ação para instalar.
+.. tip:: A partir de agora você pode programar e instalar os módulos de visão de lista também. Observe os botões do lado direito e o botão de ação para instalar.
 
 .. figure:: images/install_google_map_module.png
    :scale: 75
@@ -111,19 +89,11 @@ direito e o botão de ação para instalar.
 
 .. tip::  Guia Técnico
 
-	Se você selecionar um módulo em qualquer uma das listas do módulo, clicando em uma linha de módulo e, em seguida,no canto superior
-direito da janela
-	:guilabel:`Technical Guide`, o OpenERP produz um relatório técnico
-nesse módulo. É útil somente se o módulo está instalado.
+	Se você selecionar um módulo em qualquer uma das listas do módulo, clicando em uma linha de módulo e, em seguida,no canto superior direito da janela :guilabel:`Technical Guide`, o OpenERP produz um relatório técnico nesse módulo. É útil somente se o módulo está instalado.
 
-	Este relatório inclui uma lista de todos os objetos e todos os campos, juntamente com suas descrições.
-O relatório se adapta ao seu sistema e reflete as modificações que você fez e todos os outros
-módulos que você instalou.
+	Este relatório inclui uma lista de todos os objetos e todos os campos, juntamente com suas descrições.O relatório se adapta ao seu sistema e reflete as modificações que você fez e todos os outros módulos que você instalou.
 
-Então, use o menu :menuselection:`Administration --> Modules --> Apply Scheduled Upgrades`, ou a partir da seção :guilabel:`Actions` 
-clique em :guilabel:`Apply Scheduled Upgrades`, então :guilabel:`Start update` no :guilabel:`Module Upgrade`
-o formulário que aparece. Feche a janela quando a operação for concluída. Volte para o menu :guilabel:`Sales`; você irá
-ver que o novo menu :menuselection:`Products` tornou-se disponível.
+Então, use o menu :menuselection:`Administration --> Modules --> Apply Scheduled Upgrades`, ou a partir da seção :guilabel:`Actions` clique em :guilabel:`Apply Scheduled Upgrades`, então :guilabel:`Start update` no :guilabel:`Module Upgrade` o formulário que aparece. Feche a janela quando a operação for concluída. Volte para o menu :guilabel:`Sales`; você irá ver que o novo menu :menuselection:`Products` tornou-se disponível.
 
 .. tip:: Atualizando o menu no cliente GTK
 
@@ -148,7 +118,7 @@ Iniciar a partir de :menuselection:`Administration --> Modules --> Modules`.
 	
 	#.  Clique na barra de ferramentas de ação para a direita. :guilabel:`Apply Scheduled Upgrades`.
 
-	#.  Clique em :guilabel:`Start update`para instalar os dois módulos.
+	#.  Clique em :guilabel:`Start update` para instalar os dois módulos.
 	
 	#.  Após alguns segundos, quando a instalação estiver completa, você pode fechar esta caixa de diálogo.
 	
@@ -172,33 +142,23 @@ formulários ou dados de demonstração adicionais ou simplesmente algumas confi
 .. note::  Dependências entre os módulos
 
 	O formulário de módulos mostra duas abas antes de ser instalado
-	O primeira guia dá informações básicas sobre o módulo, e a
-segunda dá uma lista de módulos que este módulo depende. Então, quando você instalar um módulo, o OpenERP
-seleciona automaticamente todas as dependências necessárias para instalar este módulo.
+	O primeira guia dá informações básicas sobre o módulo, e a segunda dá uma lista de módulos que este módulo depende. Então, quando você instalar um módulo, o OpenERP seleciona automaticamente todas as dependências necessárias para instalar este módulo.
 
-	Que é também a forma como você desenvolve os módulos perfil: ele simplesmente define uma lista de módulos que você quer
-em seu perfil como um conjunto de dependências.
+	Que é também a forma como você desenvolve os módulos perfil: ele simplesmente define uma lista de módulos que você quer em seu perfil como um conjunto de dependências.
 
-Embora você possa instalar um módulo e todas as suas dependências de uma só vez, você não pode removê-los em uma
-só vez –você teria que desinstalar módulo a módulo. Desinstalar é mais complexo do que
+Embora você possa instalar um módulo e todas as suas dependências de uma só vez, você não pode removê-los em uma só vez –você teria que desinstalar módulo a módulo. Desinstalar é mais complexo do que
 instalar, porque você tem que lidar com os dados do sistema existente.
 
 .. note::  Módulos de desinstalação
 
-	Embora ele funcione muito bem, a desinstalação de módulos não é perfeita no OpenERP. Não é garantido
-poder retornar o sistema exatamente ao estado em que estava antes da instalação.
+	Embora ele funcione muito bem, a desinstalação de módulos não é perfeita no OpenERP. Não é garantido poder retornar o sistema exatamente ao estado em que estava antes da instalação.
 
-	Por isso, é recomendável que você faça um backup do banco de dados antes de instalar seus novos módulos, para
-que você possa testar os novos módulos e decidir se eles são adequados ou não. Se eles não forem, então
-você pode voltar para o seu backup. Se forem, então você pode ainda reinstalar os módulos do
-seu backup para que não tenha que apagar todos os dados de teste.
+	Por isso, é recomendável que você faça um backup do banco de dados antes de instalar seus novos módulos, para que você possa testar os novos módulos e decidir se eles são adequados ou não. Se eles não forem, então você pode voltar para o seu backup. Se forem, então você pode ainda reinstalar os módulos do seu backup para que não tenha que apagar todos os dados de teste.
 
-	Se você quiser desinstalar, você usará o menu :menuselection:`Administration --> Modules
-	--> Modules` e, em seguida, desinstalá-los na ordem inversa das suas
-dependências: ``stock``, ``account``.
+	Se você quiser desinstalar, você usará o menu :menuselection:`Administration --> Modules --> Modules` e, em seguida, desinstalá-los na ordem inversa das suas dependências: ``stock``, ``account``.
 
 Instalando Funcionalidades adicionais
-------------------------------------
+-------------------------------------
 
 Para descobrir toda a gama de possibilidades OpenERP, você pode instalar vários módulos adicionais.
 Instalá-los com seus dados de demonstração fornece uma maneira conveniente de explorar todo o núcleo

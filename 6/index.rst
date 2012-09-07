@@ -1,9 +1,9 @@
 
 .. _part-trade:
 
-####################
+#######################
 Gerenciando seu Negócio
-####################
+#######################
 
  These two chapters are about selling and purchasing products and services.
  
@@ -16,7 +16,7 @@ Gerenciando seu Negócio
     6_16_Sales/index
     6_17_Purchases/index
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright ÂŠ Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
 .. change the content. You can also print a copy to be read by yourself only.
@@ -40,6 +40,6 @@ Gerenciando seu Negócio
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand RosiĂ¨re, Belgium
 
 

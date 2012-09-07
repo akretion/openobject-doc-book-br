@@ -7,14 +7,11 @@ lhe uma perspectiva sobre a cobertura do software OpenERP core.
 
 .. tip:: Traduzindo Módulos novos
 
-	Quando você tiver instalado um novo módulo e estiver usando idiomas adicionais com Inglês, você tem que recarregar
-o arquivo de tradução. Novos termos introduzidos nesses módulos não são traduzidos por padrão. para fazer
-este uso :menuselection:`Administration --> Translations --> Load an Official Translation`.
+	Quando você tiver instalado um novo módulo e estiver usando idiomas adicionais com Inglês, você tem que recarregar o arquivo de tradução. Novos termos introduzidos nesses módulos não são traduzidos por padrão. para fazer este uso :menuselection:`Administration --> Translations --> Load an Official Translation`.
 
 Dependendo do usuário que se está conectado, a página aparece de forma diferente.
 Usando a sequência de instalação acima, painéis de controle determinados podem ser atribuídos como várias
-páginas dos usuários. Eles mostram um resumo das informações necessárias para começar o dia de forma eficaz. o
-painel do projeto pode conter:
+páginas dos usuários. Eles mostram um resumo das informações necessárias para começar o dia de forma eficaz. o painel do projeto pode conter:
 
 * uma lista das tarefas a realizar,
 
@@ -47,11 +44,9 @@ home page de qualquer usuário.
 
 .. tip:: Criando atalhos
 
-	Cada usuário tem acesso a muitos itens de menu a partir do menu. mas, em
-geral, um funcionário usa apenas uma pequena parte das funções do sistema.
+	Cada usuário tem acesso a muitos itens de menu a partir do menu. mas, em geral, um funcionário usa apenas uma pequena parte das funções do sistema.
 
-	Para que você possa definir atalhos para os menus mais utilizados. Esses atalhos são pessoais para cada usuário. para
-criar um novo atalho, basta clicar no "*" do cabeçalho da visão no cliente web.
+	Para que você possa definir atalhos para os menus mais utilizados. Esses atalhos são pessoais para cada usuário. para criar um novo atalho, basta clicar no "*" do cabeçalho da visão no cliente web.
 
 	Para remover um atalho basta clicar no link e clique novamente em "*" do cabeçalho da visão.
 
@@ -91,8 +86,7 @@ O filtro \ ``Customers`` \ é ativado por padrão mostrando parceiros que são c
 
 .. note:: Limite das listas
 
-	Po padrão, a lista no cliente GTK mostra apenas os primeiros 80 registros, para evitar sobrecarregar a
-rede e do servidor.
+	Po padrão, a lista no cliente GTK mostra apenas os primeiros 80 registros, para evitar sobrecarregar a rede e do servidor.
 
 	Mas você pode alterar esse limite, clicando no elemento de seleção (mostrando 80 por padrão) à
 	direita de os critérios de pesquisa.
@@ -164,24 +158,17 @@ barra de ferramentas:
 
 .. tip:: Relatórios, links e ações no cliente GTK
 
-	Quando você estiver visualizando um formulário no cliente GTK, os botões à direita do formulário são atalhos para
-os mesmos relatórios, links e ações conforme descrito no texto. Quando você estiver visualizando uma lista (tais como
-a lista de parceiros), os botões não estão disponíveis para você. Em vez disso, você pode alcançar Relatórios e Ações
-através de dois dos botões na barra de ferramentas no topo da lista – Impressão e ação.
+	Quando você estiver visualizando um formulário no cliente GTK, os botões à direita do formulário são atalhos para os mesmos relatórios, links e ações conforme descrito no texto. Quando você estiver visualizando uma lista (tais como a lista de parceiros), os botões não estão disponíveis para você. Em vez disso, você pode alcançar Relatórios e Ações através de dois dos botões na barra de ferramentas no topo da lista – Impressão e ação.
 
 Parceiros são usados ​​em todo o sistema OpenERP em outros documentos. Por exemplo, o menu
 :menuselection:`Sales --> Sales Orders` traz à tona todas as pedidos de vendas na visão em lista. Abra um pedido na visão em formulário e clique no nome de um parceiro, mesmo quando o formulário é somente de leitura. O formulário de parceiro será aberto.
 
 .. tip:: Clique no botão direito do mouse e atalhos
 
-	No cliente GTK você não tem hyperlinks para outros tipos de documentos. Em vez disso, você pode clicar botão direito do mouse em
-uma visão em lista para mostrar os campos relacionados nessa linha(que é campos tendo um link para outras formas).
+	No cliente GTK você não tem hyperlinks para outros tipos de documentos. Em vez disso, você pode clicar botão direito do mouse em uma visão em lista para mostrar os campos relacionados nessa linha(que é campos tendo um link para outras formas).
 
-	No cliente web você verá atalhos hiperlink em vários dos campos em um formulário em modo de leitura
-apenas , permitindo que você seja levado diretamente para o formulário correspondente. Quando o formulário web é no modo de edição,
-	você pode em vez de clicar o com o botão direito do mouse
-	no campo, para obter todos os campos ligados em um menu pop-up como se fosse com o GTK
-	cliente.
+	No cliente web você verá atalhos hiperlink em vários dos campos em um formulário em modo de leitura apenas , permitindo que você seja levado diretamente para o formulário correspondente. Quando o formulário web é no modo de edição, você pode em vez de clicar o com o botão direito do mouse
+	no campo, para obter todos os campos ligados em um menu pop-up como se fosse com o GTK cliente.
 
 	Você pode rapidamente tentar dar um presente, vá a qualquer uma das ordens de vendas em :menuselection:`Sales
 	--> Sales Orders`. Veja onde você pode vão desde o campo
@@ -335,8 +322,7 @@ sua qualidade de processo, garantindo que nunca abra casos de *Atenção* fuga.
 Bem como aquelas funções, você tem as ferramentas para melhorar a produtividade de todos os funcionários em suas atividades diárias de
 trabalho:
 
-* um plugin para o cliente de email Outlook e Firefox que lhe permite armazenar automaticamente seus e-mails e seus anexos na
-Gestão de conhecimento (anteriormente Sistema de Gestão Documental) integrado com OpenERP,
+* um plugin para o cliente de email Outlook e Firefox que lhe permite armazenar automaticamente seus e-mails e seus anexos na Gestão de conhecimento (anteriormente Sistema de Gestão Documental) integrado com OpenERP,
 
 * interfaces para sincronizar seus contatos e calendários com OpenERP,
 
@@ -350,8 +336,7 @@ Você pode implementar uma política de melhoria contínua para todos os seus se
 ferramentas estatísticas em OpenERP, para analisar os diferentes comunicações com seus parceiros. Com
 estes, você pode executar uma política de melhoria real para gerenciar sua qualidade de serviço.
 
-A gestão de relacionamento com os clientes é detalhada na segunda seção deste livro (veja
-:ref:`part2-crm`).
+A gestão de relacionamento com os clientes é detalhada na segunda seção deste livro (veja :ref:`part2-crm`).
 
 .. index::
    single: Gestão de Vendas
@@ -536,11 +521,9 @@ A gestão de produção do OpenERP possibilita as empresas possam planejar, auto
 
 .. note:: BOMs, roteamento, centros de trabalho
 
-	Esses documentos descrevem os materiais que compõem um conjunto maior. Eles são comumente chamados
-Listas de materiais ou BOMs.
+	Esses documentos descrevem os materiais que compõem um conjunto maior. Eles são comumente chamados Listas de materiais ou BOMs.
 
-	Eles estão ligados a rotas que lista as operações necessárias para realizar a fabricação ou
-montagem do produto.
+	Eles estão ligados a rotas que lista as operações necessárias para realizar a fabricação ou montagem do produto.
 
 	Cada operação é realizada em um centro de trabalho, que pode ser uma máquina ou uma pessoa.
 
@@ -612,17 +595,12 @@ Painéis podem ser personalizados para atender às necessidades de cada usuário
 	OpenERP contém um editor de painél de controle. Crie seu próprio painél para atender às suas
 	necessidades específicas em apenas alguns cliques. Vá para o menu :menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition` para definir o seu próprio painél de controle.
 
-O `Análise estatística` é uma das coisas cruciais para tomada de decisão em qualquer negócio. OpenERP fornece
-Relatórios estatísticos para cada aplicação. Por exemplo, você pode acessar a análise estatística de vendas informações relacionadas
-a partir do menu :menuselection:`Sales --> Reporting --> Sales Analysis`. Você pode pesquisar e agrupar os dados usando esta
-``Análise estatística`.
+O `Análise estatística` é uma das coisas cruciais para tomada de decisão em qualquer negócio. OpenERP fornece Relatórios estatísticos para cada aplicação. Por exemplo, você pode acessar a análise estatística de vendas informações relacionadas a partir do menu :menuselection:`Sales-->Reporting-->Sales Analysis`. Você pode pesquisar e agrupar os dados usando esta ``Análise estatística``.
 
 Acompanhar o seu processo de Fluxos
 ===================================
 
-Muitos documentos têm um fluxo de trabalho próprio, e também participar de processos multifuncionais.
-Leve um documento que se poderia esperar para ter um fluxo de trabalho, como uma pedido de venda, e
-em seguida, clique no botão :guilabel:`?`acima de seu formulário para ver o processo completo.
+Muitos documentos têm um fluxo de trabalho próprio, e também participar de processos multifuncionais. Leve um documento que se poderia esperar para ter um fluxo de trabalho, como uma pedido de venda, e em seguida, clique no botão :guilabel:`?` acima de seu formulário para ver o processo completo.
 
 .. figure:: images/guided_tour_process.png
    :scale: 55

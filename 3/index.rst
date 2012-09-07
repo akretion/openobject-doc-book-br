@@ -1,9 +1,9 @@
 
 .. _part-genacct:
 
-#################
-Gerencie seus fatos contábeis
-#################
+#############################
+Gerencia seus fatos contábeis
+#############################
 
  When it is well integrated with the management system, an accounting system offers a company special
  benefits in addition to the obvious abilities it should have to report on the financial position.
@@ -26,7 +26,7 @@ Gerencie seus fatos contábeis
     3_8/index
     3_9/index
 
-.. Copyright © Open Object Press. All rights reserved.
+.. Copyright Â© Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
 .. change the content. You can also print a copy to be read by yourself only.
@@ -50,6 +50,6 @@ Gerencie seus fatos contábeis
 .. and the authors assume no responsibility for errors or omissions, or for damages
 .. resulting from the use of the information contained herein.
 
-.. Published by Open Object Press, Grand Rosière, Belgium
+.. Published by Open Object Press, Grand RosiÃšre, Belgium
 
 

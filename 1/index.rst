@@ -5,27 +5,22 @@
 Primeiros passos com OpenERP
 ############################
 
-OpenERP é um sistema de software impressionante, sendo fácil de usar e ainda proporciona grandes benefícios
-para ajudar você a gerenciar sua empresa.
-É fácil de instalar em Windows e Linux em comparação com outros sistemas de escala empresarial,
-e oferece funcionalidade inigualável.
+OpenERP é um sistema de software impressionante, sendo fácil de usar e ainda proporciona grandes benefícios para ajudar você a gerenciar sua empresa.
+É fácil de instalar em Windows e Linux em comparação com outros sistemas de escala empresarial, e oferece funcionalidade inigualável.
 
 O objetivo desta primeira parte do livro é ajudar você a começar a descobrir OpenERP na prática.
 
 O primeiro capítulo, :ref:`ch-inst`, dá orientação detalhada para instalá-lo.
-Se você não é um administrador de sistema, ou se você já tiver instalado
-OpenERP, ou se você estiver planejando usar um provedor de SaaS on-line, então você pode pular este capítulo,
-passe para o próximo capítulo, :ref:`ch-guided`. 
+Se você não é um administrador de sistema, ou se você já tiver instalado OpenERP, ou se você estiver planejando usar um provedor de SaaS on-line, então você pode pular este capítulo, passe para o próximo capítulo, :ref:`ch-guided`. 
 Há que levá-lo em uma turnê passo-a-passo guiado utilizando as informações no banco de dados de demonstração.
  
 Se você já usou OpenERP (ou Tiny ERP) um pouco, então você pode passar para o terceiro capítulo desta parte do livro.
-Em :ref:`ch-real` você pode experimentar um caso real, a partir do zero em um novo banco de dados,
-através do desenvolvimento de um fluxo de trabalho de negócios completo que vai de compra para venda de bens.
+Em :ref:`ch-real` você pode experimentar um caso real, a partir do zero em um novo banco de dados, através do desenvolvimento de um fluxo de trabalho de negócios completo que vai de compra para venda de bens.
  
 .. figure:: images/sect1_outline.png
   :align: center
 
-   *Opções para a leitura desta parte do livro*
+*Opções para a leitura desta parte do livro*
 
 .. toctree::
     :maxdepth: 1

@@ -6,7 +6,7 @@
 .. _part2-crm-leads:
 
 Gerindo seus Prospectos
-===================
+=======================
 
 Para definir prospectos, imagine um recipiente cheio de contatos de clientes potenciais, manifestando interesse pelos produtos da sua empresa. 
 
@@ -34,7 +34,7 @@ Desde o :menuselection:`Vendas --> Vendas --> Prospectos` menu, pode qualificar 
 
 Prospectos podem ser atribuidos a um *time de vendas* para serem seguidos facilmente (olha  :ref:`ch-team`). Cada usuário pode ser adicionado a um time de vendas por padrão que pode ser especificado no `usuário preferências`. Quando definir uma estrutura em árvore pra seu time de vendas, pode também atribuir um prospecto para um outro time de vendas para ações posteriores.
 
-.. nota:: Prospectos ou Opportunidades
+.. note:: Prospectos ou Opportunidades
 
        Empresas podem decidir não usar os prospectos, mas, em vez disso, de guardar todas informações diretamente numa oportunidade. Para algumas empresas, 
        prospectos são apenas uma passagem adicional no processo de vendas. Pode-se chamar isso de extendido (começar desde prospecto) contra simplificado (começar 
@@ -44,18 +44,18 @@ Prospectos podem ser atribuidos a um *time de vendas* para serem seguidos facilm
 
 Nas próximas seções, explicaremos alguns exemplos mais em detalhes de como `prospectos` no OpenERP podem ser usados.
 
-.. dica:: Prospectos Menu não é mostrado
+.. tip:: Prospectos Menu não é mostrado
 
         Em visao ``Simplificada``, ``Prospectos`` não serão mostrados. Para ver não só oportunidades, mas também prospectos, tem que mudar para a 
         ``visao extendida``. Pode mudar visao `simplificada` para `Extendida` facilmente, mudando suas `preferências de usuários` pelo botão `Editar Preferências`.
 
 Gravando seu Cartão de Negócio Eficientemente
----------------------------------------
+---------------------------------------------
 
 Clientes potenciais são usualmente digitados como um prospecto no sistema. Quer dizer que não cria um parceiro ou uma oportunidade de venda até que tenha qualificado se o prospecto é interessante ou não.
 
 
-.. dica:: Qualificação
+.. tip:: Qualificação
 
       Quando um prospecto qualificado precisa de ações posteriores, pode virar o prospecto num parceiro e, eventualmente, uma oportunidade de venda.
 
@@ -91,6 +91,7 @@ Sobre o :guilabel:`Extra` aba no **Prospectos** formulário, encontra estatísti
    *Extra ada*
 
 Sobre :guilabel:`Comunicação & Histórico` aba, no **Prospectos** formulário, pode ver um histórico completo de todas as ações em relação a esse prospecto. Pode também adicionar notas internas e alterar o status do prospecto enquanto adiciona uma nota assim.
+
 Manda um email diretamente desde o prospecto clicando simplesmente no botão :guilabel:`Enviar novo Email` (Para configurar suas opções de email, por favor consulte o capítulo :ref:`ch-crm-fetchmail-install`).
 Pode adicionar anexos nas notas internas e emails que você mandou para o prospecto. Pode personalizar sua mensagem e ter o status mudado depois que um email foi mandado; poderia automaticamente ter o prospecto colocado em **pendente**, porque precisa uma resposta desde o cliente antes de fazer ações posteriores.
 
@@ -101,13 +102,13 @@ Pode adicionar anexos nas notas internas e emails que você mandou para o prospe
    *Aba Comunicação & Histórico*
 
 Importação de um banco de dados de prospectos
---------------------------
+---------------------------------------------
 
 Pode-se também importar uma grande lista de prospectos. Isso pode ser útil se tiver comprado um banco de dados de prospectos potenciais que você quer carregar no OpenERP para os gerir todos ao mesmo tempo.
 
 Começa com uma lista de prospectos de formato CSV por exemplo. Se seu banco de dados de prospectos tiver um outro formato, pode-se convertê-lo facilmente no formato CSV usando Miscrosoft Excel ou OpenOffic Calc. 
 
-.. dica:: Importação 
+.. tip:: Importação 
 
       A melhor coisa a fazer para garantir que sua importação  passará sem problemas, é primeiro exportar todos os campos Prospectos necessários usando a função `Export`,e então editar o arquivo csv para importação.
 
@@ -123,7 +124,7 @@ Selecione seu arquivo que contém as informações dos prospectos, e clique em :
 
 Verifique o capítulo on-line sobre o sistema de administração para mais informações sobre importação e exportação em http://doc.openerp.com/v6.0/book/.
 
-.. dica:: várias Importações
+.. tip:: várias Importações
 
     Importando e exportando dados no OpenErp é uma função genérica disponível a todos os recursos.
     Assim, você pode importar e exportar listas, como parceiros, oportunidades, entradas de contabilidade,
@@ -141,7 +142,7 @@ Verifique o capítulo on-line sobre o sistema de administração para mais infor
 Estes diferentes métodos são descritos neste livro  (ver capítulo :ref:`contform`).
 
 Organizar prospectos
-----------------
+--------------------
 
 Para ajudar os usuários a organizar e gerir prospectos de forma eficiente, o OpenERP fornece vários recursos no CRM para ser usado em função das necessidades de cada um:
 
@@ -174,7 +175,7 @@ O gerente de vendas pode usar a visao **Prospectos** para facilmente conservar p
 Prospectos também podem ser priorizados. Os vendedores podem atribuir uma prioridade para seus prospectos, e depois começar a trabalhar em seus prospectos a partir do topo da lista, que é ordenada por prioridade.	
 
 Analisar prospecções
----------------
+--------------------
 
 OpenERP também oferece relatórios estatísticos para conservar a memoria da geração de prospectos. O: `Vendas --> Relatórios --> Analisar Prospecções` relatório permite verificar vários elementos em relação com os prospectos. Você pode olhar para atrasos de processamento, número de respostas dadas e e-mails enviados (se você usar o recurso de gateway de e-mail). Classifica suas análises de prospectos por diferentes grupos para obter análise exata.
 
@@ -182,7 +183,7 @@ Estas são algumas possibilidades de análise do Analisar prospecções relatór
 
 1. Prospectos, por Estado e por mês
 
-Para analisar os prospectos por estado, agrupe os prospectos por nível de qualificação (``Estágio ``) e status (`` Estado ``), este também pode ser feito por meses individuais (primeiro grupo por `` Mês ``).
+Para analisar os prospectos por estado, agrupe os prospectos por nível de qualificação (``Estágio``) e status (``Estado``), este também pode ser feito por meses individuais (primeiro grupo por ``Mês``).
 
 2. Prospectos por Origem
 

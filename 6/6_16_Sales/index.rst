@@ -4,9 +4,9 @@
 
 .. _ch-sales:
 
-******************
+**********************
 Conduzindo suas vendas
-******************
+**********************
 
   *This chapter describes OpenERP's sales management, following the complete sales order process from
   quotation to customer order, including the management of deliveries and invoicing. 

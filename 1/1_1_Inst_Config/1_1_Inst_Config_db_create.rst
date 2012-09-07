@@ -23,16 +23,9 @@ você terá que encontrar alguém que o tenha para criar este banco de dados.
    – poderá ler, alterar e excluir qualquer um dos dados em qualquer uma das bases de dados.
 
    Após a primeira instalação, a senha é ``admin``. Este é o padrão e
-   é usado se não houver nenhum arquivo de configuração acessível no servidor. Se o seu sistema tiver sido
-configurado para que o arquivo de configuração do servidor possa ser gravado pelo servidor, então
-você pode alterar a senha através do cliente. Ou você pode, deliberadamente, fazer com que o
-arquivo de configuração seja somente para leitura, para que não haja possibilidade de alterá-lo a partir do cliente.
-De qualquer forma, um servidor de administrador de sistemas pode mudá-lo se você esquecê-la.
+   é usado se não houver nenhum arquivo de configuração acessível no servidor. Se o seu sistema tiver sido configurado para que o arquivo de configuração do servidor possa ser gravado pelo servidor, então você pode alterar a senha através do cliente. Ou você pode, deliberadamente, fazer com que o arquivo de configuração seja somente para leitura, para que não haja possibilidade de alterá-lo a partir do cliente. De qualquer forma, um servidor de administrador de sistemas pode mudá-lo se você esquecê-la.
    
-   Portanto, se seu sistema está configurado com essa permissão, você pode alterar a senha superadmin através do cliente GTK
-    a partir do menu :menuselection:`File --> Databases --> Administrator Password`, ou através do
-cliente web efetuando logout (clique no :guilabel:`Logout` link), clicando :guilabel:`Databases` na
-    tela de login, e em seguida clicando no botão na tela de Gestão. :guilabel:`Password` 
+   Portanto, se seu sistema está configurado com essa permissão, você pode alterar a senha superadmin através do cliente GTK a partir do menu :menuselection:`File --> Databases --> Administrator Password`, ou através do cliente web efetuando logout (clique no :guilabel:`Logout` link), clicando :guilabel:`Databases` na tela de login, e em seguida clicando no botão na tela de Gestão. :guilabel:`Password` 
    
    A localização do arquivo de configuração do servidor é normalmente definido ao iniciar o servidor com
     a opção de linha de comando``--config``.
@@ -86,25 +79,16 @@ banco de dados, você pode estendê-lo sem ter que saber a senha de super admini
 
 .. tip::   Acesso de Usuário
 
-	A combinação de usuário / senha é específica para um único banco de dados. Se você tiver direitos administrativos
-de um banco de dados você pode modificar todos os usuários.
+	A combinação de usuário / senha é específica para um único banco de dados. Se você tiver direitos administrativos de um banco de dados você pode modificar todos os usuários.
 
  	.. index::
 	   single: module; users_ldap
 
-	Alternativamente, você pode instalar o módulo :mod:`users_ldap`, que gerencia a autenticação de usuários
-no LDAP (the Lightweight Directory Access Protocol, a standard system), e conectá-lo a vários
-Bancos de dados OpenERP. Usando isso, muitos bancos de dados podem compartilhar a mesma conta detalhes do usuário.
+	Alternativamente, você pode instalar o módulo :mod:`users_ldap`, que gerencia a autenticação de usuários no LDAP (the Lightweight Directory Access Protocol, a standard system), e conectá-lo a vários Bancos de dados OpenERP. Usando isso, muitos bancos de dados podem compartilhar a mesma conta detalhes do usuário.
 
 .. note::  Falha para criar um banco de dados
 
-	Como você sabe se você criou com sucesso o seu novo banco de dados?
-É informado a você se a criação de banco de dados não foi bem sucedida.
-Se você tiver digitado um nome de banco de dados usando caracteres proibidos (ou o nome de nenhum, ou um nome muito curto),
-	você será alertado pela caixa de diálogo :guilabel:`Bad database name!` explicando como corrigir o erro.
-	Se você digitou a senha de super-administrador errado ou um nome já em uso
-	(alguns nomes podem ser reservados sem o seu conhecimento), você será alertado pela caixa de diálogo
-	:guilabel:`Error during database creation!`.
+	Como você sabe se você criou com sucesso o seu novo banco de dados? É informado a você se a criação de banco de dados não foi bem sucedida. Se você tiver digitado um nome de banco de dados usando caracteres proibidos (ou o nome de nenhum, ou um nome muito curto), você será alertado pela caixa de diálogo :guilabel:`Bad database name!` explicando como corrigir o erro. Se você digitou a senha de super-administrador errado ou um nome já em uso (alguns nomes podem ser reservados sem o seu conhecimento), você será alertado pela caixa de diálogo :guilabel:`Error during database creation!`.
 
 Na primeira vez que você se conecta ao banco de dados, serão feitas uma série de perguntas para
 definir os parâmetros do banco de dados. Você pode optar por :guilabel:`Skip Configuration Wizards` ou
@@ -114,9 +98,7 @@ seguintes passos:
 	#.  :guilabel:`Configure Your Interface` : selecione \ ``Simplified`` \ e clique em :guilabel:`Next`.
 
 	#.  :guilabel:`Configure Your Company Information` : substitua o padrão proposto \ ``OpenERP S.A.`` \
-	    pelo nome da sua empresa e seu endereço. Você pode definir a moeda que
-sua empresa utiliza ou deixar a configuração padrão. Você também pode adicionar o logotipo da empresa que irá
-ser visível nos relatórios e outros documentos. Clique em :guilabel:`Next`.
+	    pelo nome da sua empresa e seu endereço. Você pode definir a moeda que sua empresa utiliza ou deixar a configuração padrão. Você também pode adicionar o logotipo da empresa que irá ser visível nos relatórios e outros documentos. Clique em :guilabel:`Next`.
 
 	#.  :guilabel:`Install Applications` : verifique os aplicativos que você precisa e clique em :guilabel:`Install`.
 	    Por enquanto, não instale qualquer aplicativo.
@@ -176,8 +158,7 @@ no cliente GTK, ou a partir do botão :guilabel:`Databases` no web do cliente
         Para restaurar um banco de dados, vá na tela web :guilabel:`Login` e clique no botão :guilabel:`Databases`.
         Em seguida, clique no botão :guilabel:`Restore`, clique no botão :guilabel:`Choose File` para selecionar o banco de dados
         que deseja restaurar. Dê ao banco de dados um nome e digite a senha de super-administrador.
-	Clique no botão :guilabel:`Restore` para confirmar que você deseja instalar uma nova cópia do banco de dados selecionado.
-Para restaurar um banco de dados, você precisa ter uma cópia existente, é claro.
+        Clique no botão :guilabel:`Restore` para confirmar que você deseja instalar uma nova cópia do banco de dados selecionado. Para restaurar um banco de dados, você precisa ter uma cópia existente, é claro.
 
 .. index::
    single: database; duplicate
@@ -190,8 +171,7 @@ Para restaurar um banco de dados, você precisa ter uma cópia existente, é cla
 
         #. restaurar este banco de dados do arquivo de backup no seu PC, e dar-lhe um novo nome.
 
-	Esta pode ser uma maneira útil de fazer um banco de dados de ensaio de um banco de dados de produção. Você pode experimentar a
-operação de uma nova configuração, novos módulos, ou apenas a importação de novos dados.
+	Esta pode ser uma maneira útil de fazer um banco de dados de ensaio de um banco de dados de produção. Você pode experimentar a operação de uma nova configuração, novos módulos, ou apenas a importação de novos dados.
 
 .. index::
    single: Acesso
@@ -223,7 +203,7 @@ E se você quer atualizar ou ampliar o já existente com módulos adicionais?
 Em ambos os casos, você precisa ser um \ ``root`` \ usuário ou \ ``Administrator`` \ de seu servidor de aplicativos OpenERP.
 
 Estendendo OpenERP
------------------
+------------------
 
 Para estender o OpenERP você precisará copiar os módulos para o diretório  \``addons``\. Que está em
 seu diretório do servidor \ ``openerp-server`` \ (que difere entre Windows, Mac e algumas das
@@ -242,9 +222,7 @@ Você pode adicionar módulos de duas maneiras principais - através do servidor
 .. index::
    pair:  system; administration
 
-Para adicionar novos módulos através do servidor: Como usuário \ ``root`` \
- ou outro usuário adequado, você deve colocar o módulo no diretório \ ``addons`` \ e mudar suas
-permissões para coincidir com as dos outros módulos.
+Para adicionar novos módulos através do servidor: Como usuário \ ``root`` \ ou outro usuário adequado, você deve colocar o módulo no diretório \ ``addons`` \ e mudar suas permissões para coincidir com as dos outros módulos.
 
 Para adicionar novos módulos por meio do cliente você deve primeiro alterar as permissões do diretório \ ``addons`` \
 do servidor, para permitir a gravação pelo servidor, isso permitirá que você instale
@@ -256,9 +234,7 @@ servidor, o software do servidor).
 
 .. tip:: Permissões de mudança
 
-	Uma maneira muito simples de alterar as permissões no sistema Linux é executar o comando sudo chmod 777 <path_to_addons> (onde <path_to_addons> é
-o caminho completo para o diretório de addons, um local como /usr/lib/python2.5/site-packages/openerp-
-	server/addons).
+	Uma maneira muito simples de alterar as permissões no sistema Linux é executar o comando sudo chmod 777 <path_to_addons> (onde <path_to_addons> é o caminho completo para o diretório de addons, um local como /usr/lib/python2.5/site-packages/openerp-server/addons).
 
 Qualquer usuário de OpenERP que tenha acesso aos menus de administração relevante pode, então, fazer upload de qualquer nova
 funcionalidade, de modo que você deve desativar esse recurso para uso em produção. Você vai ver exemplos deste

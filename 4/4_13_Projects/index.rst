@@ -4,9 +4,9 @@
 
 .. _ch-projects:
 
-*******************
+************************
 Conduzindo seus projetos
-*******************
+************************
 
  *If you have a good system to manage tasks, your whole company will benefit.
  OpenERP's project management application enables you to efficiently manage and track tasks,

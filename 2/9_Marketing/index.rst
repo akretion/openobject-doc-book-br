@@ -102,7 +102,7 @@ Como você pode ver, o módulo **Marketing Campaign** está intimamente sincroni
 Uma vez que a liderança satisfaz o nosso objetivo final, iríamos considerá-lo como um parceiro / cliente e fechar que levam.
 
 Modelos de e-mail
----------------
+-----------------
 
 OpenERP permite que você crie seu próprio e-mail modelos. Você pode usar o Construtor de Expressões para ter as variáveis ​​criadas para você. Suponha que você gostaria de adicionar o nome do contato no e-mail, mas claro, isso vai ser um nome diferente para cada e-mail.
 

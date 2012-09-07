@@ -43,21 +43,18 @@ que você crie diretamente o cliente com o nome digitado.
 Uma vez que o nome do cliente foi selecionado, diferentes campos do pedido estão concluídos
 automaticamente, com base na configuração do formulário de sócio para que o cliente:
 
-* :guilabel:`Ordering Contact` :pessoa que manuseia o pedido no final do cliente. Por padrão, o OpenERP
-propõe o contato Pedido ao parceiro selecionado
+* :guilabel:`Ordering Contact` :pessoa que manuseia o pedido no final do cliente. Por padrão, o OpenERP propõe o contato Pedido ao parceiro selecionado
 
 * :guilabel:`Delivery Address` : endereço usado no pedido de entrega. Por padrão, o OpenERP propõe
    o endereço de entrega do formulário de sócio. Se nenhum endereço de entrega específica é definida, o padrão
    endereço será utilizado em seu lugar.
 
 * :guilabel:`Invoice Address` :endereço usado para enviar a fatura para o cliente. Por padrão, o OpenERP
-   propõe o endereço rotulado :guilabel:`Invoice` a partir do formulário do parceiro. Se nenhum endereço e fatura específica são definidos,
-por padrão o endereço será utilizado em seu lugar.
+   propõe o endereço rotulado :guilabel:`Invoice` a partir do formulário do parceiro. Se nenhum endereço e fatura específica são definidos, por padrão o endereço será utilizado em seu lugar.
 
 * :guilabel:`Pricelist` : irá determinar tanto a moeda da cotação quanto o preço que serão usados para cada produto.
 
-* :guilabel:`Payment Term` : disponível na aba :guilabel:`Other Information`, ele mostra o método de pagamento
-   que o cliente irá seguir, por exemplo ``30 Days End of Month``.
+* :guilabel:`Payment Term` : disponível na aba :guilabel:`Other Information`, ele mostra o método de pagamento que o cliente irá seguir, por exemplo ``30 Days End of Month``.
 
 Você pode modificar qualquer um destes campos no pedido.
 
@@ -90,16 +87,11 @@ informações úteis para a lista de produtos para ajudar você a fazer uma cota
 * :guilabel:`Virtual Stock` : mostra um vendedor a quantidade que pode ser vendida, tendo em conta
    ambas as ações reservadas para outras ordens e o número de produtos planejados para chegar a curto prazo.
 
-* :guilabel:`Public Price` : o preço de venda básico para determinado produto. Ele fornece uma base para que o
-   vendedor possa julgar se deve oferecer um desconto para o cliente, e quanto de
-   desconto deve ser oferecido.
+* :guilabel:`Public Price` : o preço de venda básico para determinado produto. Ele fornece uma base para que o vendedor possa julgar se deve oferecer um desconto para o cliente, e quanto de desconto deve ser oferecido.
 
-* :guilabel:`Pricelist` : (não pode ser mostrado, dependendo dos módulos instalados) depende das condições de preços anexada ao cliente,
-calculada sobre o preço de lista. Este é o preço que é proposto por padrão na cotação dos clientes, a menos que tenha sido modificado 
-pelo vendedor.
+* :guilabel:`Pricelist` : (não pode ser mostrado, dependendo dos módulos instalados) depende das condições de preços anexada ao cliente, calculada sobre o preço de lista. Este é o preço que é proposto por padrão na cotação dos clientes, a menos que tenha sido modificado pelo vendedor.
 
-* :guilabel:`Cost Price` : mostra o preço de custo do produto. Se o vendedor vende por menos
-   do que este montante, a empresa incorre em uma perda.
+* :guilabel:`Cost Price` : mostra o preço de custo do produto. Se o vendedor vende por menos do que este montante, a empresa incorre em uma perda.
 
 .. figure:: images/sale_product_list.png
    :scale: 75
@@ -117,16 +109,9 @@ formulário do produto..
 
 .. tip:: Desconto visível
 
-   Se um preço com desconto é retirado de uma lista de preços, por padrão, essa figura é mostrada como o
-    preço de venda ao cliente. Ele vai ver um desconto de 0%, juntamente com o preço unitário que é diferente
-    do preço de lista.
-   Se você instalar o módulo :mod:`product_visible_discount` from ``extra-addons``,
-   você pode configurar se quiser tornar o desconto
-    explicitamente visível em um formulário de pedido como uma diferença percentual em relação ao preço de lista,
-    ou apenas mostrar um preço unitário reduzido na configuração padrão.
+   Se um preço com desconto é retirado de uma lista de preços, por padrão, essa figura é mostrada como o preço de venda ao cliente. Ele vai ver um desconto de 0%, juntamente com o preço unitário que é diferente do preço de lista. Se você instalar o módulo :mod:`product_visible_discount` from ``extra-addons``, você pode configurar se quiser tornar o desconto explicitamente visível em um formulário de pedido como uma diferença percentual em relação ao preço de lista, ou apenas mostrar um preço unitário reduzido na configuração padrão.
 
-Quando você entra em uma cotação, o produto escolhido é apresentado na linguagem do cliente para que ele possa ver
-o que ele está vendendo. A descrição do produto vendido pode também ser expressa na linguagem do cliente.
+Quando você entra em uma cotação, o produto escolhido é apresentado na linguagem do cliente para que ele possa ver o que ele está vendendo. A descrição do produto vendido pode também ser expressa na linguagem do cliente.
 A tradução para o idioma do cliente é usada na cotação ou no pedido quando ele é impresso.
 
 .. figure:: images/sale_line_translation.png

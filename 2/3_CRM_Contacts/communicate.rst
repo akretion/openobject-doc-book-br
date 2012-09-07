@@ -30,8 +30,8 @@ Ferramentas de Comunicação
 
 .. index:: fetchmail
 
-O Fetchmail * / * mailGateway a funcionalidade permite a interface do CRM com e-mails recebidos e enviados. Assim, você pode receber e-mails em OpenERP e respondê-las diretamente do OpenERP.
-Você pode instalá-lo quando você configurar o CRM, por meio da Reconfigure `assistente,` Fetch Emails `, ou instalando o: mod:` fetchmail módulo `a partir da lista de módulos.
+O *Fetchmail/mailGateway* a funcionalidade permite a interface do CRM com e-mails recebidos e enviados. Assim, você pode receber e-mails em OpenERP e respondê-las diretamente do OpenERP.
+Você pode instalá-lo quando você configurar o CRM, por meio da Reconfigure `assistente`,`Fetch Emails`, ou instalando o: mod: `fetchmail módulo` a partir da lista de módulos.
 Graças a esta característica, cada e-mail que você receberá no endereço de e-mail especificado pode criar automaticamente uma ligação, um contato ou um outro objeto no OpenERP, mantendo a leitura de anexos de e-mail. Esta é uma maneira fácil de garantir que nenhuma informação importante se perda em vendas.
 
 Você define o endereço de e-mail genérico que pretende utilizar, tais como vendas@minhaempresa.com, e então você diz OpenERP que cada e-mails para este endereço devem ser automaticamente criado como um lead.
@@ -125,7 +125,7 @@ Graças ao plug-in, você pode facilmente ligar e-mails e anexos correspondentes
 
 	O Microsoft Outlook plug-in funciona com o Microsoft Outlook 2003 e 2007, mas não com o Outlook Express.
 
-Neste capítulo, apenas as possibilidades reais do plug-in será discutido. Para mais informações sobre como instalar e configurar o Outlook plug-in, consulte o capítulo :ref:`outlook`.
+Neste capítulo, apenas as possibilidades reais do plug-in será discutido. Para mais informações sobre como instalar e configurar o Outlook plug-in, consulte o capítulo :ref:`outlook` .
 
 Na barra de ferramentas do Outlook, de uma olhada em  :menuselection:`Tools` menu.
 
@@ -198,8 +198,8 @@ Da caixa de correio, simplesmente clicando em um e-mail, você pode acessar dire
 
 * Passo 1: Instalar o plugin Outlook no OpenERP
 
-Use o Assistente de Configuração OpenERP e instale a aplicação ``Customer Relationship Management``. Na *Configuração de aplicação do CRM* diálogo em Plug-In, selecione `MS-Outlook`.
-Em seguida, o *Outlook Plug-In * assistente aparece. Ao lado do campo ``Outlook Plug-in``, clique no botão ``Salvar como`` para salvar o plug-in para o seu desktop (ou qualquer outro local no seu computador).
+Use o Assistente de Configuração OpenERP e instale a aplicação `Customer Relationship Management`. Na *Configuração de aplicação do CRM* diálogo em Plug-In, selecione `MS-Outlook`.
+Em seguida, o *Outlook Plug-In* assistente aparece. Ao lado do campo `Outlook Plug-in`, clique no botão ``Salvar como`` para salvar o plug-in para o seu desktop (ou qualquer outro local no seu computador).
 
 Você também pode baixar o manual de instalação, clicando na seta verde ao lado de ``instalação manual``.  
 
@@ -265,7 +265,7 @@ A janela de configuração será exibida para que você possa inserir os dados d
 
 	#. Selecione o banco de dados você deseja se conectar e digite o usuário ea senha necessários para efetuar login no banco de dados,
 
-	#. Clique no botão `Conectar´.
+	#. Clique no botão `Conectar`.
 
 	#. Na aba ``Definições de configuração``, em *Parâmetros webserver* clique no botão `Alterar`
 	   e digite as configurações do servidor web, ex ``http://localhost:8080``,
@@ -359,8 +359,7 @@ seja você acabou de criar um contato (endereço), ou criou um parceiro com o co
 	- Quando você também deseja criar um novo parceiro, complete os dados de contato.
 	  Em seguida, clique no botão ``Criar Parceiro``, adicione o nome do parceiro e clique no botão ``Salve``.
 
-	- Você também pode adicionar um novo contato para um parceiro existente. Clique no botão ``Pesquisar`` ao lado do campo Parceiro
-e selecione o sócio correspondente da lista. Em seguida, preencha os dados de contato e clique no botão ``Salvar``.
+	- Você também pode adicionar um novo contato para um parceiro existente. Clique no botão ``Pesquisar`` ao lado do campo Parceiro e selecione o sócio correspondente da lista. Em seguida, preencha os dados de contato e clique no botão ``Salvar``.
 
 .. figure::  images/thunderbird_creation.png
    :scale: 75
@@ -374,16 +373,13 @@ Da caixa de correio, simplesmente clicando em um e-mail, você pode acessar dire
 
 .. tip:: Gestão de Conhecimento
 
-	O plug-in do Thunderbird é compatível com a gestão de conhecimento do OpenERP (ex. Documento). Se você instalar o
-Aplicação do conhecimento, você será capaz de:
+	O plug-in do Thunderbird é compatível com a gestão de conhecimento do OpenERP (ex. Documento). Se você instalar o Aplicação do conhecimento, você será capaz de:
 
-	* pesquisa através do conteúdo de documentos da sua empresa e também em e-mails arquivados (aqueles que têm o tipo .doc, .pdf, .sxw
-	  and .odt),
+	* pesquisa através do conteúdo de documentos da sua empresa e também em e-mails arquivados (aqueles que têm o tipo .doc, .pdf, .sxw e .odt),
 
-	* ter um sistema de arquivos compartilhado que está ligado a vários documentos OpenERP para compartilhar informações e
-acessá-lo com seu navegador favorito,
+	* ter um sistema de arquivos compartilhado que está ligado a vários documentos OpenERP para compartilhar informações e acessá-lo com seu navegador favorito,
 
-* Passo 1: Instale o plugin Thunderbird no OpenERP
+  * Passo 1: Instale o plugin Thunderbird no OpenERP
 
 Use o Assistente de Configuração OpenERP e instalar o aplicativo ``Gestão de Relacionamento com o Cliente``. No diálogo *Configuração de Aplicação CRM* sob Plug-In, selecione `Thunderbird '
 Em seguida, aparece o assistente *Thunderbird Plug-In* . Ao lado do campo ``Thunderbird Plug-in`` , clique no botão ``Salvar como`` para salvar o plug-in em seu desktop (ou qualquer outro local no seu computador).
@@ -413,11 +409,9 @@ Uma vez que a extensão foi instalado, um novo item do menu"OpenERP" é adiciona
 
 	O plugin OpenERP para Thunderbird funciona a partir do Thunderbird versão 2.0.
 
-	Portanto, verifique a sua versão Thunderbird antes de instalar e baixar a última versão que você precisa
-no seguinte endereço : http://www.mozilla.org/products/thunderbird/
+	Portanto, verifique a sua versão Thunderbird antes de instalar e baixar a última versão que você precisa no seguinte endereço : http://www.mozilla.org/products/thunderbird/
 
-Quando você tiver executado Instalação Passo 1 e Passo 2, a primeira coisa a fazer é se conectar Thunderbird no OpenERP.
-Um pouco de configuração precisa ser feito.
+Quando você tiver executado Instalação Passo 1 e Passo 2, a primeira coisa a fazer é se conectar Thunderbird no OpenERP. Um pouco de configuração precisa ser feito.
 
 .. note:: Antes de iniciar a configuração, verifique se o servidor GTK e servidor web está executando (deve ser permitido XML-RPC).
 
@@ -456,11 +450,10 @@ Aqui está um exemplo de como configurar os tipos de documentos extra. Suponha q
 	#. Na `Imagem`, selecione um ícone que você gostaria de usar,
 
 	#. Clique no botão `Adicionar` para realmente criar o tipo de documento.
+
 .. note:: Uma palavra sobre os Objetos
 
-       Para encontrar o objeto que você precisa em OpenERP, vá ao menu :menuselection:`Administration --> Customization --> Database Structure -->
-      Objetos`. O OpenERP só vai mostrar objetos para o qual o correspondente as Aplicações de Negócios / Módulos foram instalados.
-       Você só pode adicionar objetos ao Thunderbird que estão disponíveis no banco de dados selecionado.
+  Para encontrar o objeto que você precisa em OpenERP, vá ao menu :menuselection:`Administration --> Customization --> Database Structure --> Objetos`. O OpenERP só vai mostrar objetos para o qual o correspondente as Aplicações de Negócios / Módulos foram instalados. Você só pode adicionar objetos ao Thunderbird que estão disponíveis no banco de dados selecionado.
 
 .. figure::  images/thunderbird_document.png
    :scale: 75
@@ -496,9 +489,9 @@ Alguns módulos precisam ser instalados no servidor OpenERP (ou pode já estar i
     - :mod:`caldav`: Necessário, ter a configuração de referência e o necessário os 
              código subjacentes. Também fará com que documentos e document_webdav
              seja ser instalado.
-    - :modo:`crm_caldav`: Opcional, vai exportar os Encontros CRM como um calendário.
-    - :modo:`project_caldav`: Opcional, vai exportar tarefas do projeto como um calendário.
-    - :modo:`http_well_known`: Opcional, experimental. Vai facilitar bootstrapping,
+    - :mod:`crm_caldav`: Opcional, vai exportar os Encontros CRM como um calendário.
+    - :mod:`project_caldav`: Opcional, vai exportar tarefas do projeto como um calendário.
+    - :mod:`http_well_known`: Opcional, experimental. Vai facilitar bootstrapping,
              mas apenas quando um registro DNS SRV também é usado.
 
 Quando você instalar o módulo(s) acima, quando estiver pronto para ir, uma configuração de referência das pastas é fornecida.
@@ -518,7 +511,7 @@ Para configurar os calendários, proceda da seguinte forma:
 
 2. vá em ``Adicionar conta...``
 
-3. Clique em ``Outros`.
+3. Clique em ``Outros``.
 
 4. A partir do grupo ``Calendários``, selecione ``Adicionar Conta CalDAV``.
 
@@ -540,18 +533,12 @@ Para configurar os calendários, proceda da seguinte forma:
     
 10. Especifique as informações sobre o servidor OpenERP: 8071 como SSL, 8069 com SSL.
 
-11. Especifique ``Conta URL`` para o caminho certo do webdav OpenERP
-Novo! Segure a tecla Shift pressionada, clique e arraste as palavras acima para reorganizar. Dispensar:
-    a URL dada pelo assistente (ex. http://my.server.ip:8069/webdav/dbname/calendars/ )
+11. Especifique ``Conta URL`` para o caminho certo do webdav OpenERP 
+Novo! Segure a tecla Shift pressionada, clique e arraste as palavras acima para reorganizar. Dispensar: a URL dada pelo assistente (ex. http://my.server.ip:8069/webdav/dbname/calendars/ )
 
-12. Clique em ``Feito``. O telefone irá se conectar ao servidor OpenERP
-     e verificar se a conta pode ser usado.
+12. Clique em ``Feito``. O telefone irá se conectar ao servidor OpenERP e verificar se a conta pode ser usado.
 
-13. Vá para o menu principal do iPhone e abra o aplicativo Calendário.
-     Seus calendários OpenERP será visível dentro da seleção do botão
-    "Calendários".
-    Note que ao criar uma nova entrada na agenda, você terá que especificar
-     calendário que deve ser salvo.
+13. Vá para o menu principal do iPhone e abra o aplicativo Calendário. Seus calendários OpenERP será visível dentro da seleção do botão "Calendários". Note que ao criar uma nova entrada na agenda, você terá que especificar calendário que deve ser salvo.
 
 Se você precisar de SSL * * (e seu certificado não é algo verificado),
 primeiro você precisa para deixar o iPhone confiar no certificado. Siga estes passos:
@@ -564,10 +551,10 @@ primeiro você precisa para deixar o iPhone confiar no certificado. Siga estes p
     e clique em "Aceitar" para que o iPhone agora confia-lo.
 
 Calendários em Android
-++++++++++++++++++++
+++++++++++++++++++++++
 
 Pré-requisitos
-*************
+**************
 Não há como built-in para sincronizar calendários com CalDAV.
 Então, você precisa instalar um software de terceiros: Calendário (CalDav) Sincronização BETA
 Software de Hypermatix (por enquanto, é o único).
@@ -601,9 +588,7 @@ Calendários em Evolução
  
     - tipo : CalDav
     - Nome : O que você quiser (ex. reunião)
-    - URL : http://HOST:PORT/webdav/DB_NAME/calendars/users/USER/c/Meetings (e.g.
-      http://localhost:8069/webdav/db_1/calendars/users/demo/c/Meetings) 
-     a um dado no topo da janela
+    - URL : http://HOST:PORT/webdav/DB_NAME/calendars/users/USER/c/Meetings (e.g.      http://localhost:8069/webdav/db_1/calendars/users/demo/c/Meetings)  a um dado no topo da janela
     - Desmarque "usuário SSL"
     - Usuário : seu nome de usuário (ex. Demo)
     - Atualize : toda vez que quiser fazer uma atualização para sincronizar os dados com o servidor
@@ -617,7 +602,7 @@ Calendários em Evolução
 5. Um novo calendário com o nome digitado deve aparecer no lado esquerdo.
 
 Calendários no Sunbird / Lightning
-++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++
 
 Pré-requisitos
 **************
